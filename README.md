@@ -31,15 +31,4 @@ If you've spotted a bug in the code please use the project Issues [HERE](https:/
 
 ---
 
-#### Quick Start
-We have a small sample [HERE](https://github.com/CodeGator/CG.Blazor/samples/QuickStart) that demonstrated how to use the CG.Blazor library.
-
-Otherwise, here are the steps for integrating CG.Blazor into your project:
-
-- Open a new, or existing server-side Blazor project. (Sorry, haven't tested anything with client-side Blazor yet)
-- Add a reference to the CG.Blazor nuget package in your project.
-- If you want to play with plugins, add a new, or existing Razor Class Library project to your solution. Then, either add a reference to that project, in your main Blazor project, or, otherwise arrange for your Razor Class Library to be available 
-
-
-
 
