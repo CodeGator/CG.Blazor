@@ -1,0 +1,28 @@
+﻿@page "/sample"
+@inherits ViewBase<ISampleViewModel>
+
+@using CG.Blazor.QuickStart.Plugin.ViewModels
+
+<h1>Sample Page</h1>
+<p>This razor page was loaded at runtime. It demonstrates the following:</p>
+<ul>
+    <li>The <code>CG.Blazor</code> library can easily load your Razor Class Library, as a plugin, at runtime.</li>
+    <li>Plugins can have static resources, like style sheets and java scripts.</li>
+    <li>Pages and components in a plugin route the same way standard Razor pages and components do.</li>
+    <li>Pages can use the view-model extensions in <code>CG.Blazor</code> to improve testability and separation of concerns.</li>
+    <li>Plugins can register services by implementing the <code>IPluginModule</code> interface in a simple class.</li>
+</ul>
+
+<hr />
+
+<h2>Example</h2>
+<p>This button is colored using a class in the 'style.css' stylesheet, which is statically bound to the <code>CG.Blazor.QuickStart.Plugin</code> 
+   library. The stylesheet is injected into the HTML head using the <code>CG.Blazor</code> plugin extensions. </p>
+
+<button id="sampleButton" class="sampleButton" @onclick=@(() => ViewModel.Command.Execute(this))>@ViewModel.A</button>
+<label for="sampleButton">@ViewModel.B</label>
+
+<p>
+    The button is bound to an <code>ICommand</code>, in a view-model, just like we're all familiar with. That command calls a service to return the current time,
+    demonstrating how views, view-models, services, etc, can all live together in the same plugin - but still isolated from the main web project, or other plugins.
+</p>
