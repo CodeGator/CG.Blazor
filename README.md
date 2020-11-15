@@ -1,10 +1,10 @@
 # CG.Blazor: 
 
 ---
-[![Build Status](https://dev.azure.com/codegator/CG.Blazor/_apis/build/status/CodeGator.CG.Blazor?branchName=master)](https://dev.azure.com/codegator/CG.Blazor/_build/latest?definitionId=4&branchName=master)
+[![Build Status](https://dev.azure.com/codegator/CG.Blazor/_apis/build/status/CodeGator.CG.Blazor?branchName=main)](https://dev.azure.com/codegator/CG.Blazor/_build/latest?definitionId=30&branchName=main)
 [![Github docs](https://img.shields.io/static/v1?label=Documentation&message=online&color=blue)](https://codegator.github.io/CG.Blazor/index.html)
 [![NuGet downloads](https://img.shields.io/nuget/dt/CG.Blazor.svg?style=flat)](https://nuget.org/packages/CG.Blazor)
-![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.Blazor/4)
+![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.Blazor/30)
 
 #### What does it do?
 The package contains Blazor related abstractions used by other CodeGator packages.
