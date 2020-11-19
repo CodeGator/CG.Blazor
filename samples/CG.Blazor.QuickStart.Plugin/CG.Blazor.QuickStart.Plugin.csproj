@@ -10,6 +10,10 @@
 		<EmbeddedResource Include="wwwroot\**\*" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Content Remove="wwwroot\scripts\scripts.js" />
+	</ItemGroup>
+
 	<!--<ItemGroup>
 		<Content Remove="wwwroot\**\*" />
 	</ItemGroup>-->

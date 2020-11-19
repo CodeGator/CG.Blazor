@@ -4,9 +4,9 @@ using System;
 
 namespace CG.Blazor.QuickStart.Plugin
 {
-    public class Plugin : IPlugin
+    public class Module : IModule
     {
-        public void OnInitialize(
+        public void Initialize(
             IServiceCollection serviceCollection
             )
         {

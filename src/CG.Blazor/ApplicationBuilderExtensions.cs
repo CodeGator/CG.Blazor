@@ -1,4 +1,5 @@
-﻿using CG.Validations;
+﻿using CG.Blazor.Plugins;
+using CG.Validations;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.FileProviders;
@@ -166,10 +167,11 @@ namespace CG.Blazor
                 try
                 {
                     // Create a file provider to read embedded resources.
-                    var fileProvider = new ManifestEmbeddedFileProvider(
+                    var fileProvider = new ManifestEmbeddedFileProviderEx(
                             asm,
                             $"wwwroot"
                             );
+
                     // Add the provider to the collection.
                     allProviders.Insert(0, fileProvider);
                 }
@@ -265,7 +267,7 @@ namespace CG.Blazor
                 try
                 {
                     // Create a file provider to read embedded resources.
-                    var fileProvider = new ManifestEmbeddedFileProvider(
+                    var fileProvider = new ManifestEmbeddedFileProviderEx(
                             asm,
                             $"wwwroot"
                             );

@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
@@ -26,6 +27,12 @@ namespace CG.Blazor.QuickStart
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            //var fp = new ManifestEmbeddedFileProvider(
+            //                typeof(CG.Blazor.QuickStart.Plugin.Module).Assembly,
+            //                $"wwwroot"
+            //                );
+            //var fi = fp.GetFileInfo("_content/CG.Blazor.QuickStart.Plugin/styles/styles.css");
+
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();

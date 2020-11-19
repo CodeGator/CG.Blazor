@@ -172,10 +172,13 @@ namespace Microsoft.Extensions.DependencyInjection
                 {
                     // Load the assembly by name.
                     asm = Assembly.Load(module.Assembly);
-                }                
+                }
+
+                // Create a safe name for the assembly.
+                var safeAsmName = asm.GetName().Name;
 
                 // Have we already processed this plugin assembly?
-                if (asmNameSet.Contains(asm.GetName().Name))
+                if (asmNameSet.Contains(safeAsmName))
                 {
                     continue; // Nothing to do.
                 }
@@ -184,7 +187,9 @@ namespace Microsoft.Extensions.DependencyInjection
                 if (module.Routed)
                 {
                     // Remember the assembly on behalf of Blazor.
-                    BlazorResources.RoutedAssemblies.Add(asm);
+                    BlazorResources.RoutedAssemblies.Add(
+                        asm
+                        );
                 }
 
                 // Get the static resources from the assembly.
@@ -204,28 +209,39 @@ namespace Microsoft.Extensions.DependencyInjection
                     module
                     );
                 
-                // Is there an entry point?
+                // Is there a module?
                 if (false == string.IsNullOrEmpty(module.EntryPoint))
                 {
-                    // Try to load the type.
-                    var type = asm.GetType(
-                        module.EntryPoint,
-                        true // <-- throw exception on fail.
-                        );
-
-                    // Try to create an instance.
-                    var plugin = Activator.CreateInstance(
-                        type
-                        ) as IPlugin;
-
-                    // Did we succeed?
-                    if (null != plugin)
+                    try 
                     {
-                        // Initialize the plugin.
-                        plugin.OnInitialize(
-                            serviceCollection
+                        // Try to load the module type.
+                        var type = asm.GetType(
+                            module.EntryPoint,
+                            true // <-- throw exception on fail.
                             );
+
+                        // Try to create an instance.
+                        var moduleObj = Activator.CreateInstance(
+                            type
+                            ) as IModule;
+
+                        // Did we succeed?
+                        if (null != moduleObj)
+                        {
+                            // Initialize the module.
+                            moduleObj.Initialize(
+                                serviceCollection
+                                );
+                        }
                     }
+                    catch (Exception ex)
+                    {
+                        // Provide more context for the error.
+                        throw new InvalidOperationException(
+                            message: $"It appears the module: '{module.EntryPoint}' either doesn't exist in assembly '{safeAsmName}'. See inner exceptions for more detail.",
+                            innerException: ex
+                            );
+                    }                    
                 }
             }
 

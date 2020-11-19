@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\CG.Blazor\CG.Blazor.csproj" />
-    <ProjectReference Include="..\CG.Blazor.QuickStart.Plugin\CG.Blazor.QuickStart.Plugin.csproj" />
   </ItemGroup>
 
 </Project>
