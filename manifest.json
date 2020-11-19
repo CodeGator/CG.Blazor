@@ -74,11 +74,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.Blazor.IPlugin.yml",
+      "source_relative_path": "api/CG.Blazor.IModule.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CG.Blazor.IPlugin.html",
-          "hash": "Usuu/hzNQP3lA/rsVdvujg=="
+          "relative_path": "api/CG.Blazor.IModule.html",
+          "hash": "QMS/y9KU5SKKl/mkd0fXRg=="
         }
       },
       "is_incremental": false,
@@ -115,6 +115,30 @@
         ".html": {
           "relative_path": "api/CG.Blazor.Options.html",
           "hash": "J5zuglSc8K6AJWWxy2wuyQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Plugins.ModuleBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Plugins.ModuleBase.html",
+          "hash": "Xdq0JlnqJTPxPL272oLjeA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Plugins.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Plugins.html",
+          "hash": "jmASfWMIxqF4DQ6cdqsQKw=="
         }
       },
       "is_incremental": false,
@@ -186,7 +210,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Blazor.html",
-          "hash": "ISrXTJ1dm7cRMJPdOGzXWQ=="
+          "hash": "ceriCQQTcZLfHsY7lEgdNA=="
         }
       },
       "is_incremental": false,
@@ -222,7 +246,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "ataug+HrZ+M2jSJYFbiuSQ=="
+          "hash": "DAF6c+oG4MIhT5Mr42xKoQ=="
         }
       },
       "is_incremental": false,
@@ -341,7 +365,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 17,
+          "total_file_count": 19,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

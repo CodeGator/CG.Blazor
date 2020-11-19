@@ -181,25 +181,25 @@ references:
   commentId: T:CG.Blazor.Commands.SimpleEventHandler
   fullName: CG.Blazor.Commands.SimpleEventHandler
   nameWithType: SimpleEventHandler
-- uid: CG.Blazor.IPlugin
-  name: IPlugin
-  href: api/CG.Blazor.IPlugin.html
-  commentId: T:CG.Blazor.IPlugin
-  fullName: CG.Blazor.IPlugin
-  nameWithType: IPlugin
-- uid: CG.Blazor.IPlugin.OnInitialize(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  name: OnInitialize(IServiceCollection)
-  href: api/CG.Blazor.IPlugin.html#CG_Blazor_IPlugin_OnInitialize_Microsoft_Extensions_DependencyInjection_IServiceCollection_
-  commentId: M:CG.Blazor.IPlugin.OnInitialize(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  fullName: CG.Blazor.IPlugin.OnInitialize(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  nameWithType: IPlugin.OnInitialize(IServiceCollection)
-- uid: CG.Blazor.IPlugin.OnInitialize*
-  name: OnInitialize
-  href: api/CG.Blazor.IPlugin.html#CG_Blazor_IPlugin_OnInitialize_
-  commentId: Overload:CG.Blazor.IPlugin.OnInitialize
+- uid: CG.Blazor.IModule
+  name: IModule
+  href: api/CG.Blazor.IModule.html
+  commentId: T:CG.Blazor.IModule
+  fullName: CG.Blazor.IModule
+  nameWithType: IModule
+- uid: CG.Blazor.IModule.Initialize(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: Initialize(IServiceCollection)
+  href: api/CG.Blazor.IModule.html#CG_Blazor_IModule_Initialize_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:CG.Blazor.IModule.Initialize(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: CG.Blazor.IModule.Initialize(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: IModule.Initialize(IServiceCollection)
+- uid: CG.Blazor.IModule.Initialize*
+  name: Initialize
+  href: api/CG.Blazor.IModule.html#CG_Blazor_IModule_Initialize_
+  commentId: Overload:CG.Blazor.IModule.Initialize
   isSpec: "True"
-  fullName: CG.Blazor.IPlugin.OnInitialize
-  nameWithType: IPlugin.OnInitialize
+  fullName: CG.Blazor.IModule.Initialize
+  nameWithType: IModule.Initialize
 - uid: CG.Blazor.Options
   name: CG.Blazor.Options
   href: api/CG.Blazor.Options.html
@@ -302,6 +302,31 @@ references:
   commentId: F:CG.Blazor.Options.PluginOptions.SectionKey
   fullName: CG.Blazor.Options.PluginOptions.SectionKey
   nameWithType: PluginOptions.SectionKey
+- uid: CG.Blazor.Plugins
+  name: CG.Blazor.Plugins
+  href: api/CG.Blazor.Plugins.html
+  commentId: N:CG.Blazor.Plugins
+  fullName: CG.Blazor.Plugins
+  nameWithType: CG.Blazor.Plugins
+- uid: CG.Blazor.Plugins.ModuleBase
+  name: ModuleBase
+  href: api/CG.Blazor.Plugins.ModuleBase.html
+  commentId: T:CG.Blazor.Plugins.ModuleBase
+  fullName: CG.Blazor.Plugins.ModuleBase
+  nameWithType: ModuleBase
+- uid: CG.Blazor.Plugins.ModuleBase.Initialize(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: Initialize(IServiceCollection)
+  href: api/CG.Blazor.Plugins.ModuleBase.html#CG_Blazor_Plugins_ModuleBase_Initialize_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:CG.Blazor.Plugins.ModuleBase.Initialize(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: CG.Blazor.Plugins.ModuleBase.Initialize(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: ModuleBase.Initialize(IServiceCollection)
+- uid: CG.Blazor.Plugins.ModuleBase.Initialize*
+  name: Initialize
+  href: api/CG.Blazor.Plugins.ModuleBase.html#CG_Blazor_Plugins_ModuleBase_Initialize_
+  commentId: Overload:CG.Blazor.Plugins.ModuleBase.Initialize
+  isSpec: "True"
+  fullName: CG.Blazor.Plugins.ModuleBase.Initialize
+  nameWithType: ModuleBase.Initialize
 - uid: CG.Blazor.ViewModels
   name: CG.Blazor.ViewModels
   href: api/CG.Blazor.ViewModels.html

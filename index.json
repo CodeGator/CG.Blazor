@@ -27,12 +27,12 @@
   "api/CG.Blazor.html": {
     "href": "api/CG.Blazor.html",
     "title": "Namespace CG.Blazor",
-    "keywords": "Namespace CG.Blazor Classes ApplicationBuilderExtensions This class contains extension methods related to the Microsoft.AspNetCore.Builder.IApplicationBuilder BlazorResources This class utility contains resources that were dynamically gathered from various plugins at startup. Interfaces IPlugin This interface represents a Blazor plugin entry point."
+    "keywords": "Namespace CG.Blazor Classes ApplicationBuilderExtensions This class contains extension methods related to the Microsoft.AspNetCore.Builder.IApplicationBuilder BlazorResources This class utility contains resources that were dynamically gathered from various plugins at startup. Interfaces IModule This interface represents a Blazor plugin module."
   },
-  "api/CG.Blazor.IPlugin.html": {
-    "href": "api/CG.Blazor.IPlugin.html",
-    "title": "Interface IPlugin",
-    "keywords": "Interface IPlugin This interface represents a Blazor plugin entry point. Namespace : CG.Blazor Assembly : CG.Blazor.dll Syntax public interface IPlugin Methods OnInitialize(IServiceCollection) This method is called by the framework when the plugin is first loaded, to initialize the plugin. Declaration void OnInitialize(IServiceCollection serviceCollection) Parameters Type Name Description Microsoft.Extensions.DependencyInjection.IServiceCollection serviceCollection The service collection to use for the operation."
+  "api/CG.Blazor.IModule.html": {
+    "href": "api/CG.Blazor.IModule.html",
+    "title": "Interface IModule",
+    "keywords": "Interface IModule This interface represents a Blazor plugin module. Namespace : CG.Blazor Assembly : CG.Blazor.dll Syntax public interface IModule Methods Initialize(IServiceCollection) This method is called by the framework when the module is first loaded, to initialize the plugin. Declaration void Initialize(IServiceCollection serviceCollection) Parameters Type Name Description Microsoft.Extensions.DependencyInjection.IServiceCollection serviceCollection The service collection to use for the operation."
   },
   "api/CG.Blazor.Options.html": {
     "href": "api/CG.Blazor.Options.html",
@@ -48,6 +48,16 @@
     "href": "api/CG.Blazor.Options.PluginOptions.html",
     "title": "Class PluginOptions",
     "keywords": "Class PluginOptions This class represents configuration options for Blazor plugins. Inheritance System.Object CG.DataAnnotations.ValidatableObject CG.Options.OptionsBase PluginOptions Implements System.ComponentModel.DataAnnotations.IValidatableObject Inherited Members CG.DataAnnotations.ValidatableObject.Validate(System.ComponentModel.DataAnnotations.ValidationContext) System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : CG.Blazor.Options Assembly : CG.Blazor.dll Syntax public class PluginOptions : OptionsBase, IValidatableObject Fields SectionKey This constant represents the corresponding configuration key for these options. Declaration public const string SectionKey = \"Plugins\" Field Value Type Description System.String Properties Modules This property contains a list of plugin modules. Declaration [Required] public IList<ModuleOptions> Modules { get; set; } Property Value Type Description System.Collections.Generic.IList < ModuleOptions > Implements System.ComponentModel.DataAnnotations.IValidatableObject"
+  },
+  "api/CG.Blazor.Plugins.html": {
+    "href": "api/CG.Blazor.Plugins.html",
+    "title": "Namespace CG.Blazor.Plugins",
+    "keywords": "Namespace CG.Blazor.Plugins Classes ModuleBase This class is a base implementation of the IModule interface."
+  },
+  "api/CG.Blazor.Plugins.ModuleBase.html": {
+    "href": "api/CG.Blazor.Plugins.ModuleBase.html",
+    "title": "Class ModuleBase",
+    "keywords": "Class ModuleBase This class is a base implementation of the IModule interface. Inheritance System.Object ModuleBase Implements IModule Inherited Members System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : CG.Blazor.Plugins Assembly : CG.Blazor.dll Syntax public abstract class ModuleBase : IModule Methods Initialize(IServiceCollection) This method is called by the framework when the module is first loaded, to initialize the plugin. Declaration public abstract void Initialize(IServiceCollection serviceCollection) Parameters Type Name Description Microsoft.Extensions.DependencyInjection.IServiceCollection serviceCollection The service collection to use for the operation. Implements IModule"
   },
   "api/CG.Blazor.ViewModels.html": {
     "href": "api/CG.Blazor.ViewModels.html",
