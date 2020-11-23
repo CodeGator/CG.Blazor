@@ -14,7 +14,8 @@ The package contains Blazor related abstractions used by other CodeGator package
 * CG.Blazor.Views.ViewBase
 * CG.Blazor.ViewModels.IViewModel
 * CG.Blazor.ViewModels.ViewModelBase
-* CG.Blazor.Plugins.IPluginModule
+* CG.Blazor.Plugins.IModule
+* CG.Blazor.Plugins.ModuleBase
 * CG.Blazor.Options.PluginOptions
 * CG.Blazor.Options.ModuleOptions
 
@@ -28,6 +29,11 @@ PM> Install-Package CG.Blazor
 
 #### How do I contact you?
 If you've spotted a bug in the code please use the project Issues [HERE](https://github.com/CodeGator/CG.Blazor/issues)
+
+#### Is there any documentation?
+There is developer documentation [HERE](https://codegator.github.io/CG.Blazor/)
+
+We also blog about projects like this one on our website, [HERE](http://www.codegator.com)
 
 ---
 
