@@ -38,6 +38,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.ClaimsPrincipalExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.ClaimsPrincipalExtensions.html",
+          "hash": "KPFopTe4yxJdule6sJhvww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CG.Blazor.Commands.DelegateCommand.yml",
       "output": {
         ".html": {
@@ -210,7 +222,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Blazor.html",
-          "hash": "ceriCQQTcZLfHsY7lEgdNA=="
+          "hash": "zDSDS12zdn5FYOvMLkHFMg=="
         }
       },
       "is_incremental": false,
@@ -246,7 +258,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "DAF6c+oG4MIhT5Mr42xKoQ=="
+          "hash": "no8xYilUi1tdmJtX9odgzQ=="
         }
       },
       "is_incremental": false,
@@ -365,7 +377,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 19,
+          "total_file_count": 20,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
