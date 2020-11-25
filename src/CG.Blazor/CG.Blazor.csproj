@@ -10,7 +10,7 @@
 	<Description>This package contains Blazor extensions used by other CodeGator packages. 
 
 Platforms supported:
-      .NET Standard 2.0 or above</Description>
+      .NET Core 3.1 or above</Description>
 	<Company>CodeGator</Company>
 	<PackageProjectUrl>https://github.com/CodeGator/CG.Blazor</PackageProjectUrl>
 	<RepositoryUrl>https://github.com/CodeGator/CG.Blazor</RepositoryUrl>

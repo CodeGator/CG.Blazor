@@ -20,7 +20,7 @@ The package contains Blazor related abstractions used by other CodeGator package
 * CG.Blazor.Options.ModuleOptions
 
 #### What platform(s) does it support?
-* .NET Standard 2.x or higher
+* .NET Core 3.1 or higher
 
 #### How do I install it?
 The binary is hosted on [NuGet](https://www.nuget.org/packages/CG.Blazor). To install the package using the NuGet package manager:
