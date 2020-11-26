@@ -2,7 +2,7 @@
 
 # Introduction
 
-CG.Blazor.dll contains Blazor extensions used by other CodeGator packages.
+CG.Blazor.dll contains server side Blazor extensions used by other CodeGator packages.
 
 
 

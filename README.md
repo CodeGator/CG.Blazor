@@ -7,7 +7,7 @@
 ![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.Blazor/30)
 
 #### What does it do?
-The package contains Blazor related abstractions used by other CodeGator packages.
+The package contains server side Blazor extensions used by other CodeGator packages.
 
 #### Commonly used types:
 * Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions

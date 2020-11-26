@@ -11,3 +11,5 @@
 
 * I added support for plugins.
 
+* I moved the claims extensions to CG.Blazor.Client
+

@@ -7,10 +7,10 @@
 	<PackageIcon>packageDefaultIcon-50x50.png</PackageIcon>
 	<PackageLicenseExpression>MIT</PackageLicenseExpression>
 	<Copyright>Copyright © 2018 - 2020 by CodeGator. All rights reserved.</Copyright>
-	<Description>This package contains Blazor extensions used by other CodeGator packages. 
+	<Description>This package contains server side Blazor extensions used by other CodeGator packages. 
 
 Platforms supported:
-      .NET Core 3.1 or above</Description>
+    .NET Core 3.1 or above</Description>
 	<Company>CodeGator</Company>
 	<PackageProjectUrl>https://github.com/CodeGator/CG.Blazor</PackageProjectUrl>
 	<RepositoryUrl>https://github.com/CodeGator/CG.Blazor</RepositoryUrl>
@@ -25,8 +25,9 @@ Platforms supported:
 	</ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="CG.Blazor.Client" Version="2020.1.1" />
     <PackageReference Include="CG.Core" Version="2020.6.41" />
-    <PackageReference Include="CG.Options" Version="2020.1.15" />
+    <PackageReference Include="CG.Options" Version="2020.1.16" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
     <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="5.0.0" />
