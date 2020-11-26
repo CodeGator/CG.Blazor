@@ -1,6 +1,7 @@
 ﻿using CG.Blazor.ViewModels;
 using Microsoft.AspNetCore.Components;
 using System;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace CG.Blazor.Views
@@ -70,7 +71,8 @@ namespace CG.Blazor.Views
         #region Protected methods
 
         /// <summary>
-        /// This method is invoked when the component is ready to start.
+        /// This method is invoked when the component is ready to start, having 
+        /// received its initial parameters from its parent in the render tree.
         /// </summary>
         /// <returns>A task to perform the operation.</returns>
         protected override async Task OnInitializedAsync()
@@ -81,7 +83,7 @@ namespace CG.Blazor.Views
                 // Wire up a handler for any view-model property changes.
                 ViewModel.PropertyChanged += async (sender, e) =>
                 {
-                    // Tell Blazor something changed.
+                    // Tell Blazor whenever something changes.
                     await InvokeAsync(() => StateHasChanged());
                 };
             }

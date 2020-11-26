@@ -9,5 +9,7 @@ public interface ISampleViewModel : IViewModel
     ICommand Command { get; }
     string A { get; set; }
     string B { get; set; }
-}
+
+        string Test1Value { get; set; }
+    }
 }

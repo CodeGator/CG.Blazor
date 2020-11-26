@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30709.132
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CG.Blazor.QuickStart", "CG.Blazor.QuickStart\CG.Blazor.QuickStart.csproj", "{F51E17D0-B7FD-4363-9BB7-EBDBAA0926EC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B629B661-8446-4458-82F9-C54DE86D2262} = {B629B661-8446-4458-82F9-C54DE86D2262}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CG.Blazor", "..\src\CG.Blazor\CG.Blazor.csproj", "{93C83BFE-DC20-494D-92F6-1DACEDA63D34}"
 EndProject

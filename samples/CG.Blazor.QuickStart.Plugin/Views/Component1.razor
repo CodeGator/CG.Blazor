@@ -1,0 +1,13 @@
+﻿@inherits ViewBase<IComponent1ViewModel>
+
+<h2>Component Sample</h2>
+<p>The value of Test1, from the @nameof(IComponent1ViewModel) view-model is: @Test1</p>
+<p>This value was cascaded, by Blazor, from the main view's view-model, to the child component's view-model.</p>
+
+@using CG.Blazor.QuickStart.Plugin.ViewModels
+
+@code {
+    [CascadingParameter(Name = "Test1")]
+    public string Test1 { get; set; }
+
+}
