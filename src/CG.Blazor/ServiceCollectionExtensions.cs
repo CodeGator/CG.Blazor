@@ -1,6 +1,7 @@
 ﻿using CG;
 using CG.Blazor;
 using CG.Blazor.Options;
+using CG.Blazor.Properties;
 using CG.Blazor.ViewModels;
 using CG.Validations;
 using Microsoft.Extensions.Configuration;
@@ -145,9 +146,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 .ThrowIfNull(configuration, nameof(configuration));
 
             // Clear any old blazor resources.
-            BlazorResources.RoutedAssemblies.Clear();
-            BlazorResources.Scripts.Clear();
-            BlazorResources.StyleSheets.Clear();
+            BlazorResources.Clear();
 
             // Configure the plugin options.
             serviceCollection.ConfigureOptions<PluginOptions>(
@@ -157,7 +156,7 @@ namespace Microsoft.Extensions.DependencyInjection
 
             var asmNameSet = new HashSet<string>();
 
-            // Loop through the modules (ignoring any duplicates).
+            // Loop through the modules.
             foreach (var module in pluginOptions.Modules)
             {
                 Assembly asm = null;
@@ -220,25 +219,34 @@ namespace Microsoft.Extensions.DependencyInjection
                             true // <-- throw exception on fail.
                             );
 
-                        // Try to create an instance.
-                        var moduleObj = Activator.CreateInstance(
+                        // Try to create an instance of the module.
+                        if (Activator.CreateInstance(
                             type
-                            ) as IModule;
-
-                        // Did we succeed?
-                        if (null != moduleObj)
+                            ) is IModule moduleObj)
                         {
-                            // Initialize the module.
-                            moduleObj.Initialize(
-                                serviceCollection
+                            // Register any services in the module.
+                            moduleObj.ConfigureServices(
+                                serviceCollection,
+                                configuration
                                 );
+
+                            // Since we've gone to all the trouble to create
+                            //   this module, and we know we'll need it again,
+                            //   as part of the whole startup operation, let's
+                            //   go ahead and cache so we don't have to
+                            //   re-create it, next time we need it.
+                            BlazorResources.Modules.Add(moduleObj);
                         }
                     }
                     catch (Exception ex)
                     {
                         // Provide more context for the error.
                         throw new InvalidOperationException(
-                            message: $"It appears the module: '{module.EntryPoint}' either doesn't exist in assembly '{safeAsmName}'. See inner exceptions for more detail.",
+                            message: string.Format(
+                                Resources.ServiceCollectionExtensions_EntryPoint,
+                                module.EntryPoint,
+                                safeAsmName
+                                ),
                             innerException: ex
                             );
                     }                    
@@ -280,7 +288,10 @@ namespace Microsoft.Extensions.DependencyInjection
                     {
                         // Panic!
                         throw new InvalidOperationException(
-                            message: $"It appears the script path '{resource}' contains HTML. HTML is not allowed in the path."
+                            message: string.Format(
+                                Resources.ServiceCollectionExtensions_HtmlScript,
+                                resource
+                                )
                             );
                     }
 
@@ -288,11 +299,15 @@ namespace Microsoft.Extensions.DependencyInjection
                     if (resource.StartsWith('/'))
                     {
                         // Check for the resource in the assembly.
-                        if (staticResourceNames.Contains($"{asm.GetName().Name}.wwwroot.{resource.Substring(1)}"))
+                        if (staticResourceNames.Contains($"{asm.GetName().Name}.wwwroot.{resource[1..]}"))
                         {
                             // Panic!
                             throw new InvalidOperationException(
-                                message: $"It appears the script '{resource}' is not an embedded resource in assembly '{asm.GetName().Name}'!"
+                                message: string.Format(
+                                    Resources.ServiceCollectionExtensions_ResScript,
+                                    resource,
+                                    asm.GetName().Name
+                                    )
                                 );
                         }
 
@@ -308,7 +323,11 @@ namespace Microsoft.Extensions.DependencyInjection
                         {
                             // Panic!
                             throw new InvalidOperationException(
-                                message: $"It appears the script '{resource}' is not an embedded resource in assembly '{asm.GetName().Name}'!"
+                                message: string.Format(
+                                    Resources.ServiceCollectionExtensions_ResScript,
+                                    resource,
+                                    asm.GetName().Name
+                                    )
                                 );
                         }
 
@@ -346,7 +365,10 @@ namespace Microsoft.Extensions.DependencyInjection
                     {
                         // Panic!
                         throw new InvalidOperationException(
-                            message: $"It appears the style sheet path '{resource}' contains HTML. HTML is not allowed in the path."
+                            message: string.Format(
+                                    Resources.ServiceCollectionExtensions_HtmlStyle,
+                                    resource
+                                    )
                             );
                     }
 
@@ -354,11 +376,15 @@ namespace Microsoft.Extensions.DependencyInjection
                     if (resource.StartsWith('/'))
                     {
                         // Check for the resource in the assembly.
-                        if (staticResourceNames.Contains($"{asm.GetName().Name}.wwwroot.{resource.Substring(1)}"))
+                        if (staticResourceNames.Contains($"{asm.GetName().Name}.wwwroot.{resource[1..]}"))
                         {
                             // Panic!
                             throw new InvalidOperationException(
-                                message: $"It appears the style sheet '{resource}' is not an embedded resource in assembly '{asm.GetName().Name}'!"
+                                message: string.Format(
+                                    Resources.ServiceCollectionExtensions_ResStyle,
+                                    resource,
+                                    asm.GetName().Name
+                                    )
                                 );
                         }
 
@@ -374,7 +400,11 @@ namespace Microsoft.Extensions.DependencyInjection
                         {
                             // Panic!
                             throw new InvalidOperationException(
-                                message: $"It appears the style sheet '{resource}' is not an embedded resource in assembly '{asm.GetName().Name}'!"
+                                message: string.Format(
+                                    Resources.ServiceCollectionExtensions_ResStyle,
+                                    resource,
+                                    asm.GetName().Name
+                                    )
                                 );
                         }
 

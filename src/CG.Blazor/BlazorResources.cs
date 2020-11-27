@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Builder;
 
 namespace CG.Blazor
 {
@@ -33,6 +35,14 @@ namespace CG.Blazor
         /// in a Razor Class Library and must be linked at runtime.
         /// </summary>
         public static IList<string> Scripts { get; } = new List<string>();
+
+        /// <summary>
+        /// This property contains a temporary list of modules that have been 
+        /// loaded by the runtime. This list is populated by the <see cref="ServiceCollectionExtensions.AddPlugins(IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration)"/>
+        /// method and is cleared by the <see cref="ApplicationBuilderExtensions.UsePlugins(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Hosting.IWebHostEnvironment)"/>
+        /// method.
+        /// </summary>
+        internal static IList<IModule> Modules { get; } = new List<IModule>();
 
         #endregion
 
@@ -76,6 +86,19 @@ namespace CG.Blazor
             }
             var rawHTml = sb.ToString();
             return rawHTml;
+        }
+
+        // *******************************************************************
+
+        /// <summary>
+        ///  This method clears any resources contained by this class utility.
+        /// </summary>
+        public static void Clear()
+        {
+            BlazorResources.RoutedAssemblies.Clear();
+            BlazorResources.Scripts.Clear();
+            BlazorResources.StyleSheets.Clear();
+            BlazorResources.Modules.Clear();
         }
 
         #endregion

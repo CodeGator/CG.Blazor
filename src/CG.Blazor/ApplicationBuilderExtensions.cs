@@ -1,6 +1,7 @@
-﻿using CG.Blazor.Plugins;
+﻿using CG.Blazor;
+using CG.Blazor.Plugins;
+using CG.Blazor.Properties;
 using CG.Validations;
-using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.FileProviders;
 using System;
@@ -8,7 +9,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 
-namespace CG.Blazor
+namespace Microsoft.AspNetCore.Builder
 {
     /// <summary>
     /// This class contains extension methods related to the <see cref="IApplicationBuilder"/>
@@ -76,6 +77,18 @@ namespace CG.Blazor
                 allProviders
                 );
 
+            // The final thing we need to do is walk through the list of modules
+            //   and call the Configure method on each one, just in case that 
+            //   module is expecting that to happen.
+            foreach (var module in BlazorResources.Modules)
+            {
+                // Configure any services in the module.
+                module.Configure(
+                    applicationBuilder,
+                    webHostEnvironment
+                    );
+            }
+
             // Return the application builder.
             return applicationBuilder;
         }
@@ -115,7 +128,10 @@ namespace CG.Blazor
                 {
                     // Panic.
                     throw new InvalidOperationException(
-                        message: $"It appears the script tag '{resource}' is missing the '_content/' portion of the tag."
+                        message: string.Format(
+                            Resources.ApplicationBuilderExtensions_MissingContent,
+                            resource
+                            )
                         );
                 }
 
@@ -128,15 +144,15 @@ namespace CG.Blazor
                 {
                     // Panic.
                     throw new InvalidOperationException(
-                        message: $"It appears the script tag '{resource}' is missing a '/' after the assembly name."
+                        message: string.Format(
+                            Resources.ApplicationBuilderExtensions_MissingSlash,
+                            resource
+                            )
                         );
                 }
 
                 // Parse out the assembly name.
-                var asmName = resource.Substring(
-                    index1,
-                    index2 - index1
-                    );
+                var asmName = resource[index1..index2];
 
                 // Have we already created a file provider for this assembly?
                 if (asmNameSet.Contains(asmName))
@@ -159,7 +175,10 @@ namespace CG.Blazor
                 {
                     // Provide better context for the error.
                     throw new FileNotFoundException(
-                        message: $"It appears the plugin assembly '{asmName}' can't be found. See inner exception for more detail.",
+                        message: string.Format(
+                            Resources.ApplicationBuilderExtensions_AsmName,
+                            asmName
+                            ),
                         innerException: ex
                         );
                 }
@@ -179,7 +198,10 @@ namespace CG.Blazor
                 {
                     // Provide better context for the error.
                     throw new InvalidOperationException(
-                        message: $"It appears the plugin assembly '{asm.GetName().Name}' doesn't have a wwwroot folder, or doesn't have any embedded resources in that folder, or doesn't have an embedded manifest. See inner exception for more detail.",
+                        message: string.Format(
+                            Resources.ApplicationBuilderExtensions_WwwRoot,
+                            asm.GetName().Name
+                            ),
                         innerException: ex
                         );
                 }
@@ -215,7 +237,10 @@ namespace CG.Blazor
                 {
                     // Panic.
                     throw new InvalidOperationException(
-                        message: $"It appears the style sheet link '{resource}' is missing the '_content/' portion of the link."
+                        message: string.Format(
+                            Resources.ApplicationBuilderExtensions_MissingContent,
+                            resource
+                            )
                         );
                 }
 
@@ -228,15 +253,15 @@ namespace CG.Blazor
                 {
                     // Panic.
                     throw new InvalidOperationException(
-                        message: $"It appears the style sheet link '{resource}' is missing a '/' after the assembly name."
+                        message: string.Format(
+                            Resources.ApplicationBuilderExtensions_MissingSlash,
+                            resource
+                            )
                         );
                 }
 
                 // Parse out the assembly name.
-                var asmName = resource.Substring(
-                    index1,
-                    index2 - index1
-                    );
+                var asmName = resource[index1..index2];
 
                 // Have we already created a file provider for this assembly?
                 if (asmNameSet.Contains(asmName))
@@ -259,7 +284,10 @@ namespace CG.Blazor
                 {
                     // Provide better context for the error.
                     throw new FileNotFoundException(
-                        message: $"It appears the plugin assembly '{asmName}' can't be found. See inner exception for more detail.",
+                        message: string.Format(
+                            Resources.ApplicationBuilderExtensions_AsmName,
+                            asmName
+                            ),
                         innerException: ex
                         );
                 }
@@ -279,7 +307,10 @@ namespace CG.Blazor
                 {
                     // Provide better context for the error.
                     throw new InvalidOperationException(
-                        message: $"It appears the plugin assembly '{asm.GetName().Name}' doesn't have a wwwroot folder, or doesn't have any embedded resources in that folder, or doesn't have an embedded manifest. See inner exception for more detail.",
+                        message: string.Format(
+                            Resources.ApplicationBuilderExtensions_WwwRoot,
+                            asm.GetName().Name
+                            ),
                         innerException: ex
                         );
                 }
