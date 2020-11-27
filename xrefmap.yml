@@ -7,31 +7,25 @@ references:
   commentId: N:CG.Blazor
   fullName: CG.Blazor
   nameWithType: CG.Blazor
-- uid: CG.Blazor.ApplicationBuilderExtensions
-  name: ApplicationBuilderExtensions
-  href: api/CG.Blazor.ApplicationBuilderExtensions.html
-  commentId: T:CG.Blazor.ApplicationBuilderExtensions
-  fullName: CG.Blazor.ApplicationBuilderExtensions
-  nameWithType: ApplicationBuilderExtensions
-- uid: CG.Blazor.ApplicationBuilderExtensions.UsePlugins(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)
-  name: UsePlugins(IApplicationBuilder, IWebHostEnvironment)
-  href: api/CG.Blazor.ApplicationBuilderExtensions.html#CG_Blazor_ApplicationBuilderExtensions_UsePlugins_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_AspNetCore_Hosting_IWebHostEnvironment_
-  commentId: M:CG.Blazor.ApplicationBuilderExtensions.UsePlugins(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)
-  fullName: CG.Blazor.ApplicationBuilderExtensions.UsePlugins(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Hosting.IWebHostEnvironment)
-  nameWithType: ApplicationBuilderExtensions.UsePlugins(IApplicationBuilder, IWebHostEnvironment)
-- uid: CG.Blazor.ApplicationBuilderExtensions.UsePlugins*
-  name: UsePlugins
-  href: api/CG.Blazor.ApplicationBuilderExtensions.html#CG_Blazor_ApplicationBuilderExtensions_UsePlugins_
-  commentId: Overload:CG.Blazor.ApplicationBuilderExtensions.UsePlugins
-  isSpec: "True"
-  fullName: CG.Blazor.ApplicationBuilderExtensions.UsePlugins
-  nameWithType: ApplicationBuilderExtensions.UsePlugins
 - uid: CG.Blazor.BlazorResources
   name: BlazorResources
   href: api/CG.Blazor.BlazorResources.html
   commentId: T:CG.Blazor.BlazorResources
   fullName: CG.Blazor.BlazorResources
   nameWithType: BlazorResources
+- uid: CG.Blazor.BlazorResources.Clear
+  name: Clear()
+  href: api/CG.Blazor.BlazorResources.html#CG_Blazor_BlazorResources_Clear
+  commentId: M:CG.Blazor.BlazorResources.Clear
+  fullName: CG.Blazor.BlazorResources.Clear()
+  nameWithType: BlazorResources.Clear()
+- uid: CG.Blazor.BlazorResources.Clear*
+  name: Clear
+  href: api/CG.Blazor.BlazorResources.html#CG_Blazor_BlazorResources_Clear_
+  commentId: Overload:CG.Blazor.BlazorResources.Clear
+  isSpec: "True"
+  fullName: CG.Blazor.BlazorResources.Clear
+  nameWithType: BlazorResources.Clear
 - uid: CG.Blazor.BlazorResources.RenderScriptTags
   name: RenderScriptTags()
   href: api/CG.Blazor.BlazorResources.html#CG_Blazor_BlazorResources_RenderScriptTags
@@ -103,18 +97,24 @@ references:
   commentId: N:CG.Blazor.Commands
   fullName: CG.Blazor.Commands
   nameWithType: CG.Blazor.Commands
+- uid: CG.Blazor.Commands.CommandEventHandler
+  name: CommandEventHandler
+  href: api/CG.Blazor.Commands.CommandEventHandler.html
+  commentId: T:CG.Blazor.Commands.CommandEventHandler
+  fullName: CG.Blazor.Commands.CommandEventHandler
+  nameWithType: CommandEventHandler
 - uid: CG.Blazor.Commands.DelegateCommand
   name: DelegateCommand
   href: api/CG.Blazor.Commands.DelegateCommand.html
   commentId: T:CG.Blazor.Commands.DelegateCommand
   fullName: CG.Blazor.Commands.DelegateCommand
   nameWithType: DelegateCommand
-- uid: CG.Blazor.Commands.DelegateCommand.#ctor(CG.Blazor.Commands.SimpleEventHandler)
-  name: DelegateCommand(SimpleEventHandler)
-  href: api/CG.Blazor.Commands.DelegateCommand.html#CG_Blazor_Commands_DelegateCommand__ctor_CG_Blazor_Commands_SimpleEventHandler_
-  commentId: M:CG.Blazor.Commands.DelegateCommand.#ctor(CG.Blazor.Commands.SimpleEventHandler)
-  fullName: CG.Blazor.Commands.DelegateCommand.DelegateCommand(CG.Blazor.Commands.SimpleEventHandler)
-  nameWithType: DelegateCommand.DelegateCommand(SimpleEventHandler)
+- uid: CG.Blazor.Commands.DelegateCommand.#ctor(CG.Blazor.Commands.CommandEventHandler)
+  name: DelegateCommand(CommandEventHandler)
+  href: api/CG.Blazor.Commands.DelegateCommand.html#CG_Blazor_Commands_DelegateCommand__ctor_CG_Blazor_Commands_CommandEventHandler_
+  commentId: M:CG.Blazor.Commands.DelegateCommand.#ctor(CG.Blazor.Commands.CommandEventHandler)
+  fullName: CG.Blazor.Commands.DelegateCommand.DelegateCommand(CG.Blazor.Commands.CommandEventHandler)
+  nameWithType: DelegateCommand.DelegateCommand(CommandEventHandler)
 - uid: CG.Blazor.Commands.DelegateCommand.#ctor*
   name: DelegateCommand
   href: api/CG.Blazor.Commands.DelegateCommand.html#CG_Blazor_Commands_DelegateCommand__ctor_
@@ -175,31 +175,38 @@ references:
   fullName: CG.Blazor.Commands.DelegateCommand.System.Windows.Input.ICommand.Execute
   nameWithType: DelegateCommand.ICommand.Execute
   nameWithType.vb: DelegateCommand.System.Windows.Input.ICommand.Execute
-- uid: CG.Blazor.Commands.SimpleEventHandler
-  name: SimpleEventHandler
-  href: api/CG.Blazor.Commands.SimpleEventHandler.html
-  commentId: T:CG.Blazor.Commands.SimpleEventHandler
-  fullName: CG.Blazor.Commands.SimpleEventHandler
-  nameWithType: SimpleEventHandler
 - uid: CG.Blazor.IModule
   name: IModule
   href: api/CG.Blazor.IModule.html
   commentId: T:CG.Blazor.IModule
   fullName: CG.Blazor.IModule
   nameWithType: IModule
-- uid: CG.Blazor.IModule.Initialize(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  name: Initialize(IServiceCollection)
-  href: api/CG.Blazor.IModule.html#CG_Blazor_IModule_Initialize_Microsoft_Extensions_DependencyInjection_IServiceCollection_
-  commentId: M:CG.Blazor.IModule.Initialize(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  fullName: CG.Blazor.IModule.Initialize(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  nameWithType: IModule.Initialize(IServiceCollection)
-- uid: CG.Blazor.IModule.Initialize*
-  name: Initialize
-  href: api/CG.Blazor.IModule.html#CG_Blazor_IModule_Initialize_
-  commentId: Overload:CG.Blazor.IModule.Initialize
+- uid: CG.Blazor.IModule.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)
+  name: Configure(IApplicationBuilder, IWebHostEnvironment)
+  href: api/CG.Blazor.IModule.html#CG_Blazor_IModule_Configure_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_AspNetCore_Hosting_IWebHostEnvironment_
+  commentId: M:CG.Blazor.IModule.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)
+  fullName: CG.Blazor.IModule.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Hosting.IWebHostEnvironment)
+  nameWithType: IModule.Configure(IApplicationBuilder, IWebHostEnvironment)
+- uid: CG.Blazor.IModule.Configure*
+  name: Configure
+  href: api/CG.Blazor.IModule.html#CG_Blazor_IModule_Configure_
+  commentId: Overload:CG.Blazor.IModule.Configure
   isSpec: "True"
-  fullName: CG.Blazor.IModule.Initialize
-  nameWithType: IModule.Initialize
+  fullName: CG.Blazor.IModule.Configure
+  nameWithType: IModule.Configure
+- uid: CG.Blazor.IModule.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+  name: ConfigureServices(IServiceCollection, IConfiguration)
+  href: api/CG.Blazor.IModule.html#CG_Blazor_IModule_ConfigureServices_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_
+  commentId: M:CG.Blazor.IModule.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+  fullName: CG.Blazor.IModule.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration)
+  nameWithType: IModule.ConfigureServices(IServiceCollection, IConfiguration)
+- uid: CG.Blazor.IModule.ConfigureServices*
+  name: ConfigureServices
+  href: api/CG.Blazor.IModule.html#CG_Blazor_IModule_ConfigureServices_
+  commentId: Overload:CG.Blazor.IModule.ConfigureServices
+  isSpec: "True"
+  fullName: CG.Blazor.IModule.ConfigureServices
+  nameWithType: IModule.ConfigureServices
 - uid: CG.Blazor.Options
   name: CG.Blazor.Options
   href: api/CG.Blazor.Options.html
@@ -314,19 +321,32 @@ references:
   commentId: T:CG.Blazor.Plugins.ModuleBase
   fullName: CG.Blazor.Plugins.ModuleBase
   nameWithType: ModuleBase
-- uid: CG.Blazor.Plugins.ModuleBase.Initialize(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  name: Initialize(IServiceCollection)
-  href: api/CG.Blazor.Plugins.ModuleBase.html#CG_Blazor_Plugins_ModuleBase_Initialize_Microsoft_Extensions_DependencyInjection_IServiceCollection_
-  commentId: M:CG.Blazor.Plugins.ModuleBase.Initialize(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  fullName: CG.Blazor.Plugins.ModuleBase.Initialize(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  nameWithType: ModuleBase.Initialize(IServiceCollection)
-- uid: CG.Blazor.Plugins.ModuleBase.Initialize*
-  name: Initialize
-  href: api/CG.Blazor.Plugins.ModuleBase.html#CG_Blazor_Plugins_ModuleBase_Initialize_
-  commentId: Overload:CG.Blazor.Plugins.ModuleBase.Initialize
+- uid: CG.Blazor.Plugins.ModuleBase.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)
+  name: Configure(IApplicationBuilder, IWebHostEnvironment)
+  href: api/CG.Blazor.Plugins.ModuleBase.html#CG_Blazor_Plugins_ModuleBase_Configure_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_AspNetCore_Hosting_IWebHostEnvironment_
+  commentId: M:CG.Blazor.Plugins.ModuleBase.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)
+  fullName: CG.Blazor.Plugins.ModuleBase.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Hosting.IWebHostEnvironment)
+  nameWithType: ModuleBase.Configure(IApplicationBuilder, IWebHostEnvironment)
+- uid: CG.Blazor.Plugins.ModuleBase.Configure*
+  name: Configure
+  href: api/CG.Blazor.Plugins.ModuleBase.html#CG_Blazor_Plugins_ModuleBase_Configure_
+  commentId: Overload:CG.Blazor.Plugins.ModuleBase.Configure
   isSpec: "True"
-  fullName: CG.Blazor.Plugins.ModuleBase.Initialize
-  nameWithType: ModuleBase.Initialize
+  fullName: CG.Blazor.Plugins.ModuleBase.Configure
+  nameWithType: ModuleBase.Configure
+- uid: CG.Blazor.Plugins.ModuleBase.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+  name: ConfigureServices(IServiceCollection, IConfiguration)
+  href: api/CG.Blazor.Plugins.ModuleBase.html#CG_Blazor_Plugins_ModuleBase_ConfigureServices_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_
+  commentId: M:CG.Blazor.Plugins.ModuleBase.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+  fullName: CG.Blazor.Plugins.ModuleBase.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration)
+  nameWithType: ModuleBase.ConfigureServices(IServiceCollection, IConfiguration)
+- uid: CG.Blazor.Plugins.ModuleBase.ConfigureServices*
+  name: ConfigureServices
+  href: api/CG.Blazor.Plugins.ModuleBase.html#CG_Blazor_Plugins_ModuleBase_ConfigureServices_
+  commentId: Overload:CG.Blazor.Plugins.ModuleBase.ConfigureServices
+  isSpec: "True"
+  fullName: CG.Blazor.Plugins.ModuleBase.ConfigureServices
+  nameWithType: ModuleBase.ConfigureServices
 - uid: CG.Blazor.ViewModels
   name: CG.Blazor.ViewModels
   href: api/CG.Blazor.ViewModels.html
@@ -491,6 +511,31 @@ references:
   fullName.vb: CG.Blazor.Views.ViewBase(Of T).ViewModel
   nameWithType: ViewBase<T>.ViewModel
   nameWithType.vb: ViewBase(Of T).ViewModel
+- uid: Microsoft.AspNetCore.Builder
+  name: Microsoft.AspNetCore.Builder
+  href: api/Microsoft.AspNetCore.Builder.html
+  commentId: N:Microsoft.AspNetCore.Builder
+  fullName: Microsoft.AspNetCore.Builder
+  nameWithType: Microsoft.AspNetCore.Builder
+- uid: Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions
+  name: ApplicationBuilderExtensions
+  href: api/Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.html
+  commentId: T:Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions
+  fullName: Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions
+  nameWithType: ApplicationBuilderExtensions
+- uid: Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UsePlugins(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)
+  name: UsePlugins(IApplicationBuilder, IWebHostEnvironment)
+  href: api/Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.html#Microsoft_AspNetCore_Builder_ApplicationBuilderExtensions_UsePlugins_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_AspNetCore_Hosting_IWebHostEnvironment_
+  commentId: M:Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UsePlugins(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)
+  fullName: Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UsePlugins(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Hosting.IWebHostEnvironment)
+  nameWithType: ApplicationBuilderExtensions.UsePlugins(IApplicationBuilder, IWebHostEnvironment)
+- uid: Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UsePlugins*
+  name: UsePlugins
+  href: api/Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.html#Microsoft_AspNetCore_Builder_ApplicationBuilderExtensions_UsePlugins_
+  commentId: Overload:Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UsePlugins
+  isSpec: "True"
+  fullName: Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UsePlugins
+  nameWithType: ApplicationBuilderExtensions.UsePlugins
 - uid: Microsoft.Extensions.DependencyInjection
   name: Microsoft.Extensions.DependencyInjection
   href: api/Microsoft.Extensions.DependencyInjection.html

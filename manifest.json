@@ -14,11 +14,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.Blazor.ApplicationBuilderExtensions.yml",
+      "source_relative_path": "api/CG.Blazor.BlazorResources.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CG.Blazor.ApplicationBuilderExtensions.html",
-          "hash": "FMWlrzzLodwOojC6IyVCHw=="
+          "relative_path": "api/CG.Blazor.BlazorResources.html",
+          "hash": "yuqVb8Voh4ShXcXHeL/gBQ=="
         }
       },
       "is_incremental": false,
@@ -26,11 +26,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.Blazor.BlazorResources.yml",
+      "source_relative_path": "api/CG.Blazor.Commands.CommandEventHandler.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CG.Blazor.BlazorResources.html",
-          "hash": "ejzfB06hkWPwQg1ce6uOrg=="
+          "relative_path": "api/CG.Blazor.Commands.CommandEventHandler.html",
+          "hash": "xozxR0jSCaNdSkvHIXs1FA=="
         }
       },
       "is_incremental": false,
@@ -42,19 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Blazor.Commands.DelegateCommand.html",
-          "hash": "SmH8xj8RLPo116xZe7KI/w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Blazor.Commands.SimpleEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Blazor.Commands.SimpleEventHandler.html",
-          "hash": "PlA7iKD6a4qymFwtz30HTQ=="
+          "hash": "blBkd4BhPUs9baUFawj2Mg=="
         }
       },
       "is_incremental": false,
@@ -66,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Blazor.Commands.html",
-          "hash": "xyAnQN/Sp1NiwTvhkGF8HA=="
+          "hash": "ttfVcuAdcgbEX1x6AEhjCA=="
         }
       },
       "is_incremental": false,
@@ -78,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Blazor.IModule.html",
-          "hash": "QMS/y9KU5SKKl/mkd0fXRg=="
+          "hash": "orVDLLEOnjVZMFum4PtnQg=="
         }
       },
       "is_incremental": false,
@@ -126,7 +114,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Blazor.Plugins.ModuleBase.html",
-          "hash": "Xdq0JlnqJTPxPL272oLjeA=="
+          "hash": "RQSo23RANmrdFFWLL0FSKQ=="
         }
       },
       "is_incremental": false,
@@ -138,7 +126,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Blazor.Plugins.html",
-          "hash": "jmASfWMIxqF4DQ6cdqsQKw=="
+          "hash": "FRWFDTxO6FsxMvIaHOwf9w=="
         }
       },
       "is_incremental": false,
@@ -210,7 +198,31 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Blazor.html",
-          "hash": "ceriCQQTcZLfHsY7lEgdNA=="
+          "hash": "MlBPpeVy94Yyw74vn8Rzzg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.html",
+          "hash": "O5mo8YUQw3rOOVa4Y8Qadw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Builder.html",
+          "hash": "F8km5cVCKbD+jqipOAuvoA=="
         }
       },
       "is_incremental": false,
@@ -246,7 +258,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "DAF6c+oG4MIhT5Mr42xKoQ=="
+          "hash": "uYxNJsa9aYSr/Htm1fqvcQ=="
         }
       },
       "is_incremental": false,
@@ -365,7 +377,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 19,
+          "total_file_count": 20,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
