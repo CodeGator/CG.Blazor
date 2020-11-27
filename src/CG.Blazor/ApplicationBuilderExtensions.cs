@@ -78,8 +78,8 @@ namespace Microsoft.AspNetCore.Builder
                 );
 
             // The final thing we need to do is walk through the list of modules
-            //   and call the Configure method on each one, just in case that 
-            //   module is expecting that to happen.
+            //   and call the Configure method on each one, just in case any of 
+            //   them are expecting that to happen.
             foreach (var module in BlazorResources.Modules)
             {
                 // Configure any services in the module.
@@ -88,6 +88,9 @@ namespace Microsoft.AspNetCore.Builder
                     webHostEnvironment
                     );
             }
+
+            // At this point we clear the cached modules.
+            BlazorResources.Modules.Clear();
 
             // Return the application builder.
             return applicationBuilder;
