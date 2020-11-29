@@ -148,18 +148,33 @@ namespace Microsoft.Extensions.DependencyInjection
             // Clear any old blazor resources.
             BlazorResources.Clear();
 
+            // Get the plugins section.
+            var pluginsSection = configuration.GetSection(
+                PluginOptions.SectionKey
+                );
+
             // Configure the plugin options.
             serviceCollection.ConfigureOptions<PluginOptions>(
-                configuration.GetSection(PluginOptions.SectionKey),
+                pluginsSection,
                 out var pluginOptions
                 );
 
             var asmNameSet = new HashSet<string>();
 
             // Loop through the modules.
+            var index = -1;
             foreach (var module in pluginOptions.Modules)
             {
+                index++; // Used for extracting configuration sections.
+
                 Assembly asm = null;
+
+                // TODO : I need to find a better way to manage the loading of 
+                //   assemblies here. The approach I'm taking now won't deal with
+                //   things like version conflicts, dependency issues, etc. I'm
+                //   thinking maybe a custom AssemblyLoadContext class and a custom
+                //   AssemblyDependencyResolver here - since, you know, we can't
+                //   create custom AppDomain objects, in .NET Core.
 
                 // Is the assembly property a file path?
                 if (module.Assembly.EndsWith(".dll"))
@@ -224,17 +239,23 @@ namespace Microsoft.Extensions.DependencyInjection
                             type
                             ) is IModule moduleObj)
                         {
+                            // Filter down to the section for this module. This way, each module
+                            //   can add whatever it needs, to this section, for configuration,
+                            //   and the whole thing will just work.
+                            var moduleSection = pluginsSection.GetSection(
+                                $"Modules:{index}"
+                                );
+
                             // Register any services in the module.
                             moduleObj.ConfigureServices(
                                 serviceCollection,
-                                configuration
+                                moduleSection
                                 );
 
-                            // Since we've gone to all the trouble to create
-                            //   this module, and we know we'll need it again,
-                            //   as part of the whole startup operation, let's
-                            //   go ahead and cache so we don't have to
-                            //   re-create it, next time we need it.
+                            // Since we've gone to all the trouble to create this module, and we
+                            //    know we'll need it again, as part of the whole startup operation,
+                            //    let's go ahead and cache it now, so we don't have to re-create it,
+                            //    next time we need it.
                             BlazorResources.Modules.Add(moduleObj);
                         }
                     }
