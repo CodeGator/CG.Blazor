@@ -12,13 +12,22 @@ namespace CG.Blazor
     public interface IModule
     {
         /// <summary>
-        /// This method is called by the framework when the module is 
-        /// first loaded, to configure the services within the plugin. 
+        /// This method is called by the framework when the module is first 
+        /// loaded, to configure the services within the plugin. 
         /// </summary>
         /// <param name="serviceCollection">The service collection to 
         /// use for the operation.</param>
         /// <param name="configuration">The configuration to use for the
         /// operation.</param>
+        /// <remarks>
+        /// <para>
+        /// The <paramref name="configuration"/> parameter is isolated to the 
+        /// current module's configuration settings so that each module can then
+        /// add whatever configuration settings are required, for that module. So,
+        /// for instance, if a module requires repository options, the section
+        /// can be conveniently placed inside the module's configuration section.
+        /// </para>
+        /// </remarks>
         void ConfigureServices(
             IServiceCollection serviceCollection,
             IConfiguration configuration
