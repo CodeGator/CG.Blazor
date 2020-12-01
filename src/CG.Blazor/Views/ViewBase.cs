@@ -1,7 +1,6 @@
 ﻿using CG.Blazor.ViewModels;
 using Microsoft.AspNetCore.Components;
 using System;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace CG.Blazor.Views
@@ -24,9 +23,9 @@ namespace CG.Blazor.Views
     /// All that's required to use this class is to add the following tag to your
     /// razor page markup:
     /// <code>
-    /// @inherits ViewBase<IMyViewModel></IMyViewModel>
+    /// @inherits ViewBase<IMyViewModel>
     /// </code>
-    /// Where <c>IMyViewModel</c> 
+    /// Where <c>IMyViewModel</c> is, whatever your view-model type is.
     /// </example>
     public abstract class ViewBase<T> : ComponentBase, IDisposable
         where T : class, IViewModel
