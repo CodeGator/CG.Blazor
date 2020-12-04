@@ -37,6 +37,13 @@ namespace CG.Blazor
         public static IList<string> Scripts { get; } = new List<string>();
 
         /// <summary>
+        /// This property contains a list of external, or 3rd party resources,
+        /// consumed by a Razor Class Library, that also need to be linked at 
+        /// runtime.
+        /// </summary>
+        public static IList<string> ExternalResources { get; } = new List<string>();
+
+        /// <summary>
         /// This property contains a temporary list of modules that have been 
         /// loaded by the runtime. This list is populated by the <see cref="ServiceCollectionExtensions.AddPlugins(IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration)"/>
         /// method and is cleared by the <see cref="ApplicationBuilderExtensions.UsePlugins(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Hosting.IWebHostEnvironment)"/>
@@ -91,6 +98,25 @@ namespace CG.Blazor
         // *******************************************************************
 
         /// <summary>
+        /// This method renders any external resource links in the <see cref="BlazorResources.ExternalResources"/>
+        /// collection as a collection of HTML link tags.
+        /// </summary>
+        /// <returns>An unencoded HTML snippet.</returns>
+        public static string RenderExternalResources()
+        {
+            var sb = new StringBuilder();
+            foreach (var link in ExternalResources)
+            {
+                sb.Append(link);
+                sb.Append(" ");
+            }
+            var rawHTml = sb.ToString();
+            return rawHTml;
+        }
+
+        // *******************************************************************
+
+        /// <summary>
         ///  This method clears any resources contained by this class utility.
         /// </summary>
         public static void Clear()
@@ -99,6 +125,7 @@ namespace CG.Blazor
             BlazorResources.Scripts.Clear();
             BlazorResources.StyleSheets.Clear();
             BlazorResources.Modules.Clear();
+            BlazorResources.ExternalResources.Clear();
         }
 
         #endregion

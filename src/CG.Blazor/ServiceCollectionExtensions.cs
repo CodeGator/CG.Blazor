@@ -3,6 +3,7 @@ using CG.Blazor;
 using CG.Blazor.Options;
 using CG.Blazor.Properties;
 using CG.Blazor.ViewModels;
+using CG.Runtime;
 using CG.Validations;
 using Microsoft.Extensions.Configuration;
 using System;
@@ -161,6 +162,9 @@ namespace Microsoft.Extensions.DependencyInjection
 
             var asmNameSet = new HashSet<string>();
 
+            // Create a loader for the plugins.
+            var loader = new AssemblyLoader();
+
             // Loop through the modules.
             var index = -1;
             foreach (var module in pluginOptions.Modules)
@@ -169,23 +173,20 @@ namespace Microsoft.Extensions.DependencyInjection
 
                 Assembly asm = null;
 
-                // TODO : I need to find a better way to manage the loading of 
-                //   assemblies here. The approach I'm taking now won't deal with
-                //   things like version conflicts, dependency issues, etc. I'm
-                //   thinking maybe a custom AssemblyLoadContext class and a custom
-                //   AssemblyDependencyResolver here - since, you know, we can't
-                //   create custom AppDomain objects, in .NET Core.
-
                 // Is the assembly property a file path?
                 if (module.Assembly.EndsWith(".dll"))
                 {
                     // Load the assembly by path.
-                    asm = Assembly.LoadFrom(module.Assembly);
+                    asm = loader.LoadFromAssemblyName(
+                        new AssemblyName(module.Assembly)
+                        );
                 }
                 else
                 {
                     // Load the assembly by name.
-                    asm = Assembly.Load(module.Assembly);
+                    asm = loader.LoadFromAssemblyPath(
+                        module.Assembly
+                        );
                 }
 
                 // Create a safe name for the assembly.
