@@ -26,6 +26,32 @@ references:
   isSpec: "True"
   fullName: CG.Blazor.BlazorResources.Clear
   nameWithType: BlazorResources.Clear
+- uid: CG.Blazor.BlazorResources.ExternalResources
+  name: ExternalResources
+  href: api/CG.Blazor.BlazorResources.html#CG_Blazor_BlazorResources_ExternalResources
+  commentId: P:CG.Blazor.BlazorResources.ExternalResources
+  fullName: CG.Blazor.BlazorResources.ExternalResources
+  nameWithType: BlazorResources.ExternalResources
+- uid: CG.Blazor.BlazorResources.ExternalResources*
+  name: ExternalResources
+  href: api/CG.Blazor.BlazorResources.html#CG_Blazor_BlazorResources_ExternalResources_
+  commentId: Overload:CG.Blazor.BlazorResources.ExternalResources
+  isSpec: "True"
+  fullName: CG.Blazor.BlazorResources.ExternalResources
+  nameWithType: BlazorResources.ExternalResources
+- uid: CG.Blazor.BlazorResources.RenderExternalResources
+  name: RenderExternalResources()
+  href: api/CG.Blazor.BlazorResources.html#CG_Blazor_BlazorResources_RenderExternalResources
+  commentId: M:CG.Blazor.BlazorResources.RenderExternalResources
+  fullName: CG.Blazor.BlazorResources.RenderExternalResources()
+  nameWithType: BlazorResources.RenderExternalResources()
+- uid: CG.Blazor.BlazorResources.RenderExternalResources*
+  name: RenderExternalResources
+  href: api/CG.Blazor.BlazorResources.html#CG_Blazor_BlazorResources_RenderExternalResources_
+  commentId: Overload:CG.Blazor.BlazorResources.RenderExternalResources
+  isSpec: "True"
+  fullName: CG.Blazor.BlazorResources.RenderExternalResources
+  nameWithType: BlazorResources.RenderExternalResources
 - uid: CG.Blazor.BlazorResources.RenderScriptTags
   name: RenderScriptTags()
   href: api/CG.Blazor.BlazorResources.html#CG_Blazor_BlazorResources_RenderScriptTags

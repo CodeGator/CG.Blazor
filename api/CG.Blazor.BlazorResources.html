@@ -124,6 +124,32 @@ from various plugins at startup.</p>
   </div>
   <h3 id="properties">Properties
   </h3>
+  <a id="CG_Blazor_BlazorResources_ExternalResources_" data-uid="CG.Blazor.BlazorResources.ExternalResources*"></a>
+  <h4 id="CG_Blazor_BlazorResources_ExternalResources" data-uid="CG.Blazor.BlazorResources.ExternalResources">ExternalResources</h4>
+  <div class="markdown level1 summary"><p>This property contains a list of external, or 3rd party resources,
+consumed by a Razor Class Library, that also need to be linked at
+runtime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IList&lt;string&gt; ExternalResources { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="CG_Blazor_BlazorResources_RoutedAssemblies_" data-uid="CG.Blazor.BlazorResources.RoutedAssemblies*"></a>
   <h4 id="CG_Blazor_BlazorResources_RoutedAssemblies" data-uid="CG.Blazor.BlazorResources.RoutedAssemblies">RoutedAssemblies</h4>
   <div class="markdown level1 summary"><p>This property contains a list of Razor Class Library assemblies that
@@ -210,6 +236,32 @@ in a Razor Class Library and must be linked at runtime.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static void Clear()</code></pre>
   </div>
+  <a id="CG_Blazor_BlazorResources_RenderExternalResources_" data-uid="CG.Blazor.BlazorResources.RenderExternalResources*"></a>
+  <h4 id="CG_Blazor_BlazorResources_RenderExternalResources" data-uid="CG.Blazor.BlazorResources.RenderExternalResources">RenderExternalResources()</h4>
+  <div class="markdown level1 summary"><p>This method renders any external resource links in the <a class="xref" href="CG.Blazor.BlazorResources.html#CG_Blazor_BlazorResources_ExternalResources">ExternalResources</a>
+collection as a collection of HTML link tags.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string RenderExternalResources()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>An unencoded HTML snippet.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="CG_Blazor_BlazorResources_RenderScriptTags_" data-uid="CG.Blazor.BlazorResources.RenderScriptTags*"></a>
   <h4 id="CG_Blazor_BlazorResources_RenderScriptTags" data-uid="CG.Blazor.BlazorResources.RenderScriptTags">RenderScriptTags()</h4>
   <div class="markdown level1 summary"><p>This method renders any scripts in the <a class="xref" href="CG.Blazor.BlazorResources.html#CG_Blazor_BlazorResources_Scripts">Scripts</a>
