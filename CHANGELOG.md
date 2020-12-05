@@ -13,3 +13,5 @@
 
 * I moved the claims extensions to CG.Blazor.Client
 
+* I added an event aggregator
+
