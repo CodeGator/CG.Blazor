@@ -201,6 +201,342 @@ references:
   fullName: CG.Blazor.Commands.DelegateCommand.System.Windows.Input.ICommand.Execute
   nameWithType: DelegateCommand.ICommand.Execute
   nameWithType.vb: DelegateCommand.System.Windows.Input.ICommand.Execute
+- uid: CG.Blazor.Events
+  name: CG.Blazor.Events
+  href: api/CG.Blazor.Events.html
+  commentId: N:CG.Blazor.Events
+  fullName: CG.Blazor.Events
+  nameWithType: CG.Blazor.Events
+- uid: CG.Blazor.Events.EventBase
+  name: EventBase
+  href: api/CG.Blazor.Events.EventBase.html
+  commentId: T:CG.Blazor.Events.EventBase
+  fullName: CG.Blazor.Events.EventBase
+  nameWithType: EventBase
+- uid: CG.Blazor.Events.EventBase.#ctor
+  name: EventBase()
+  href: api/CG.Blazor.Events.EventBase.html#CG_Blazor_Events_EventBase__ctor
+  commentId: M:CG.Blazor.Events.EventBase.#ctor
+  fullName: CG.Blazor.Events.EventBase.EventBase()
+  nameWithType: EventBase.EventBase()
+- uid: CG.Blazor.Events.EventBase.#ctor*
+  name: EventBase
+  href: api/CG.Blazor.Events.EventBase.html#CG_Blazor_Events_EventBase__ctor_
+  commentId: Overload:CG.Blazor.Events.EventBase.#ctor
+  isSpec: "True"
+  fullName: CG.Blazor.Events.EventBase.EventBase
+  nameWithType: EventBase.EventBase
+- uid: CG.Blazor.Events.EventBase.Contains(CG.Blazor.Events.ISubscriber)
+  name: Contains(ISubscriber)
+  href: api/CG.Blazor.Events.EventBase.html#CG_Blazor_Events_EventBase_Contains_CG_Blazor_Events_ISubscriber_
+  commentId: M:CG.Blazor.Events.EventBase.Contains(CG.Blazor.Events.ISubscriber)
+  fullName: CG.Blazor.Events.EventBase.Contains(CG.Blazor.Events.ISubscriber)
+  nameWithType: EventBase.Contains(ISubscriber)
+- uid: CG.Blazor.Events.EventBase.Contains(System.Action)
+  name: Contains(Action)
+  href: api/CG.Blazor.Events.EventBase.html#CG_Blazor_Events_EventBase_Contains_System_Action_
+  commentId: M:CG.Blazor.Events.EventBase.Contains(System.Action)
+  fullName: CG.Blazor.Events.EventBase.Contains(System.Action)
+  nameWithType: EventBase.Contains(Action)
+- uid: CG.Blazor.Events.EventBase.Contains*
+  name: Contains
+  href: api/CG.Blazor.Events.EventBase.html#CG_Blazor_Events_EventBase_Contains_
+  commentId: Overload:CG.Blazor.Events.EventBase.Contains
+  isSpec: "True"
+  fullName: CG.Blazor.Events.EventBase.Contains
+  nameWithType: EventBase.Contains
+- uid: CG.Blazor.Events.EventBase.InternalPublish(System.Object[])
+  name: InternalPublish(Object[])
+  href: api/CG.Blazor.Events.EventBase.html#CG_Blazor_Events_EventBase_InternalPublish_System_Object___
+  commentId: M:CG.Blazor.Events.EventBase.InternalPublish(System.Object[])
+  name.vb: InternalPublish(Object())
+  fullName: CG.Blazor.Events.EventBase.InternalPublish(System.Object[])
+  fullName.vb: CG.Blazor.Events.EventBase.InternalPublish(System.Object())
+  nameWithType: EventBase.InternalPublish(Object[])
+  nameWithType.vb: EventBase.InternalPublish(Object())
+- uid: CG.Blazor.Events.EventBase.InternalPublish*
+  name: InternalPublish
+  href: api/CG.Blazor.Events.EventBase.html#CG_Blazor_Events_EventBase_InternalPublish_
+  commentId: Overload:CG.Blazor.Events.EventBase.InternalPublish
+  isSpec: "True"
+  fullName: CG.Blazor.Events.EventBase.InternalPublish
+  nameWithType: EventBase.InternalPublish
+- uid: CG.Blazor.Events.EventBase.InternalSubscribe(CG.Blazor.Events.ISubscription)
+  name: InternalSubscribe(ISubscription)
+  href: api/CG.Blazor.Events.EventBase.html#CG_Blazor_Events_EventBase_InternalSubscribe_CG_Blazor_Events_ISubscription_
+  commentId: M:CG.Blazor.Events.EventBase.InternalSubscribe(CG.Blazor.Events.ISubscription)
+  fullName: CG.Blazor.Events.EventBase.InternalSubscribe(CG.Blazor.Events.ISubscription)
+  nameWithType: EventBase.InternalSubscribe(ISubscription)
+- uid: CG.Blazor.Events.EventBase.InternalSubscribe*
+  name: InternalSubscribe
+  href: api/CG.Blazor.Events.EventBase.html#CG_Blazor_Events_EventBase_InternalSubscribe_
+  commentId: Overload:CG.Blazor.Events.EventBase.InternalSubscribe
+  isSpec: "True"
+  fullName: CG.Blazor.Events.EventBase.InternalSubscribe
+  nameWithType: EventBase.InternalSubscribe
+- uid: CG.Blazor.Events.EventBase.Publish
+  name: Publish()
+  href: api/CG.Blazor.Events.EventBase.html#CG_Blazor_Events_EventBase_Publish
+  commentId: M:CG.Blazor.Events.EventBase.Publish
+  fullName: CG.Blazor.Events.EventBase.Publish()
+  nameWithType: EventBase.Publish()
+- uid: CG.Blazor.Events.EventBase.Publish*
+  name: Publish
+  href: api/CG.Blazor.Events.EventBase.html#CG_Blazor_Events_EventBase_Publish_
+  commentId: Overload:CG.Blazor.Events.EventBase.Publish
+  isSpec: "True"
+  fullName: CG.Blazor.Events.EventBase.Publish
+  nameWithType: EventBase.Publish
+- uid: CG.Blazor.Events.EventBase.Subscribe(System.Action)
+  name: Subscribe(Action)
+  href: api/CG.Blazor.Events.EventBase.html#CG_Blazor_Events_EventBase_Subscribe_System_Action_
+  commentId: M:CG.Blazor.Events.EventBase.Subscribe(System.Action)
+  fullName: CG.Blazor.Events.EventBase.Subscribe(System.Action)
+  nameWithType: EventBase.Subscribe(Action)
+- uid: CG.Blazor.Events.EventBase.Subscribe(System.Action,System.Boolean)
+  name: Subscribe(Action, Boolean)
+  href: api/CG.Blazor.Events.EventBase.html#CG_Blazor_Events_EventBase_Subscribe_System_Action_System_Boolean_
+  commentId: M:CG.Blazor.Events.EventBase.Subscribe(System.Action,System.Boolean)
+  fullName: CG.Blazor.Events.EventBase.Subscribe(System.Action, System.Boolean)
+  nameWithType: EventBase.Subscribe(Action, Boolean)
+- uid: CG.Blazor.Events.EventBase.Subscribe*
+  name: Subscribe
+  href: api/CG.Blazor.Events.EventBase.html#CG_Blazor_Events_EventBase_Subscribe_
+  commentId: Overload:CG.Blazor.Events.EventBase.Subscribe
+  isSpec: "True"
+  fullName: CG.Blazor.Events.EventBase.Subscribe
+  nameWithType: EventBase.Subscribe
+- uid: CG.Blazor.Events.EventBase.Subscriptions
+  name: Subscriptions
+  href: api/CG.Blazor.Events.EventBase.html#CG_Blazor_Events_EventBase_Subscriptions
+  commentId: P:CG.Blazor.Events.EventBase.Subscriptions
+  fullName: CG.Blazor.Events.EventBase.Subscriptions
+  nameWithType: EventBase.Subscriptions
+- uid: CG.Blazor.Events.EventBase.Subscriptions*
+  name: Subscriptions
+  href: api/CG.Blazor.Events.EventBase.html#CG_Blazor_Events_EventBase_Subscriptions_
+  commentId: Overload:CG.Blazor.Events.EventBase.Subscriptions
+  isSpec: "True"
+  fullName: CG.Blazor.Events.EventBase.Subscriptions
+  nameWithType: EventBase.Subscriptions
+- uid: CG.Blazor.Events.EventBase.Unsubscribe(CG.Blazor.Events.ISubscriber)
+  name: Unsubscribe(ISubscriber)
+  href: api/CG.Blazor.Events.EventBase.html#CG_Blazor_Events_EventBase_Unsubscribe_CG_Blazor_Events_ISubscriber_
+  commentId: M:CG.Blazor.Events.EventBase.Unsubscribe(CG.Blazor.Events.ISubscriber)
+  fullName: CG.Blazor.Events.EventBase.Unsubscribe(CG.Blazor.Events.ISubscriber)
+  nameWithType: EventBase.Unsubscribe(ISubscriber)
+- uid: CG.Blazor.Events.EventBase.Unsubscribe(System.Action)
+  name: Unsubscribe(Action)
+  href: api/CG.Blazor.Events.EventBase.html#CG_Blazor_Events_EventBase_Unsubscribe_System_Action_
+  commentId: M:CG.Blazor.Events.EventBase.Unsubscribe(System.Action)
+  fullName: CG.Blazor.Events.EventBase.Unsubscribe(System.Action)
+  nameWithType: EventBase.Unsubscribe(Action)
+- uid: CG.Blazor.Events.EventBase.Unsubscribe*
+  name: Unsubscribe
+  href: api/CG.Blazor.Events.EventBase.html#CG_Blazor_Events_EventBase_Unsubscribe_
+  commentId: Overload:CG.Blazor.Events.EventBase.Unsubscribe
+  isSpec: "True"
+  fullName: CG.Blazor.Events.EventBase.Unsubscribe
+  nameWithType: EventBase.Unsubscribe
+- uid: CG.Blazor.Events.EventBase`1
+  name: EventBase<T>
+  href: api/CG.Blazor.Events.EventBase-1.html
+  commentId: T:CG.Blazor.Events.EventBase`1
+  name.vb: EventBase(Of T)
+  fullName: CG.Blazor.Events.EventBase<T>
+  fullName.vb: CG.Blazor.Events.EventBase(Of T)
+  nameWithType: EventBase<T>
+  nameWithType.vb: EventBase(Of T)
+- uid: CG.Blazor.Events.EventBase`1.Contains(System.Action{`0})
+  name: Contains(Action<T>)
+  href: api/CG.Blazor.Events.EventBase-1.html#CG_Blazor_Events_EventBase_1_Contains_System_Action__0__
+  commentId: M:CG.Blazor.Events.EventBase`1.Contains(System.Action{`0})
+  name.vb: Contains(Action(Of T))
+  fullName: CG.Blazor.Events.EventBase<T>.Contains(System.Action<T>)
+  fullName.vb: CG.Blazor.Events.EventBase(Of T).Contains(System.Action(Of T))
+  nameWithType: EventBase<T>.Contains(Action<T>)
+  nameWithType.vb: EventBase(Of T).Contains(Action(Of T))
+- uid: CG.Blazor.Events.EventBase`1.Contains*
+  name: Contains
+  href: api/CG.Blazor.Events.EventBase-1.html#CG_Blazor_Events_EventBase_1_Contains_
+  commentId: Overload:CG.Blazor.Events.EventBase`1.Contains
+  isSpec: "True"
+  fullName: CG.Blazor.Events.EventBase<T>.Contains
+  fullName.vb: CG.Blazor.Events.EventBase(Of T).Contains
+  nameWithType: EventBase<T>.Contains
+  nameWithType.vb: EventBase(Of T).Contains
+- uid: CG.Blazor.Events.EventBase`1.Publish(`0)
+  name: Publish(T)
+  href: api/CG.Blazor.Events.EventBase-1.html#CG_Blazor_Events_EventBase_1_Publish__0_
+  commentId: M:CG.Blazor.Events.EventBase`1.Publish(`0)
+  fullName: CG.Blazor.Events.EventBase<T>.Publish(T)
+  fullName.vb: CG.Blazor.Events.EventBase(Of T).Publish(T)
+  nameWithType: EventBase<T>.Publish(T)
+  nameWithType.vb: EventBase(Of T).Publish(T)
+- uid: CG.Blazor.Events.EventBase`1.Publish*
+  name: Publish
+  href: api/CG.Blazor.Events.EventBase-1.html#CG_Blazor_Events_EventBase_1_Publish_
+  commentId: Overload:CG.Blazor.Events.EventBase`1.Publish
+  isSpec: "True"
+  fullName: CG.Blazor.Events.EventBase<T>.Publish
+  fullName.vb: CG.Blazor.Events.EventBase(Of T).Publish
+  nameWithType: EventBase<T>.Publish
+  nameWithType.vb: EventBase(Of T).Publish
+- uid: CG.Blazor.Events.EventBase`1.Subscribe(System.Action{`0})
+  name: Subscribe(Action<T>)
+  href: api/CG.Blazor.Events.EventBase-1.html#CG_Blazor_Events_EventBase_1_Subscribe_System_Action__0__
+  commentId: M:CG.Blazor.Events.EventBase`1.Subscribe(System.Action{`0})
+  name.vb: Subscribe(Action(Of T))
+  fullName: CG.Blazor.Events.EventBase<T>.Subscribe(System.Action<T>)
+  fullName.vb: CG.Blazor.Events.EventBase(Of T).Subscribe(System.Action(Of T))
+  nameWithType: EventBase<T>.Subscribe(Action<T>)
+  nameWithType.vb: EventBase(Of T).Subscribe(Action(Of T))
+- uid: CG.Blazor.Events.EventBase`1.Subscribe(System.Action{`0},System.Boolean)
+  name: Subscribe(Action<T>, Boolean)
+  href: api/CG.Blazor.Events.EventBase-1.html#CG_Blazor_Events_EventBase_1_Subscribe_System_Action__0__System_Boolean_
+  commentId: M:CG.Blazor.Events.EventBase`1.Subscribe(System.Action{`0},System.Boolean)
+  name.vb: Subscribe(Action(Of T), Boolean)
+  fullName: CG.Blazor.Events.EventBase<T>.Subscribe(System.Action<T>, System.Boolean)
+  fullName.vb: CG.Blazor.Events.EventBase(Of T).Subscribe(System.Action(Of T), System.Boolean)
+  nameWithType: EventBase<T>.Subscribe(Action<T>, Boolean)
+  nameWithType.vb: EventBase(Of T).Subscribe(Action(Of T), Boolean)
+- uid: CG.Blazor.Events.EventBase`1.Subscribe(System.Action{`0},System.Boolean,System.Predicate{`0})
+  name: Subscribe(Action<T>, Boolean, Predicate<T>)
+  href: api/CG.Blazor.Events.EventBase-1.html#CG_Blazor_Events_EventBase_1_Subscribe_System_Action__0__System_Boolean_System_Predicate__0__
+  commentId: M:CG.Blazor.Events.EventBase`1.Subscribe(System.Action{`0},System.Boolean,System.Predicate{`0})
+  name.vb: Subscribe(Action(Of T), Boolean, Predicate(Of T))
+  fullName: CG.Blazor.Events.EventBase<T>.Subscribe(System.Action<T>, System.Boolean, System.Predicate<T>)
+  fullName.vb: CG.Blazor.Events.EventBase(Of T).Subscribe(System.Action(Of T), System.Boolean, System.Predicate(Of T))
+  nameWithType: EventBase<T>.Subscribe(Action<T>, Boolean, Predicate<T>)
+  nameWithType.vb: EventBase(Of T).Subscribe(Action(Of T), Boolean, Predicate(Of T))
+- uid: CG.Blazor.Events.EventBase`1.Subscribe(System.Action{`0},System.Predicate{`0})
+  name: Subscribe(Action<T>, Predicate<T>)
+  href: api/CG.Blazor.Events.EventBase-1.html#CG_Blazor_Events_EventBase_1_Subscribe_System_Action__0__System_Predicate__0__
+  commentId: M:CG.Blazor.Events.EventBase`1.Subscribe(System.Action{`0},System.Predicate{`0})
+  name.vb: Subscribe(Action(Of T), Predicate(Of T))
+  fullName: CG.Blazor.Events.EventBase<T>.Subscribe(System.Action<T>, System.Predicate<T>)
+  fullName.vb: CG.Blazor.Events.EventBase(Of T).Subscribe(System.Action(Of T), System.Predicate(Of T))
+  nameWithType: EventBase<T>.Subscribe(Action<T>, Predicate<T>)
+  nameWithType.vb: EventBase(Of T).Subscribe(Action(Of T), Predicate(Of T))
+- uid: CG.Blazor.Events.EventBase`1.Subscribe*
+  name: Subscribe
+  href: api/CG.Blazor.Events.EventBase-1.html#CG_Blazor_Events_EventBase_1_Subscribe_
+  commentId: Overload:CG.Blazor.Events.EventBase`1.Subscribe
+  isSpec: "True"
+  fullName: CG.Blazor.Events.EventBase<T>.Subscribe
+  fullName.vb: CG.Blazor.Events.EventBase(Of T).Subscribe
+  nameWithType: EventBase<T>.Subscribe
+  nameWithType.vb: EventBase(Of T).Subscribe
+- uid: CG.Blazor.Events.EventBase`1.Unsubscribe(System.Action{`0})
+  name: Unsubscribe(Action<T>)
+  href: api/CG.Blazor.Events.EventBase-1.html#CG_Blazor_Events_EventBase_1_Unsubscribe_System_Action__0__
+  commentId: M:CG.Blazor.Events.EventBase`1.Unsubscribe(System.Action{`0})
+  name.vb: Unsubscribe(Action(Of T))
+  fullName: CG.Blazor.Events.EventBase<T>.Unsubscribe(System.Action<T>)
+  fullName.vb: CG.Blazor.Events.EventBase(Of T).Unsubscribe(System.Action(Of T))
+  nameWithType: EventBase<T>.Unsubscribe(Action<T>)
+  nameWithType.vb: EventBase(Of T).Unsubscribe(Action(Of T))
+- uid: CG.Blazor.Events.EventBase`1.Unsubscribe*
+  name: Unsubscribe
+  href: api/CG.Blazor.Events.EventBase-1.html#CG_Blazor_Events_EventBase_1_Unsubscribe_
+  commentId: Overload:CG.Blazor.Events.EventBase`1.Unsubscribe
+  isSpec: "True"
+  fullName: CG.Blazor.Events.EventBase<T>.Unsubscribe
+  fullName.vb: CG.Blazor.Events.EventBase(Of T).Unsubscribe
+  nameWithType: EventBase<T>.Unsubscribe
+  nameWithType.vb: EventBase(Of T).Unsubscribe
+- uid: CG.Blazor.Events.IEventAggregator
+  name: IEventAggregator
+  href: api/CG.Blazor.Events.IEventAggregator.html
+  commentId: T:CG.Blazor.Events.IEventAggregator
+  fullName: CG.Blazor.Events.IEventAggregator
+  nameWithType: IEventAggregator
+- uid: CG.Blazor.Events.IEventAggregator.GetEvent*
+  name: GetEvent
+  href: api/CG.Blazor.Events.IEventAggregator.html#CG_Blazor_Events_IEventAggregator_GetEvent_
+  commentId: Overload:CG.Blazor.Events.IEventAggregator.GetEvent
+  isSpec: "True"
+  fullName: CG.Blazor.Events.IEventAggregator.GetEvent
+  nameWithType: IEventAggregator.GetEvent
+- uid: CG.Blazor.Events.IEventAggregator.GetEvent``1
+  name: GetEvent<TEvent>()
+  href: api/CG.Blazor.Events.IEventAggregator.html#CG_Blazor_Events_IEventAggregator_GetEvent__1
+  commentId: M:CG.Blazor.Events.IEventAggregator.GetEvent``1
+  name.vb: GetEvent(Of TEvent)()
+  fullName: CG.Blazor.Events.IEventAggregator.GetEvent<TEvent>()
+  fullName.vb: CG.Blazor.Events.IEventAggregator.GetEvent(Of TEvent)()
+  nameWithType: IEventAggregator.GetEvent<TEvent>()
+  nameWithType.vb: IEventAggregator.GetEvent(Of TEvent)()
+- uid: CG.Blazor.Events.ISubscriber
+  name: ISubscriber
+  href: api/CG.Blazor.Events.ISubscriber.html
+  commentId: T:CG.Blazor.Events.ISubscriber
+  fullName: CG.Blazor.Events.ISubscriber
+  nameWithType: ISubscriber
+- uid: CG.Blazor.Events.ISubscriber.Id
+  name: Id
+  href: api/CG.Blazor.Events.ISubscriber.html#CG_Blazor_Events_ISubscriber_Id
+  commentId: P:CG.Blazor.Events.ISubscriber.Id
+  fullName: CG.Blazor.Events.ISubscriber.Id
+  nameWithType: ISubscriber.Id
+- uid: CG.Blazor.Events.ISubscriber.Id*
+  name: Id
+  href: api/CG.Blazor.Events.ISubscriber.html#CG_Blazor_Events_ISubscriber_Id_
+  commentId: Overload:CG.Blazor.Events.ISubscriber.Id
+  isSpec: "True"
+  fullName: CG.Blazor.Events.ISubscriber.Id
+  nameWithType: ISubscriber.Id
+- uid: CG.Blazor.Events.ISubscription
+  name: ISubscription
+  href: api/CG.Blazor.Events.ISubscription.html
+  commentId: T:CG.Blazor.Events.ISubscription
+  fullName: CG.Blazor.Events.ISubscription
+  nameWithType: ISubscription
+- uid: CG.Blazor.Events.ISubscription.GetAction
+  name: GetAction()
+  href: api/CG.Blazor.Events.ISubscription.html#CG_Blazor_Events_ISubscription_GetAction
+  commentId: M:CG.Blazor.Events.ISubscription.GetAction
+  fullName: CG.Blazor.Events.ISubscription.GetAction()
+  nameWithType: ISubscription.GetAction()
+- uid: CG.Blazor.Events.ISubscription.GetAction*
+  name: GetAction
+  href: api/CG.Blazor.Events.ISubscription.html#CG_Blazor_Events_ISubscription_GetAction_
+  commentId: Overload:CG.Blazor.Events.ISubscription.GetAction
+  isSpec: "True"
+  fullName: CG.Blazor.Events.ISubscription.GetAction
+  nameWithType: ISubscription.GetAction
+- uid: CG.Blazor.Events.ISubscription.Subscriber
+  name: Subscriber
+  href: api/CG.Blazor.Events.ISubscription.html#CG_Blazor_Events_ISubscription_Subscriber
+  commentId: P:CG.Blazor.Events.ISubscription.Subscriber
+  fullName: CG.Blazor.Events.ISubscription.Subscriber
+  nameWithType: ISubscription.Subscriber
+- uid: CG.Blazor.Events.ISubscription.Subscriber*
+  name: Subscriber
+  href: api/CG.Blazor.Events.ISubscription.html#CG_Blazor_Events_ISubscription_Subscriber_
+  commentId: Overload:CG.Blazor.Events.ISubscription.Subscriber
+  isSpec: "True"
+  fullName: CG.Blazor.Events.ISubscription.Subscriber
+  nameWithType: ISubscription.Subscriber
+- uid: CG.Blazor.Events.IWeakDelegate
+  name: IWeakDelegate
+  href: api/CG.Blazor.Events.IWeakDelegate.html
+  commentId: T:CG.Blazor.Events.IWeakDelegate
+  fullName: CG.Blazor.Events.IWeakDelegate
+  nameWithType: IWeakDelegate
+- uid: CG.Blazor.Events.IWeakDelegate.Target
+  name: Target
+  href: api/CG.Blazor.Events.IWeakDelegate.html#CG_Blazor_Events_IWeakDelegate_Target
+  commentId: P:CG.Blazor.Events.IWeakDelegate.Target
+  fullName: CG.Blazor.Events.IWeakDelegate.Target
+  nameWithType: IWeakDelegate.Target
+- uid: CG.Blazor.Events.IWeakDelegate.Target*
+  name: Target
+  href: api/CG.Blazor.Events.IWeakDelegate.html#CG_Blazor_Events_IWeakDelegate_Target_
+  commentId: Overload:CG.Blazor.Events.IWeakDelegate.Target
+  isSpec: "True"
+  fullName: CG.Blazor.Events.IWeakDelegate.Target
+  nameWithType: IWeakDelegate.Target
 - uid: CG.Blazor.IModule
   name: IModule
   href: api/CG.Blazor.IModule.html
@@ -574,6 +910,19 @@ references:
   commentId: T:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions
   fullName: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions
   nameWithType: ServiceCollectionExtensions
+- uid: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddEventAggregator(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddEventAggregator(IServiceCollection)
+  href: api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddEventAggregator_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddEventAggregator(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddEventAggregator(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: ServiceCollectionExtensions.AddEventAggregator(IServiceCollection)
+- uid: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddEventAggregator*
+  name: AddEventAggregator
+  href: api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddEventAggregator_
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddEventAggregator
+  isSpec: "True"
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddEventAggregator
+  nameWithType: ServiceCollectionExtensions.AddEventAggregator
 - uid: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddPlugins(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
   name: AddPlugins(IServiceCollection, IConfiguration)
   href: api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddPlugins_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_

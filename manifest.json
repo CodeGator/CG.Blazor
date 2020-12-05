@@ -62,6 +62,90 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Events.EventBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Events.EventBase-1.html",
+          "hash": "WjMzYH3pX3H0byKXULh2hw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Events.EventBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Events.EventBase.html",
+          "hash": "D0xElUIPES6SnK5MmxhcdA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Events.IEventAggregator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Events.IEventAggregator.html",
+          "hash": "fBsMaxsLHNqJBVb2KfMycQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Events.ISubscriber.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Events.ISubscriber.html",
+          "hash": "hG+b9PP6GaXLwMqjNhOIXw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Events.ISubscription.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Events.ISubscription.html",
+          "hash": "2mHYvEqFFqlxxYyi3GIykw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Events.IWeakDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Events.IWeakDelegate.html",
+          "hash": "WCEaK/k7St5k0DFL3zN58A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Events.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Events.html",
+          "hash": "YBFwAMDpnflkw5MKTfwj7A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CG.Blazor.IModule.yml",
       "output": {
         ".html": {
@@ -234,7 +318,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html",
-          "hash": "dh3Uq8QEDGB7D0UCKrg8uQ=="
+          "hash": "fDAOsMJto25tNkU4e1djWA=="
         }
       },
       "is_incremental": false,
@@ -258,7 +342,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "uYxNJsa9aYSr/Htm1fqvcQ=="
+          "hash": "+6xB3epXPsJvOl0OBLhfsA=="
         }
       },
       "is_incremental": false,
@@ -377,7 +461,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 20,
+          "total_file_count": 27,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
