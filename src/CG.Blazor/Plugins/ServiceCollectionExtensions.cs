@@ -2,12 +2,11 @@
 using CG.Blazor;
 using CG.Blazor.Options;
 using CG.Blazor.Properties;
-using CG.Blazor.ViewModels;
-using CG.Runtime;
 using CG.Validations;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 
@@ -68,9 +67,6 @@ namespace Microsoft.Extensions.DependencyInjection
 
             var asmNameSet = new HashSet<string>();
 
-            // Create a loader for the plugins.
-            var loader = new AssemblyLoader();
-
             // Loop through the modules.
             var index = -1;
             foreach (var module in pluginOptions.Modules)
@@ -82,16 +78,27 @@ namespace Microsoft.Extensions.DependencyInjection
                 // Is the assembly property a file path?
                 if (module.Assembly.EndsWith(".dll"))
                 {
-                    // Load the assembly by path.
-                    asm = loader.LoadFromAssemblyName(
-                        new AssemblyName(module.Assembly)
-                        );
+                    // Check for relative paths.
+                    if (false == Path.IsPathRooted(module.Assembly))
+                    {
+                        // Convert the path and load the assembly.
+                        asm = Assembly.LoadFrom(
+                            Path.GetFullPath(module.Assembly)
+                            );
+                    }
+                    else
+                    {
+                        // Load the assembly by path.
+                        asm = Assembly.LoadFrom(
+                            module.Assembly
+                            );
+                    }
                 }
                 else
                 {
                     // Load the assembly by name.
-                    asm = loader.LoadFromAssemblyPath(
-                        module.Assembly
+                    asm = Assembly.Load(
+                        new AssemblyName(module.Assembly)
                         );
                 }
 

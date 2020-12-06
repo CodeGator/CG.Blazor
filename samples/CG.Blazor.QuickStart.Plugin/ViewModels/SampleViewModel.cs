@@ -43,7 +43,7 @@ namespace CG.Blazor.QuickStart.Plugin.ViewModels
             _sampleService = sampleService;
 
             A = "press me!";
-            Command = new DelegateCommand(() =>
+            Command = new DelegateCommand(x =>
             {
                 A = _sampleService.GetTimeNow();
                 B = "<-- The time came from a service!";

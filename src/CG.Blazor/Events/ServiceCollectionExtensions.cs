@@ -1,16 +1,5 @@
-﻿using CG;
-using CG.Blazor;
-using CG.Blazor.Events;
-using CG.Blazor.Options;
-using CG.Blazor.Properties;
-using CG.Blazor.ViewModels;
-using CG.Runtime;
+﻿using CG.Blazor.Events;
 using CG.Validations;
-using Microsoft.Extensions.Configuration;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
