@@ -7,17 +7,27 @@
   "api/CG.Blazor.Commands.CommandEventHandler.html": {
     "href": "api/CG.Blazor.Commands.CommandEventHandler.html",
     "title": "Delegate CommandEventHandler",
-    "keywords": "Delegate CommandEventHandler This delegate type is used to process command events. Namespace : CG.Blazor.Commands Assembly : CG.Blazor.dll Syntax public delegate void CommandEventHandler();"
+    "keywords": "Delegate CommandEventHandler This delegate type is used to process command events. Namespace : CG.Blazor.Commands Assembly : CG.Blazor.dll Syntax public delegate void CommandEventHandler(object arg); Parameters Type Name Description System.Object arg Optional arguments for the event."
+  },
+  "api/CG.Blazor.Commands.CommandEventHandler-1.html": {
+    "href": "api/CG.Blazor.Commands.CommandEventHandler-1.html",
+    "title": "Delegate CommandEventHandler<T>",
+    "keywords": "Delegate CommandEventHandler<T> This delegate type is used to process command events. Namespace : CG.Blazor.Commands Assembly : CG.Blazor.dll Syntax public delegate void CommandEventHandler<T>(T arg); Parameters Type Name Description T arg Optional arguments for the event. Type Parameters Name Description T The type of associated data."
   },
   "api/CG.Blazor.Commands.DelegateCommand.html": {
     "href": "api/CG.Blazor.Commands.DelegateCommand.html",
     "title": "Class DelegateCommand",
     "keywords": "Class DelegateCommand This class is a default implementation of the System.Windows.Input.ICommand interface. Inheritance System.Object DelegateCommand Implements System.Windows.Input.ICommand Inherited Members System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : CG.Blazor.Commands Assembly : CG.Blazor.dll Syntax public sealed class DelegateCommand : ICommand Constructors DelegateCommand(CommandEventHandler) This constructor creates a new instance of the DelegateCommand class. Declaration public DelegateCommand(CommandEventHandler handler) Parameters Type Name Description CommandEventHandler handler The delegate to use with the command. Properties IsEnabled This property indicates whether the command can be executed, or not. Declaration public bool IsEnabled { get; } Property Value Type Description System.Boolean Events CanExecuteChanged This event is raised whenever the IsEnabled property of the command has changed. Declaration public event EventHandler CanExecuteChanged Event Type Type Description System.EventHandler Explicit Interface Implementations ICommand.CanExecute(Object) Declaration bool ICommand.CanExecute(object arg) Parameters Type Name Description System.Object arg Returns Type Description System.Boolean ICommand.Execute(Object) Declaration void ICommand.Execute(object arg) Parameters Type Name Description System.Object arg Implements System.Windows.Input.ICommand"
   },
+  "api/CG.Blazor.Commands.DelegateCommand-1.html": {
+    "href": "api/CG.Blazor.Commands.DelegateCommand-1.html",
+    "title": "Class DelegateCommand<T>",
+    "keywords": "Class DelegateCommand<T> This class is a default implementation of the System.Windows.Input.ICommand interface. Inheritance System.Object DelegateCommand<T> Implements System.Windows.Input.ICommand Inherited Members System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : CG.Blazor.Commands Assembly : CG.Blazor.dll Syntax public sealed class DelegateCommand<T> : ICommand Type Parameters Name Description T The type of associated data. Constructors DelegateCommand(CommandEventHandler<T>) This constructor creates a new instance of the DelegateCommand class. Declaration public DelegateCommand(CommandEventHandler<T> handler) Parameters Type Name Description CommandEventHandler <T> handler The delegate to use with the command. Properties IsEnabled This property indicates whether the command can be executed, or not. Declaration public bool IsEnabled { get; } Property Value Type Description System.Boolean Events CanExecuteChanged This event is raised whenever the IsEnabled property of the command has changed. Declaration public event EventHandler CanExecuteChanged Event Type Type Description System.EventHandler Explicit Interface Implementations ICommand.CanExecute(Object) Declaration bool ICommand.CanExecute(object arg) Parameters Type Name Description System.Object arg Returns Type Description System.Boolean ICommand.Execute(Object) Declaration void ICommand.Execute(object arg) Parameters Type Name Description System.Object arg Implements System.Windows.Input.ICommand"
+  },
   "api/CG.Blazor.Commands.html": {
     "href": "api/CG.Blazor.Commands.html",
     "title": "Namespace CG.Blazor.Commands",
-    "keywords": "Namespace CG.Blazor.Commands Classes DelegateCommand This class is a default implementation of the System.Windows.Input.ICommand interface. Delegates CommandEventHandler This delegate type is used to process command events."
+    "keywords": "Namespace CG.Blazor.Commands Classes DelegateCommand This class is a default implementation of the System.Windows.Input.ICommand interface. DelegateCommand<T> This class is a default implementation of the System.Windows.Input.ICommand interface. Delegates CommandEventHandler This delegate type is used to process command events. CommandEventHandler<T> This delegate type is used to process command events."
   },
   "api/CG.Blazor.Events.EventBase.html": {
     "href": "api/CG.Blazor.Events.EventBase.html",

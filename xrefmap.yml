@@ -129,6 +129,15 @@ references:
   commentId: T:CG.Blazor.Commands.CommandEventHandler
   fullName: CG.Blazor.Commands.CommandEventHandler
   nameWithType: CommandEventHandler
+- uid: CG.Blazor.Commands.CommandEventHandler`1
+  name: CommandEventHandler<T>
+  href: api/CG.Blazor.Commands.CommandEventHandler-1.html
+  commentId: T:CG.Blazor.Commands.CommandEventHandler`1
+  name.vb: CommandEventHandler(Of T)
+  fullName: CG.Blazor.Commands.CommandEventHandler<T>
+  fullName.vb: CG.Blazor.Commands.CommandEventHandler(Of T)
+  nameWithType: CommandEventHandler<T>
+  nameWithType.vb: CommandEventHandler(Of T)
 - uid: CG.Blazor.Commands.DelegateCommand
   name: DelegateCommand
   href: api/CG.Blazor.Commands.DelegateCommand.html
@@ -201,6 +210,96 @@ references:
   fullName: CG.Blazor.Commands.DelegateCommand.System.Windows.Input.ICommand.Execute
   nameWithType: DelegateCommand.ICommand.Execute
   nameWithType.vb: DelegateCommand.System.Windows.Input.ICommand.Execute
+- uid: CG.Blazor.Commands.DelegateCommand`1
+  name: DelegateCommand<T>
+  href: api/CG.Blazor.Commands.DelegateCommand-1.html
+  commentId: T:CG.Blazor.Commands.DelegateCommand`1
+  name.vb: DelegateCommand(Of T)
+  fullName: CG.Blazor.Commands.DelegateCommand<T>
+  fullName.vb: CG.Blazor.Commands.DelegateCommand(Of T)
+  nameWithType: DelegateCommand<T>
+  nameWithType.vb: DelegateCommand(Of T)
+- uid: CG.Blazor.Commands.DelegateCommand`1.#ctor(CG.Blazor.Commands.CommandEventHandler{`0})
+  name: DelegateCommand(CommandEventHandler<T>)
+  href: api/CG.Blazor.Commands.DelegateCommand-1.html#CG_Blazor_Commands_DelegateCommand_1__ctor_CG_Blazor_Commands_CommandEventHandler__0__
+  commentId: M:CG.Blazor.Commands.DelegateCommand`1.#ctor(CG.Blazor.Commands.CommandEventHandler{`0})
+  name.vb: DelegateCommand(CommandEventHandler(Of T))
+  fullName: CG.Blazor.Commands.DelegateCommand<T>.DelegateCommand(CG.Blazor.Commands.CommandEventHandler<T>)
+  fullName.vb: CG.Blazor.Commands.DelegateCommand(Of T).DelegateCommand(CG.Blazor.Commands.CommandEventHandler(Of T))
+  nameWithType: DelegateCommand<T>.DelegateCommand(CommandEventHandler<T>)
+  nameWithType.vb: DelegateCommand(Of T).DelegateCommand(CommandEventHandler(Of T))
+- uid: CG.Blazor.Commands.DelegateCommand`1.#ctor*
+  name: DelegateCommand
+  href: api/CG.Blazor.Commands.DelegateCommand-1.html#CG_Blazor_Commands_DelegateCommand_1__ctor_
+  commentId: Overload:CG.Blazor.Commands.DelegateCommand`1.#ctor
+  isSpec: "True"
+  fullName: CG.Blazor.Commands.DelegateCommand<T>.DelegateCommand
+  fullName.vb: CG.Blazor.Commands.DelegateCommand(Of T).DelegateCommand
+  nameWithType: DelegateCommand<T>.DelegateCommand
+  nameWithType.vb: DelegateCommand(Of T).DelegateCommand
+- uid: CG.Blazor.Commands.DelegateCommand`1.CanExecuteChanged
+  name: CanExecuteChanged
+  href: api/CG.Blazor.Commands.DelegateCommand-1.html#CG_Blazor_Commands_DelegateCommand_1_CanExecuteChanged
+  commentId: E:CG.Blazor.Commands.DelegateCommand`1.CanExecuteChanged
+  fullName: CG.Blazor.Commands.DelegateCommand<T>.CanExecuteChanged
+  fullName.vb: CG.Blazor.Commands.DelegateCommand(Of T).CanExecuteChanged
+  nameWithType: DelegateCommand<T>.CanExecuteChanged
+  nameWithType.vb: DelegateCommand(Of T).CanExecuteChanged
+- uid: CG.Blazor.Commands.DelegateCommand`1.IsEnabled
+  name: IsEnabled
+  href: api/CG.Blazor.Commands.DelegateCommand-1.html#CG_Blazor_Commands_DelegateCommand_1_IsEnabled
+  commentId: P:CG.Blazor.Commands.DelegateCommand`1.IsEnabled
+  fullName: CG.Blazor.Commands.DelegateCommand<T>.IsEnabled
+  fullName.vb: CG.Blazor.Commands.DelegateCommand(Of T).IsEnabled
+  nameWithType: DelegateCommand<T>.IsEnabled
+  nameWithType.vb: DelegateCommand(Of T).IsEnabled
+- uid: CG.Blazor.Commands.DelegateCommand`1.IsEnabled*
+  name: IsEnabled
+  href: api/CG.Blazor.Commands.DelegateCommand-1.html#CG_Blazor_Commands_DelegateCommand_1_IsEnabled_
+  commentId: Overload:CG.Blazor.Commands.DelegateCommand`1.IsEnabled
+  isSpec: "True"
+  fullName: CG.Blazor.Commands.DelegateCommand<T>.IsEnabled
+  fullName.vb: CG.Blazor.Commands.DelegateCommand(Of T).IsEnabled
+  nameWithType: DelegateCommand<T>.IsEnabled
+  nameWithType.vb: DelegateCommand(Of T).IsEnabled
+- uid: CG.Blazor.Commands.DelegateCommand`1.System#Windows#Input#ICommand#CanExecute(System.Object)
+  name: ICommand.CanExecute(Object)
+  href: api/CG.Blazor.Commands.DelegateCommand-1.html#CG_Blazor_Commands_DelegateCommand_1_System_Windows_Input_ICommand_CanExecute_System_Object_
+  commentId: M:CG.Blazor.Commands.DelegateCommand`1.System#Windows#Input#ICommand#CanExecute(System.Object)
+  name.vb: System.Windows.Input.ICommand.CanExecute(Object)
+  fullName: CG.Blazor.Commands.DelegateCommand<T>.System.Windows.Input.ICommand.CanExecute(System.Object)
+  fullName.vb: CG.Blazor.Commands.DelegateCommand(Of T).System.Windows.Input.ICommand.CanExecute(System.Object)
+  nameWithType: DelegateCommand<T>.ICommand.CanExecute(Object)
+  nameWithType.vb: DelegateCommand(Of T).System.Windows.Input.ICommand.CanExecute(Object)
+- uid: CG.Blazor.Commands.DelegateCommand`1.System#Windows#Input#ICommand#CanExecute*
+  name: ICommand.CanExecute
+  href: api/CG.Blazor.Commands.DelegateCommand-1.html#CG_Blazor_Commands_DelegateCommand_1_System_Windows_Input_ICommand_CanExecute_
+  commentId: Overload:CG.Blazor.Commands.DelegateCommand`1.System#Windows#Input#ICommand#CanExecute
+  isSpec: "True"
+  name.vb: System.Windows.Input.ICommand.CanExecute
+  fullName: CG.Blazor.Commands.DelegateCommand<T>.System.Windows.Input.ICommand.CanExecute
+  fullName.vb: CG.Blazor.Commands.DelegateCommand(Of T).System.Windows.Input.ICommand.CanExecute
+  nameWithType: DelegateCommand<T>.ICommand.CanExecute
+  nameWithType.vb: DelegateCommand(Of T).System.Windows.Input.ICommand.CanExecute
+- uid: CG.Blazor.Commands.DelegateCommand`1.System#Windows#Input#ICommand#Execute(System.Object)
+  name: ICommand.Execute(Object)
+  href: api/CG.Blazor.Commands.DelegateCommand-1.html#CG_Blazor_Commands_DelegateCommand_1_System_Windows_Input_ICommand_Execute_System_Object_
+  commentId: M:CG.Blazor.Commands.DelegateCommand`1.System#Windows#Input#ICommand#Execute(System.Object)
+  name.vb: System.Windows.Input.ICommand.Execute(Object)
+  fullName: CG.Blazor.Commands.DelegateCommand<T>.System.Windows.Input.ICommand.Execute(System.Object)
+  fullName.vb: CG.Blazor.Commands.DelegateCommand(Of T).System.Windows.Input.ICommand.Execute(System.Object)
+  nameWithType: DelegateCommand<T>.ICommand.Execute(Object)
+  nameWithType.vb: DelegateCommand(Of T).System.Windows.Input.ICommand.Execute(Object)
+- uid: CG.Blazor.Commands.DelegateCommand`1.System#Windows#Input#ICommand#Execute*
+  name: ICommand.Execute
+  href: api/CG.Blazor.Commands.DelegateCommand-1.html#CG_Blazor_Commands_DelegateCommand_1_System_Windows_Input_ICommand_Execute_
+  commentId: Overload:CG.Blazor.Commands.DelegateCommand`1.System#Windows#Input#ICommand#Execute
+  isSpec: "True"
+  name.vb: System.Windows.Input.ICommand.Execute
+  fullName: CG.Blazor.Commands.DelegateCommand<T>.System.Windows.Input.ICommand.Execute
+  fullName.vb: CG.Blazor.Commands.DelegateCommand(Of T).System.Windows.Input.ICommand.Execute
+  nameWithType: DelegateCommand<T>.ICommand.Execute
+  nameWithType.vb: DelegateCommand(Of T).System.Windows.Input.ICommand.Execute
 - uid: CG.Blazor.Events
   name: CG.Blazor.Events
   href: api/CG.Blazor.Events.html

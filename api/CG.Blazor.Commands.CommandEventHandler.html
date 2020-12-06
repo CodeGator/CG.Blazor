@@ -90,8 +90,26 @@
   <h6><strong>Assembly</strong>: CG.Blazor.dll</h6>
   <h5 id="CG_Blazor_Commands_CommandEventHandler_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public delegate void CommandEventHandler();</code></pre>
+    <pre><code class="lang-csharp hljs">public delegate void CommandEventHandler(object arg);</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">arg</span></td>
+        <td><p>Optional arguments for the event.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           

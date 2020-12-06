@@ -26,11 +26,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Commands.CommandEventHandler-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Commands.CommandEventHandler-1.html",
+          "hash": "5fis8qIP4rJoKe00rvqzdA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CG.Blazor.Commands.CommandEventHandler.yml",
       "output": {
         ".html": {
           "relative_path": "api/CG.Blazor.Commands.CommandEventHandler.html",
-          "hash": "xozxR0jSCaNdSkvHIXs1FA=="
+          "hash": "FJ6z4wroMf8QOCjzLda0eg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Commands.DelegateCommand-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Commands.DelegateCommand-1.html",
+          "hash": "Kebu+n09W6GIedL80QY4ZA=="
         }
       },
       "is_incremental": false,
@@ -54,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Blazor.Commands.html",
-          "hash": "ttfVcuAdcgbEX1x6AEhjCA=="
+          "hash": "g3ezkNb6GWSbeqs1MOd7HA=="
         }
       },
       "is_incremental": false,
@@ -342,7 +366,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "+6xB3epXPsJvOl0OBLhfsA=="
+          "hash": "8elkiL52joqvIhETibn9Zg=="
         }
       },
       "is_incremental": false,
@@ -461,7 +485,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 27,
+          "total_file_count": 29,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
