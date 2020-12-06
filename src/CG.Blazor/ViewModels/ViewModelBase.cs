@@ -1,5 +1,4 @@
-﻿using CG.Validations;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
@@ -21,62 +20,6 @@ namespace CG.Blazor.ViewModels
         /// This event is raised whenever a property value changes on the view-model.
         /// </summary>
         public event PropertyChangedEventHandler PropertyChanged;
-
-        #endregion
-
-        // *******************************************************************
-        // Properties.
-        // *******************************************************************
-
-        #region Properties
-
-        /// <summary>
-        /// This property contains a reference to an inner view-model.
-        /// </summary>
-        protected ViewModelBase InnerViewModel { get; }
-
-        #endregion
-
-        // *******************************************************************
-        // Constructors.
-        // *******************************************************************
-
-        #region Constructors
-
-        /// <summary>
-        /// This constructor creates a new instance of the <see cref="ViewModelBase"/>
-        /// class.
-        /// </summary>
-        public ViewModelBase()
-        {
-
-        }
-
-        // *******************************************************************
-
-        /// <summary>
-        /// This constructor creates a new instance of the <see cref="ViewModelBase"/>
-        /// class.
-        /// </summary>
-        /// <param name="innerViewModel">The inner view-model to use with this
-        /// view-model.</param>
-        public ViewModelBase(
-            ViewModelBase innerViewModel
-            )
-        {
-            // Validate the parameters before attempting to use them.
-            Guard.Instance().ThrowIfNull(innerViewModel, nameof(innerViewModel));
-
-            // Save the references.
-            InnerViewModel = innerViewModel;
-
-            // Wire up a handler for any inner view-model.
-            InnerViewModel.PropertyChanged += (sender, e) =>
-            {
-                // Propagate the notification.
-                OnPropertyChanged(e.PropertyName);
-            };
-        }
 
         #endregion
 
@@ -131,31 +74,6 @@ namespace CG.Blazor.ViewModels
             OnPropertyChanged(
                 propertyName
                 );
-        }
-
-        // *******************************************************************
-
-        /// <summary>
-        /// This method is called when the object should free managed resources.
-        /// </summary>
-        /// <param name="disposing">True to cleanup managed resources.</param>
-        protected override void Dispose(
-            bool disposing
-            )
-        {
-            // Should we cleanup managed resources.
-            if (disposing)
-            {
-#pragma warning disable CS1998
-                if (null != InnerViewModel)
-                {
-                    InnerViewModel.PropertyChanged -= async (sender, e) => { };
-                }
-#pragma warning restore CS1998 
-            }
-
-            // Give the base class a chance.
-            base.Dispose(disposing);
         }
 
         #endregion

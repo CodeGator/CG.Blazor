@@ -7,6 +7,6 @@ namespace CG.Blazor.ViewModels
     /// </summary>
     public interface IViewModel : INotifyPropertyChanged
     {
-
+        
     }
 }

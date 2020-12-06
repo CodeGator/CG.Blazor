@@ -11,7 +11,7 @@ namespace CG.Blazor.QuickStart.Plugin.ViewModels
         protected SampleService _sampleService;
         protected string _a;
         protected string _b;
-
+                
         protected ICommand _command;
 
         public string A
@@ -31,8 +31,6 @@ namespace CG.Blazor.QuickStart.Plugin.ViewModels
                 SetValue(ref _b, value);
             }
         }
-
-        public string Test1Value { get; set; } = "does it work?";
 
         public ICommand Command { get; }
 
