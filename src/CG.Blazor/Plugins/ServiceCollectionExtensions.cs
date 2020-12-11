@@ -75,30 +75,41 @@ namespace Microsoft.Extensions.DependencyInjection
 
                 Assembly asm = null;
 
-                // Is the assembly property a file path?
-                if (module.Assembly.EndsWith(".dll"))
+                // If the AssemblyNameOrPath ends with a .dll then we'll assume the
+                //   property contains a path and treat it as such.
+                if (module.AssemblyNameOrPath.EndsWith(".dll"))
                 {
                     // Check for relative paths.
-                    if (false == Path.IsPathRooted(module.Assembly))
+                    if (false == Path.IsPathRooted(module.AssemblyNameOrPath))
                     {
-                        // Convert the path and load the assembly.
+                        // Expand the path (the load expects a rooted path).
+                        var completePath = Path.GetFullPath(
+                            module.AssemblyNameOrPath
+                            );
+
+                        // Load the assembly from the path.
                         asm = Assembly.LoadFrom(
-                            Path.GetFullPath(module.Assembly)
+                            completePath
                             );
                     }
                     else
                     {
-                        // Load the assembly by path.
+                        // Load the assembly from the path.
                         asm = Assembly.LoadFrom(
-                            module.Assembly
+                            module.AssemblyNameOrPath
                             );
                     }
                 }
                 else
                 {
+                    // Create the complete assembly name.
+                    var assemblyName = new AssemblyName(
+                        module.AssemblyNameOrPath
+                        );
+
                     // Load the assembly by name.
                     asm = Assembly.Load(
-                        new AssemblyName(module.Assembly)
+                        assemblyName
                         );
                 }
 

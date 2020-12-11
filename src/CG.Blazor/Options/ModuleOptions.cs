@@ -16,10 +16,10 @@ namespace CG.Blazor.Options
         #region Properties
 
         /// <summary>
-        /// This property contains the name of a Blazor plugin assembly
+        /// This property contains the assembly name, or path, for a Blazor plugin.
         /// </summary>
         [Required]
-        public string Assembly { get; set; }
+        public string AssemblyNameOrPath { get; set; }
 
         /// <summary>
         /// This property indicates that the plugin requires routing support,
