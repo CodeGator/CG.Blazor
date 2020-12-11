@@ -680,19 +680,19 @@ references:
   commentId: T:CG.Blazor.Options.ModuleOptions
   fullName: CG.Blazor.Options.ModuleOptions
   nameWithType: ModuleOptions
-- uid: CG.Blazor.Options.ModuleOptions.Assembly
-  name: Assembly
-  href: api/CG.Blazor.Options.ModuleOptions.html#CG_Blazor_Options_ModuleOptions_Assembly
-  commentId: P:CG.Blazor.Options.ModuleOptions.Assembly
-  fullName: CG.Blazor.Options.ModuleOptions.Assembly
-  nameWithType: ModuleOptions.Assembly
-- uid: CG.Blazor.Options.ModuleOptions.Assembly*
-  name: Assembly
-  href: api/CG.Blazor.Options.ModuleOptions.html#CG_Blazor_Options_ModuleOptions_Assembly_
-  commentId: Overload:CG.Blazor.Options.ModuleOptions.Assembly
+- uid: CG.Blazor.Options.ModuleOptions.AssemblyNameOrPath
+  name: AssemblyNameOrPath
+  href: api/CG.Blazor.Options.ModuleOptions.html#CG_Blazor_Options_ModuleOptions_AssemblyNameOrPath
+  commentId: P:CG.Blazor.Options.ModuleOptions.AssemblyNameOrPath
+  fullName: CG.Blazor.Options.ModuleOptions.AssemblyNameOrPath
+  nameWithType: ModuleOptions.AssemblyNameOrPath
+- uid: CG.Blazor.Options.ModuleOptions.AssemblyNameOrPath*
+  name: AssemblyNameOrPath
+  href: api/CG.Blazor.Options.ModuleOptions.html#CG_Blazor_Options_ModuleOptions_AssemblyNameOrPath_
+  commentId: Overload:CG.Blazor.Options.ModuleOptions.AssemblyNameOrPath
   isSpec: "True"
-  fullName: CG.Blazor.Options.ModuleOptions.Assembly
-  nameWithType: ModuleOptions.Assembly
+  fullName: CG.Blazor.Options.ModuleOptions.AssemblyNameOrPath
+  nameWithType: ModuleOptions.AssemblyNameOrPath
 - uid: CG.Blazor.Options.ModuleOptions.EntryPoint
   name: EntryPoint
   href: api/CG.Blazor.Options.ModuleOptions.html#CG_Blazor_Options_ModuleOptions_EntryPoint
