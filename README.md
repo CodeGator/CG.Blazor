@@ -5,6 +5,7 @@
 [![Github docs](https://img.shields.io/static/v1?label=Documentation&message=online&color=blue)](https://codegator.github.io/CG.Blazor/index.html)
 [![NuGet downloads](https://img.shields.io/nuget/dt/CG.Blazor.svg?style=flat)](https://nuget.org/packages/CG.Blazor)
 ![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.Blazor/30)
+[![Github discussion](https://img.shields.io/badge/Discussion-online-blue)](https://github.com/CodeGator/CG.Blazor/discussions)
 
 #### What does it do?
 The package contains server side Blazor extensions used by other CodeGator packages.

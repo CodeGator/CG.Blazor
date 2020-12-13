@@ -195,7 +195,7 @@ namespace Microsoft.Extensions.DependencyInjection
                                 ),
                             innerException: ex
                             );
-                    }                    
+                    }
                 }
             }
 
@@ -265,7 +265,7 @@ namespace Microsoft.Extensions.DependencyInjection
                     else
                     {
                         // Check for the resource in the assembly.
-                        if (staticResourceNames.Contains($"{asm.GetName().Name}.wwwroot.{resource}"))
+                        if (false == staticResourceNames.Contains($"{asm.GetName().Name}.wwwroot.{resource}"))
                         {
                             // Panic!
                             throw new InvalidOperationException(
@@ -342,7 +342,7 @@ namespace Microsoft.Extensions.DependencyInjection
                     else
                     {
                         // Check for the resource in the assembly.
-                        if (staticResourceNames.Contains($"{asm.GetName().Name}.wwwroot.{resource}"))
+                        if (false == staticResourceNames.Contains($"{asm.GetName().Name}.wwwroot.{resource}"))
                         {
                             // Panic!
                             throw new InvalidOperationException(

@@ -44,7 +44,7 @@ namespace Microsoft.AspNetCore.Builder
             //   file provider for each plugin assembly and wire everything together with
             //   a composite file provider. We'll do that here.
 
-            // Ensure we're using static files.
+            // Ensure we're setup to use static files.
             applicationBuilder.UseStaticFiles();
 
             var allProviders = new List<IFileProvider>();

@@ -162,7 +162,19 @@ namespace CG.Blazor.Plugins
         {
             // Validate the parameters before attempting to use them.
             Guard.Instance().ThrowIfNullOrEmpty(subpath, nameof(subpath));
-                        
+                  
+            // Watch for paths that start with '/~', we'll need to correct those
+            //   in order to get to the resource properly.
+            if (subpath.StartsWith("/~"))
+            {
+                // If we get here then the caller specified the resource like this: '~/myfile.png'
+                //   but, we don't really need the '~', and, in fact, it interferes with our ability
+                //   to load the resource, at runtime. So, let's get rid of it.
+
+                // Trim off the leading /~ part.
+                subpath = $"/{subpath.Substring("/~".Length)}";
+            }
+
             // Watch for paths that start with '/_content/', those are special
             //   and require some extra handling.
             if (subpath.StartsWith("/_content/"))
