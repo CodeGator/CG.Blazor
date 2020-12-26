@@ -1,13 +1,18 @@
 ﻿using CG.Blazor;
+using CG.Blazor.Options;
 using CG.Blazor.Plugins;
 using CG.Blazor.Properties;
 using CG.Validations;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
+using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Reflection;
+using System.Reflection.Metadata.Ecma335;
 
 namespace Microsoft.AspNetCore.Builder
 {
@@ -68,6 +73,16 @@ namespace Microsoft.AspNetCore.Builder
 
             // Add providers for any embedded scripts.
             BuildScriptProviders(
+                asmNameSet,
+                allProviders
+                );
+
+            // Get the plugin options.
+            var options = applicationBuilder.ApplicationServices.GetRequiredService<IOptions<PluginOptions>>();
+
+            // Add any remaining providers.
+            BuildRemainingProviders(
+                options,
                 asmNameSet,
                 allProviders
                 );
@@ -292,6 +307,96 @@ namespace Microsoft.AspNetCore.Builder
                             asmName
                             ),
                         innerException: ex
+                        );
+                }
+
+                try
+                {
+                    // Create a file provider to read embedded resources.
+                    var fileProvider = new ManifestEmbeddedFileProviderEx(
+                            asm,
+                            $"wwwroot"
+                            );
+
+                    // Add the provider to the collection.
+                    allProviders.Insert(0, fileProvider);
+                }
+                catch (InvalidOperationException ex)
+                {
+                    // Provide better context for the error.
+                    throw new InvalidOperationException(
+                        message: string.Format(
+                            Resources.ApplicationBuilderExtensions_WwwRoot,
+                            asm.GetName().Name
+                            ),
+                        innerException: ex
+                        );
+                }
+            }
+        }
+
+        // *******************************************************************
+
+        /// <summary>
+        /// This method adds a file provider for any plugin assembly that doesn't
+        /// contain links to embedded style sheets, or javascripts. 
+        /// </summary>
+        /// <param name="options">The options to use for the operation.</param>
+        /// <param name="asmNameSet">The set of all previously processed plugin
+        /// assemblies.</param>
+        /// <param name="allProviders">The list of all previously added file
+        /// providers.</param>
+        private static void BuildRemainingProviders(
+            IOptions<PluginOptions> options,
+            HashSet<string> asmNameSet,
+            List<IFileProvider> allProviders
+            )
+        {
+            // Loop through all the plugin modules.
+            foreach (var module in options.Value.Modules)
+            {
+                Assembly asm = null;
+
+                // Is this module configured with a path?
+                if (module.AssemblyNameOrPath.EndsWith(".dll"))
+                {
+                    // Strip out just the assembly file name.
+                    var fileName = Path.GetFileNameWithoutExtension(
+                        module.AssemblyNameOrPath
+                        );
+
+                    // Have we already processed this assembly?
+                    if (asmNameSet.Contains(fileName))
+                    {
+                        continue; // Nothing left to do.
+                    }
+
+                    // Make an assembly name.
+                    var asmName = new AssemblyName(
+                        fileName
+                        );
+
+                    // Load the assembly by path.
+                    asm = Assembly.LoadFrom(
+                        module.AssemblyNameOrPath
+                        );
+                }
+                else
+                {
+                    // Have we already processed this assembly?
+                    if (asmNameSet.Contains(module.AssemblyNameOrPath))
+                    {
+                        continue; // Nothing left to do.
+                    }
+
+                    // Make an assembly name.
+                    var asmName = new AssemblyName(
+                        module.AssemblyNameOrPath
+                        );
+
+                    // Load the assembly by name.
+                    asm = Assembly.Load(
+                        module.AssemblyNameOrPath
                         );
                 }
 

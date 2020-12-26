@@ -6,7 +6,7 @@
 	<Authors>Martin Cook</Authors>
 	<PackageIcon>packageDefaultIcon-50x50.png</PackageIcon>
 	<PackageLicenseExpression>MIT</PackageLicenseExpression>
-	<Copyright>Copyright © 2018 - 2020 by CodeGator. All rights reserved.</Copyright>
+	<Copyright>Copyright © 2018 - 2021 by CodeGator. All rights reserved.</Copyright>
 	<Description>This package contains server side Blazor extensions used by other CodeGator packages. 
 
 Platforms supported:
