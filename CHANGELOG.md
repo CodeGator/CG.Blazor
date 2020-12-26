@@ -5,6 +5,8 @@
 
 * I bumped the major version for the new year.
 
+* I added code to crate file providers for all plugins, regardless of whether they contain embedded style sheets/java scripts, or not.
+
 ## 2020.5
 
 * I copied the code from the old CG.Blazor.
