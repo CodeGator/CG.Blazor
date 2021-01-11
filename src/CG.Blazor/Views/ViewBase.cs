@@ -87,6 +87,19 @@ namespace CG.Blazor.Views
                 };
             }
 
+            // Look for a corresponding method on the view-model.
+            var methodInfo = typeof(T).GetMethod("OnInitializedAsync");
+
+            // Did we find anything?
+            if (null != methodInfo)
+            {
+                // Invoke the view-model's method.
+                await (Task)methodInfo.Invoke(
+                    ViewModel, 
+                    new object[0]
+                    );
+            }
+
             // Give the base class a chance.
             await base.OnInitializedAsync();
         }
