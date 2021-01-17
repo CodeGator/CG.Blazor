@@ -7,6 +7,10 @@
 
 * I added code to crate file providers for all plugins, regardless of whether they contain embedded style sheets/java scripts, or not.
 
+* I removed the view-model and command stuff and added a reference to CG.Mvvm
+
+* I removed the event stuff since event aggregation isn't the point of this library.
+
 ## 2020.5
 
 * I copied the code from the old CG.Blazor.
