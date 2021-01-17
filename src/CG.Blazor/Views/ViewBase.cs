@@ -1,4 +1,5 @@
 ﻿using CG.Blazor.ViewModels;
+using CG.Mvvm.ViewModels;
 using Microsoft.AspNetCore.Components;
 using System;
 using System.Threading.Tasks;
@@ -23,7 +24,7 @@ namespace CG.Blazor.Views
     /// All that's required to use this class is to add the following tag to your
     /// razor page markup:
     /// <code>
-    /// @inherits ViewBase<IMyViewModel>
+    /// @inherits ViewBase{IMyViewModel}
     /// </code>
     /// Where <c>IMyViewModel</c> is, whatever your view-model type is.
     /// </example>
@@ -87,21 +88,17 @@ namespace CG.Blazor.Views
                 };
             }
 
-            // Look for a corresponding method on the view-model.
-            var methodInfo = typeof(T).GetMethod("OnInitializedAsync");
-
-            // Did we find anything?
-            if (null != methodInfo)
+            // Is the view-model a Blazor view-model?
+            if (ViewModel is BlazorViewModelBase)
             {
-                // Invoke the view-model's method.
-                await (Task)methodInfo.Invoke(
-                    ViewModel, 
-                    new object[0]
-                    );
+                // Initialize the view-model.
+                await (ViewModel as BlazorViewModelBase).OnInitializedAsync()
+                    .ConfigureAwait(false);
             }
 
             // Give the base class a chance.
-            await base.OnInitializedAsync();
+            await base.OnInitializedAsync()
+                .ConfigureAwait(false);
         }
 
         #endregion
