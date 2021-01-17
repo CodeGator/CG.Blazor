@@ -26,150 +26,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.Blazor.Commands.CommandEventHandler-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Blazor.Commands.CommandEventHandler-1.html",
-          "hash": "VUZcDnPcw1OpNW7ZN0toMQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Blazor.Commands.CommandEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Blazor.Commands.CommandEventHandler.html",
-          "hash": "/Yuamp8vEOcAaFkj9wHTKA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Blazor.Commands.DelegateCommand-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Blazor.Commands.DelegateCommand-1.html",
-          "hash": "XCRt6rKWLJ0FK5q8jN5EGA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Blazor.Commands.DelegateCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Blazor.Commands.DelegateCommand.html",
-          "hash": "3ZosIfeSkAwhKpI+EdT5iA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Blazor.Commands.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Blazor.Commands.html",
-          "hash": "+YUI29KOfd5n0x49rP4bIg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Blazor.Events.EventBase-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Blazor.Events.EventBase-1.html",
-          "hash": "DW0m1FvJE/vM2NxKvW8riQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Blazor.Events.EventBase.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Blazor.Events.EventBase.html",
-          "hash": "9G9wg/GeW20M5ddbRWu9ew=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Blazor.Events.IEventAggregator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Blazor.Events.IEventAggregator.html",
-          "hash": "hgRZtJvmAjGeFwCqH/VilQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Blazor.Events.ISubscriber.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Blazor.Events.ISubscriber.html",
-          "hash": "9dmhzX0q+nP2FY5Gd7q3HA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Blazor.Events.ISubscription.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Blazor.Events.ISubscription.html",
-          "hash": "gqLkkPPSXWlm2jkkYfaTtw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Blazor.Events.IWeakDelegate.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Blazor.Events.IWeakDelegate.html",
-          "hash": "naOB/h6LTg50jtGiw3rs+g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Blazor.Events.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Blazor.Events.html",
-          "hash": "1h7zWpiC0ec4cyvXQO/mfw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/CG.Blazor.IModule.yml",
       "output": {
         ".html": {
@@ -242,23 +98,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.Blazor.ViewModels.IViewModel.yml",
+      "source_relative_path": "api/CG.Blazor.ViewModels.BlazorViewModelBase.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CG.Blazor.ViewModels.IViewModel.html",
-          "hash": "a8+stx+dvNg4TWcaUUimZg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Blazor.ViewModels.ViewModelBase.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Blazor.ViewModels.ViewModelBase.html",
-          "hash": "HPN5ZCPucLe3/eNU7xM/aQ=="
+          "relative_path": "api/CG.Blazor.ViewModels.BlazorViewModelBase.html",
+          "hash": "HjHNk8HsxajTHLoV6hbKCw=="
         }
       },
       "is_incremental": false,
@@ -270,7 +114,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Blazor.ViewModels.html",
-          "hash": "ur74zj+k+z9gvo2JeQAWhQ=="
+          "hash": "TeXCAKKlA7LdFkX4JC3/Vw=="
         }
       },
       "is_incremental": false,
@@ -282,7 +126,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Blazor.Views.ViewBase-1.html",
-          "hash": "2g/OrOuqxWzAHiniKmPbtw=="
+          "hash": "NC6KSEZesAPGXqGY006xIw=="
         }
       },
       "is_incremental": false,
@@ -294,7 +138,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Blazor.Views.html",
-          "hash": "VCjNsey/aW7uhhOzh8+N2w=="
+          "hash": "hX33fKYktmHEcpvdSM88HA=="
         }
       },
       "is_incremental": false,
@@ -342,7 +186,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html",
-          "hash": "KNpS9eDAq4GsFkm+xmTUpw=="
+          "hash": "Vn+npnxlAx2g1ClsM2XbGg=="
         }
       },
       "is_incremental": false,
@@ -366,7 +210,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "8elkiL52joqvIhETibn9Zg=="
+          "hash": "5N1RUGaGXesoWRk7jfR6VQ=="
         }
       },
       "is_incremental": false,
@@ -485,7 +329,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 29,
+          "total_file_count": 16,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
