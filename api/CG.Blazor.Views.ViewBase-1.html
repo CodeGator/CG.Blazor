@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ViewBase&lt;T&gt;
    ">
-    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="generator" content="docfx 2.57.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -95,35 +95,14 @@
   <div classs="implements">
     <h5>Implements</h5>
     <div><span class="xref">Microsoft.AspNetCore.Components.IComponent</span></div>
-    <div><span class="xref">Microsoft.AspNetCore.Components.IHandleAfterRender</span></div>
     <div><span class="xref">Microsoft.AspNetCore.Components.IHandleEvent</span></div>
+    <div><span class="xref">Microsoft.AspNetCore.Components.IHandleAfterRender</span></div>
     <div><span class="xref">System.IDisposable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
       <span class="xref">Microsoft.AspNetCore.Components.ComponentBase.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)</span>
-    </div>
-    <div>
-      <span class="xref">Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Action)</span>
-    </div>
-    <div>
-      <span class="xref">Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Func&lt;System.Threading.Tasks.Task&gt;)</span>
-    </div>
-    <div>
-      <span class="xref">Microsoft.AspNetCore.Components.ComponentBase.Microsoft.AspNetCore.Components.IComponent.Attach(Microsoft.AspNetCore.Components.RenderHandle)</span>
-    </div>
-    <div>
-      <span class="xref">Microsoft.AspNetCore.Components.ComponentBase.Microsoft.AspNetCore.Components.IHandleAfterRender.OnAfterRenderAsync()</span>
-    </div>
-    <div>
-      <span class="xref">Microsoft.AspNetCore.Components.ComponentBase.Microsoft.AspNetCore.Components.IHandleEvent.HandleEventAsync(Microsoft.AspNetCore.Components.EventCallbackWorkItem, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">Microsoft.AspNetCore.Components.ComponentBase.OnAfterRender(System.Boolean)</span>
-    </div>
-    <div>
-      <span class="xref">Microsoft.AspNetCore.Components.ComponentBase.OnAfterRenderAsync(System.Boolean)</span>
     </div>
     <div>
       <span class="xref">Microsoft.AspNetCore.Components.ComponentBase.OnInitialized()</span>
@@ -135,13 +114,34 @@
       <span class="xref">Microsoft.AspNetCore.Components.ComponentBase.OnParametersSetAsync()</span>
     </div>
     <div>
-      <span class="xref">Microsoft.AspNetCore.Components.ComponentBase.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)</span>
+      <span class="xref">Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged()</span>
     </div>
     <div>
       <span class="xref">Microsoft.AspNetCore.Components.ComponentBase.ShouldRender()</span>
     </div>
     <div>
-      <span class="xref">Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged()</span>
+      <span class="xref">Microsoft.AspNetCore.Components.ComponentBase.OnAfterRender(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Components.ComponentBase.OnAfterRenderAsync(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Action)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Func&lt;System.Threading.Tasks.Task&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Components.ComponentBase.Microsoft.AspNetCore.Components.IComponent.Attach(Microsoft.AspNetCore.Components.RenderHandle)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Components.ComponentBase.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Components.ComponentBase.Microsoft.AspNetCore.Components.IHandleEvent.HandleEventAsync(Microsoft.AspNetCore.Components.EventCallbackWorkItem, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Components.ComponentBase.Microsoft.AspNetCore.Components.IHandleAfterRender.OnAfterRenderAsync()</span>
     </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
@@ -169,7 +169,7 @@
   <h6><strong>Assembly</strong>: CG.Blazor.dll</h6>
   <h5 id="CG_Blazor_Views_ViewBase_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class ViewBase&lt;T&gt; : ComponentBase, IComponent, IHandleAfterRender, IHandleEvent, IDisposable where T : class, IViewModel</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class ViewBase&lt;T&gt; : ComponentBase, IComponent, IHandleEvent, IHandleAfterRender, IDisposable where T : class, IViewModel</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -275,10 +275,10 @@ received its initial parameters from its parent in the render tree.</p>
       <span class="xref">Microsoft.AspNetCore.Components.IComponent</span>
   </div>
   <div>
-      <span class="xref">Microsoft.AspNetCore.Components.IHandleAfterRender</span>
+      <span class="xref">Microsoft.AspNetCore.Components.IHandleEvent</span>
   </div>
   <div>
-      <span class="xref">Microsoft.AspNetCore.Components.IHandleEvent</span>
+      <span class="xref">Microsoft.AspNetCore.Components.IHandleAfterRender</span>
   </div>
   <div>
       <span class="xref">System.IDisposable</span>
