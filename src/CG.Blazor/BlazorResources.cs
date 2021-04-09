@@ -3,6 +3,7 @@ using System.Reflection;
 using System.Text;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.DataProtection;
 
 namespace CG.Blazor
 {
@@ -45,7 +46,7 @@ namespace CG.Blazor
 
         /// <summary>
         /// This property contains a temporary list of modules that have been 
-        /// loaded by the runtime. This list is populated by the <see cref="ServiceCollectionExtensions.AddPlugins(IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration)"/>
+        /// loaded by the runtime. This list is populated by the <see cref="ServiceCollectionExtensions.AddPlugins(IServiceCollection, IDataProtector, Microsoft.Extensions.Configuration.IConfiguration)"/>
         /// method and is cleared by the <see cref="ApplicationBuilderExtensions.UsePlugins(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Hosting.IWebHostEnvironment)"/>
         /// method.
         /// </summary>

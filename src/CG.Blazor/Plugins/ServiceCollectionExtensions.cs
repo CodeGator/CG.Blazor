@@ -3,6 +3,7 @@ using CG.Blazor;
 using CG.Blazor.Options;
 using CG.Blazor.Properties;
 using CG.Validations;
+using Microsoft.AspNetCore.DataProtection;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
@@ -31,6 +32,7 @@ namespace Microsoft.Extensions.DependencyInjection
         /// </summary>
         /// <param name="serviceCollection">The service collection to use for 
         /// the operation.</param>
+        /// <param name="dataProtector">The data protector to use for the operation.</param>
         /// <param name="configuration">The configuration to use for the operation.</param>
         /// <returns>The value of the <paramref name="serviceCollection"/>
         /// parameter, for chaining calls together.</returns>
@@ -44,11 +46,13 @@ namespace Microsoft.Extensions.DependencyInjection
         /// </remarks>
         public static IServiceCollection AddPlugins(
             this IServiceCollection serviceCollection,
+            IDataProtector dataProtector,
             IConfiguration configuration
             )
         {
             // Validate the parameters before attempting to use them.
             Guard.Instance().ThrowIfNull(serviceCollection, nameof(serviceCollection))
+                .ThrowIfNull(dataProtector, nameof(dataProtector))
                 .ThrowIfNull(configuration, nameof(configuration));
 
             // Clear any old blazor resources.
@@ -61,7 +65,8 @@ namespace Microsoft.Extensions.DependencyInjection
 
             // Configure the plugin options.
             serviceCollection.ConfigureOptions<PluginOptions>(
-                pluginsSection,
+                dataProtector,
+                pluginsSection,                
                 out var pluginOptions
                 );
 
