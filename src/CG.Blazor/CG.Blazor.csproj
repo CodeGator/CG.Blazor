@@ -30,8 +30,8 @@ Platforms supported:
 
   <ItemGroup>
     <PackageReference Include="CG.Core" Version="2021.2.6" />
-    <PackageReference Include="CG.Mvvm" Version="2021.2.2" />
-    <PackageReference Include="CG.Options" Version="2021.4.5" />
+    <PackageReference Include="CG.Mvvm" Version="2021.2.4" />
+    <PackageReference Include="CG.Options" Version="2021.4.8" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
     <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="5.0.5" />
