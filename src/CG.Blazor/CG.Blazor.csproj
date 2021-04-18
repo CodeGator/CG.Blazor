@@ -30,6 +30,7 @@ Platforms supported:
 
   <ItemGroup>
     <PackageReference Include="CG.Core" Version="2021.2.6" />
+    <PackageReference Include="CG.DataProtection" Version="2021.1.11" />
     <PackageReference Include="CG.Mvvm" Version="2021.2.4" />
     <PackageReference Include="CG.Options" Version="2021.4.8" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
