@@ -4,6 +4,8 @@
 ## 2021.2
 
 * I switched to the .NET 5.0 framework
+* bug fixes
+* I added the TokenProvider type.
 
 ## 2021.1
 
