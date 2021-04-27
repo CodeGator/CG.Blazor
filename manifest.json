@@ -134,11 +134,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.Blazor.Services.TokenService.yml",
+      "source_relative_path": "api/CG.Blazor.Services.TokenServiceBase.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CG.Blazor.Services.TokenService.html",
-          "hash": "PCC8BHN6XOQmXIEZ3mWUydUGrh0XJ2bHiejxBUmdZak="
+          "relative_path": "api/CG.Blazor.Services.TokenServiceBase.html",
+          "hash": "RERULH5NCfRqUZrAM+vK4LGufZleRKAEh6pmaOmc4lI="
         }
       },
       "is_incremental": false,
@@ -150,7 +150,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Blazor.Services.html",
-          "hash": "jBm63MdbKw7ScdxzL1hHFzY2WKPNU4ARSsJiETMkthc="
+          "hash": "I/THp1aKAygwTJCmFTSDKMN5J/sX7XqEDuZgpsAP+Es="
         }
       },
       "is_incremental": false,
@@ -270,7 +270,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "Cqw1xE3d0m7mha64UlPYPk1zU+4IlR35DctVyxRKPt0="
+          "hash": "l52RB7ZCPy4H+I+FsLOFpNr1ouKjP4isUnZbOXclwdA="
         }
       },
       "is_incremental": false,
