@@ -6,6 +6,7 @@
 * I switched to the .NET 5.0 framework
 * bug fixes
 * I added the TokenProvider type.
+* I added the ITokenService and TokenServiceBase types
 
 ## 2021.1
 
