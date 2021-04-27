@@ -8,7 +8,7 @@ namespace CG.Blazor.Services
     /// This class is a base implementation of the <see cref="ITokenService"/>
     /// interface.
     /// </summary>
-    public abstract class TokenService : ITokenService
+    public abstract class TokenServiceBase : ITokenService
     {
         // *******************************************************************
         // Properties.
@@ -30,11 +30,11 @@ namespace CG.Blazor.Services
         #region Constructors
 
         /// <summary>
-        /// This constructor creates a new instance of the <see cref="TokenService"/>
+        /// This constructor creates a new instance of the <see cref="TokenServiceBase"/>
         /// class.
         /// </summary>
         /// <param name="tokenProvider">The token provider to use with the service.</param>
-        public TokenService(
+        public TokenServiceBase(
             TokenProvider tokenProvider
             )
         {
