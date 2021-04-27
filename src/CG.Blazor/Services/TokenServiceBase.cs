@@ -34,7 +34,7 @@ namespace CG.Blazor.Services
         /// class.
         /// </summary>
         /// <param name="tokenProvider">The token provider to use with the service.</param>
-        public TokenServiceBase(
+        protected TokenServiceBase(
             TokenProvider tokenProvider
             )
         {
