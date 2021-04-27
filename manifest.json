@@ -98,6 +98,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.ServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.ServiceCollectionExtensions.html",
+          "hash": "2ncaxSZX7AzOHz67JH8URVLY7UQQG8oKCzEcTBgstvk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Services.ITokenService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Services.ITokenService.html",
+          "hash": "zIuBwSfs+juT8aIYTcQRPMZu/lQXkaGX+TeTL2Fm5cA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CG.Blazor.Services.TokenProvider.yml",
       "output": {
         ".html": {
@@ -110,11 +134,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Services.TokenService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Services.TokenService.html",
+          "hash": "PCC8BHN6XOQmXIEZ3mWUydUGrh0XJ2bHiejxBUmdZak="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CG.Blazor.Services.yml",
       "output": {
         ".html": {
           "relative_path": "api/CG.Blazor.Services.html",
-          "hash": "mW0RCw3QA7v1nY+3/t9kiDYWGL0OAEu6Yx0X92V/804="
+          "hash": "jBm63MdbKw7ScdxzL1hHFzY2WKPNU4ARSsJiETMkthc="
         }
       },
       "is_incremental": false,
@@ -174,7 +210,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Blazor.html",
-          "hash": "Gj6aFGyQ5H+VsyhT3xVLoW7bCwPHOVG8x6ML3uEVVlQ="
+          "hash": "Ee+bzKLw/WuXs+qd3XMZ8s/lhFvFNjLpjXNaVi+0DLk="
         }
       },
       "is_incremental": false,
@@ -234,7 +270,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "zNwCVKVPvr5/WvUoWxP1pf0Akj/KLnc2OtQPBwif/sw="
+          "hash": "Cqw1xE3d0m7mha64UlPYPk1zU+4IlR35DctVyxRKPt0="
         }
       },
       "is_incremental": false,
@@ -353,7 +389,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 18,
+          "total_file_count": 21,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

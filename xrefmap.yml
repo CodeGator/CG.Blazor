@@ -289,12 +289,50 @@ references:
   isSpec: "True"
   fullName: CG.Blazor.Plugins.ModuleBase.ConfigureServices
   nameWithType: ModuleBase.ConfigureServices
+- uid: CG.Blazor.ServiceCollectionExtensions
+  name: ServiceCollectionExtensions
+  href: api/CG.Blazor.ServiceCollectionExtensions.html
+  commentId: T:CG.Blazor.ServiceCollectionExtensions
+  fullName: CG.Blazor.ServiceCollectionExtensions
+  nameWithType: ServiceCollectionExtensions
+- uid: CG.Blazor.ServiceCollectionExtensions.AddTokenProvider(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  name: AddTokenProvider(IServiceCollection, IConfiguration, ServiceLifetime)
+  href: api/CG.Blazor.ServiceCollectionExtensions.html#CG_Blazor_ServiceCollectionExtensions_AddTokenProvider_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_DependencyInjection_ServiceLifetime_
+  commentId: M:CG.Blazor.ServiceCollectionExtensions.AddTokenProvider(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  fullName: CG.Blazor.ServiceCollectionExtensions.AddTokenProvider(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.DependencyInjection.ServiceLifetime)
+  nameWithType: ServiceCollectionExtensions.AddTokenProvider(IServiceCollection, IConfiguration, ServiceLifetime)
+- uid: CG.Blazor.ServiceCollectionExtensions.AddTokenProvider*
+  name: AddTokenProvider
+  href: api/CG.Blazor.ServiceCollectionExtensions.html#CG_Blazor_ServiceCollectionExtensions_AddTokenProvider_
+  commentId: Overload:CG.Blazor.ServiceCollectionExtensions.AddTokenProvider
+  isSpec: "True"
+  fullName: CG.Blazor.ServiceCollectionExtensions.AddTokenProvider
+  nameWithType: ServiceCollectionExtensions.AddTokenProvider
 - uid: CG.Blazor.Services
   name: CG.Blazor.Services
   href: api/CG.Blazor.Services.html
   commentId: N:CG.Blazor.Services
   fullName: CG.Blazor.Services
   nameWithType: CG.Blazor.Services
+- uid: CG.Blazor.Services.ITokenService
+  name: ITokenService
+  href: api/CG.Blazor.Services.ITokenService.html
+  commentId: T:CG.Blazor.Services.ITokenService
+  fullName: CG.Blazor.Services.ITokenService
+  nameWithType: ITokenService
+- uid: CG.Blazor.Services.ITokenService.EnsureAccessTokenAsync(System.Threading.CancellationToken)
+  name: EnsureAccessTokenAsync(CancellationToken)
+  href: api/CG.Blazor.Services.ITokenService.html#CG_Blazor_Services_ITokenService_EnsureAccessTokenAsync_System_Threading_CancellationToken_
+  commentId: M:CG.Blazor.Services.ITokenService.EnsureAccessTokenAsync(System.Threading.CancellationToken)
+  fullName: CG.Blazor.Services.ITokenService.EnsureAccessTokenAsync(System.Threading.CancellationToken)
+  nameWithType: ITokenService.EnsureAccessTokenAsync(CancellationToken)
+- uid: CG.Blazor.Services.ITokenService.EnsureAccessTokenAsync*
+  name: EnsureAccessTokenAsync
+  href: api/CG.Blazor.Services.ITokenService.html#CG_Blazor_Services_ITokenService_EnsureAccessTokenAsync_
+  commentId: Overload:CG.Blazor.Services.ITokenService.EnsureAccessTokenAsync
+  isSpec: "True"
+  fullName: CG.Blazor.Services.ITokenService.EnsureAccessTokenAsync
+  nameWithType: ITokenService.EnsureAccessTokenAsync
 - uid: CG.Blazor.Services.TokenProvider
   name: TokenProvider
   href: api/CG.Blazor.Services.TokenProvider.html
@@ -353,6 +391,44 @@ references:
   isSpec: "True"
   fullName: CG.Blazor.Services.TokenProvider.XsrfToken
   nameWithType: TokenProvider.XsrfToken
+- uid: CG.Blazor.Services.TokenService
+  name: TokenService
+  href: api/CG.Blazor.Services.TokenService.html
+  commentId: T:CG.Blazor.Services.TokenService
+  fullName: CG.Blazor.Services.TokenService
+  nameWithType: TokenService
+- uid: CG.Blazor.Services.TokenService.#ctor(CG.Blazor.Services.TokenProvider)
+  name: TokenService(TokenProvider)
+  href: api/CG.Blazor.Services.TokenService.html#CG_Blazor_Services_TokenService__ctor_CG_Blazor_Services_TokenProvider_
+  commentId: M:CG.Blazor.Services.TokenService.#ctor(CG.Blazor.Services.TokenProvider)
+  fullName: CG.Blazor.Services.TokenService.TokenService(CG.Blazor.Services.TokenProvider)
+  nameWithType: TokenService.TokenService(TokenProvider)
+- uid: CG.Blazor.Services.TokenService.#ctor*
+  name: TokenService
+  href: api/CG.Blazor.Services.TokenService.html#CG_Blazor_Services_TokenService__ctor_
+  commentId: Overload:CG.Blazor.Services.TokenService.#ctor
+  isSpec: "True"
+  fullName: CG.Blazor.Services.TokenService.TokenService
+  nameWithType: TokenService.TokenService
+- uid: CG.Blazor.Services.TokenService._tokenProvider
+  name: _tokenProvider
+  href: api/CG.Blazor.Services.TokenService.html#CG_Blazor_Services_TokenService__tokenProvider
+  commentId: F:CG.Blazor.Services.TokenService._tokenProvider
+  fullName: CG.Blazor.Services.TokenService._tokenProvider
+  nameWithType: TokenService._tokenProvider
+- uid: CG.Blazor.Services.TokenService.EnsureAccessTokenAsync(System.Threading.CancellationToken)
+  name: EnsureAccessTokenAsync(CancellationToken)
+  href: api/CG.Blazor.Services.TokenService.html#CG_Blazor_Services_TokenService_EnsureAccessTokenAsync_System_Threading_CancellationToken_
+  commentId: M:CG.Blazor.Services.TokenService.EnsureAccessTokenAsync(System.Threading.CancellationToken)
+  fullName: CG.Blazor.Services.TokenService.EnsureAccessTokenAsync(System.Threading.CancellationToken)
+  nameWithType: TokenService.EnsureAccessTokenAsync(CancellationToken)
+- uid: CG.Blazor.Services.TokenService.EnsureAccessTokenAsync*
+  name: EnsureAccessTokenAsync
+  href: api/CG.Blazor.Services.TokenService.html#CG_Blazor_Services_TokenService_EnsureAccessTokenAsync_
+  commentId: Overload:CG.Blazor.Services.TokenService.EnsureAccessTokenAsync
+  isSpec: "True"
+  fullName: CG.Blazor.Services.TokenService.EnsureAccessTokenAsync
+  nameWithType: TokenService.EnsureAccessTokenAsync
 - uid: CG.Blazor.ViewModels
   name: CG.Blazor.ViewModels
   href: api/CG.Blazor.ViewModels.html
