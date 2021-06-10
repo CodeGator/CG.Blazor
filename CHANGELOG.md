@@ -9,6 +9,7 @@
 * I added the ITokenService and TokenServiceBase types
 * I added the IStateService and StateService types.
 * I changed the namespace for the ServiceCollectionExtension class to Microsoft.Extensions.DependencyInjection
+* I added methods to the StateServiceExtensions class.
 
 ## 2021.1
 
