@@ -7,6 +7,7 @@
 * bug fixes
 * I added the TokenProvider type.
 * I added the ITokenService and TokenServiceBase types
+* I added the IStateService and StateService types.
 
 ## 2021.1
 
