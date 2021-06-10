@@ -49,6 +49,31 @@ namespace CG.Blazor.Services
         /// <typeparam name="T">The type of associated value.</typeparam>
         /// <param name="state">The state service to use for the operation.</param>
         /// <param name="name">The name to use for the operation.</param>
+        /// <returns>The value associated with the name, or the default value,
+        /// if the value doesn't yet exist.</returns>
+        public static T GetValueByName<T>(
+            this IStateService state,
+            string name
+            )
+        {
+            // Validate the parameters before attempting to use them.
+            Guard.Instance().ThrowIfNull(state, nameof(state));
+
+            // Get the data.
+            return (T)(state.Data as ConcurrentDictionary<string, object>).GetOrAdd(
+                name,
+                default(T)
+                );
+        }
+
+        // *******************************************************************
+
+        /// <summary>
+        /// This method sets a named string value in the state.
+        /// </summary>
+        /// <typeparam name="T">The type of associated value.</typeparam>
+        /// <param name="state">The state service to use for the operation.</param>
+        /// <param name="name">The name to use for the operation.</param>
         /// <param name="defaultValue">The default value to use if the named
         /// value doesn't yet exist.</param>
         /// <returns>The value associated with the name, or the default value,
@@ -56,7 +81,7 @@ namespace CG.Blazor.Services
         public static T GetValueByName<T>(
             this IStateService state,
             string name,
-            T defaultValue = default
+            T defaultValue
             )
         {
             // Validate the parameters before attempting to use them.
