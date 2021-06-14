@@ -29,14 +29,14 @@ Platforms supported:
 	</ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="CG.Core" Version="2021.2.10" />
-    <PackageReference Include="CG.DataProtection" Version="2021.1.17" />
+    <PackageReference Include="CG.Core" Version="2021.2.13" />
+    <PackageReference Include="CG.DataProtection" Version="2021.1.18" />
     <PackageReference Include="CG.Mvvm" Version="2021.2.6" />
-    <PackageReference Include="CG.Options" Version="2021.4.12" />
+    <PackageReference Include="CG.Options" Version="2021.4.13" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
     <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="5.0.7" />
-    <PackageReference Include="Nerdbank.GitVersioning" Version="3.4.205">
+    <PackageReference Include="Nerdbank.GitVersioning" Version="3.4.216">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
