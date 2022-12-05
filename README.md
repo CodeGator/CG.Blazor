@@ -1,10 +1,10 @@
 # CG.Blazor: 
 
 ---
-[![Build Status](https://dev.azure.com/codegator/CG.Blazor/_apis/build/status/CodeGator.CG.Blazor?branchName=main)](https://dev.azure.com/codegator/CG.Blazor/_build/latest?definitionId=30&branchName=main)
+[![Build Status](https://dev.azure.com/codegator/CG.Blazor/_apis/build/status/CodeGator.CG.Blazor?branchName=main)](https://dev.azure.com/codegator/CG.Blazor/_build/latest?definitionId=94&branchName=main)
 [![Github docs](https://img.shields.io/static/v1?label=Documentation&message=online&color=blue)](https://codegator.github.io/CG.Blazor/index.html)
 [![NuGet downloads](https://img.shields.io/nuget/dt/CG.Blazor.svg?style=flat)](https://nuget.org/packages/CG.Blazor)
-![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.Blazor/30)
+![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.Blazor/94)
 [![Github discussion](https://img.shields.io/badge/Discussion-online-blue)](https://github.com/CodeGator/CG.Blazor/discussions)
 [![CG.Blazor on fuget.org](https://www.fuget.org/packages/CG.Blazor/badge.svg)](https://www.fuget.org/packages/CG.Blazor)
 
