@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CG.Blazor</name>
+    </assembly>
+    <members>
+        <member name="T:CG.Blazor.Services.BackgroundService">
+            <summary>
+            Base class for implementing a long running <see cref="T:Microsoft.Extensions.Hosting.IHostedService"/>.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,27 +1,27 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
 	<GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
 	<Authors>Martin Cook</Authors>
 	<PackageIcon>packageDefaultIcon-50x50.png</PackageIcon>
 	<PackageLicenseExpression>MIT</PackageLicenseExpression>
-	<Copyright>Copyright © 2018 - 2021 by CodeGator. All rights reserved.</Copyright>
+	<Copyright>Copyright © 2022 - 2023 by CodeGator. All rights reserved.</Copyright>
 	<Description>This package contains server side Blazor extensions used by other CodeGator packages. 
 
 Platforms supported:
-    .NET 5.x or above</Description>
+    .NET 6.x or above</Description>
 	<Company>CodeGator</Company>
 	<PackageProjectUrl>https://github.com/CodeGator/CG.Blazor</PackageProjectUrl>
 	<RepositoryUrl>https://github.com/CodeGator/CG.Blazor</RepositoryUrl>
 	<RepositoryType>git</RepositoryType>
-	<PackageTags>blazor, mvvm, command, view, view model, plugin, module, CG.Blazor, CodeGator</PackageTags>
+	<PackageTags>blazor, CG.Blazor, CodeGator</PackageTags>
 	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\net5.0\CG.Blazor.xml</DocumentationFile>
+    <DocumentationFile>CG.Blazor.xml</DocumentationFile>
   </PropertyGroup>
 
 	<ItemGroup>
@@ -29,14 +29,7 @@ Platforms supported:
 	</ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="CG.Core" Version="2021.3.1" />
-    <PackageReference Include="CG.DataProtection" Version="2021.2.1" />
-    <PackageReference Include="CG.Mvvm" Version="2021.3.1" />
-    <PackageReference Include="CG.Options" Version="2021.5.1" />
-    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
-    <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="5.0.7" />
-    <PackageReference Include="Nerdbank.GitVersioning" Version="3.4.220">
+    <PackageReference Include="Nerdbank.GitVersioning" Version="3.5.119">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
@@ -47,21 +40,6 @@ Platforms supported:
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Update="Properties\Resources.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Update="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
   </ItemGroup>
 
 </Project>
