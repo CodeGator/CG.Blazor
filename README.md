@@ -11,18 +11,8 @@
 #### What does it do?
 The package contains server side Blazor extensions used by other CodeGator packages.
 
-#### Commonly used types:
-* Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions
-* CG.Blazor.Views.ViewBase
-* CG.Blazor.ViewModels.IViewModel
-* CG.Blazor.ViewModels.ViewModelBase
-* CG.Blazor.Plugins.IModule
-* CG.Blazor.Plugins.ModuleBase
-* CG.Blazor.Options.PluginOptions
-* CG.Blazor.Options.ModuleOptions
-
 #### What platform(s) does it support?
-* .NET 5.x or higher
+* .NET 6.x or higher
 
 #### How do I install it?
 The binary is hosted on [NuGet](https://www.nuget.org/packages/CG.Blazor). To install the package using the NuGet package manager:
@@ -40,5 +30,8 @@ There is developer documentation [HERE](https://codegator.github.io/CG.Blazor/)
 We also blog about projects like this one on our website, [HERE](http://www.codegator.com)
 
 ---
+
+#### Disclaimer
+This package and it's contents are experimental in nature. There is no official support. Use at your own risk.
 
 
