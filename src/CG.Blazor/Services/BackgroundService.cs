@@ -10,7 +10,7 @@ namespace CG.Blazor.Services;
 /// <summary>
 /// Base class for implementing a long running <see cref="IHostedService"/>.
 /// </summary>
-internal abstract class BackgroundService : IHostedService, IDisposable
+public abstract class BackgroundService : IHostedService, IDisposable
 {
     internal protected Task? _executingTask;
     
