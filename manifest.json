@@ -14,155 +14,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.Blazor.BlazorResources.yml",
+      "source_relative_path": "api/CG.Blazor.Services.BackgroundService.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CG.Blazor.BlazorResources.html",
-          "hash": "eqMo3Ue2aOgA3hknh6/ME71dtRLHWHWP4CAaOGKH3QY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Blazor.IModule.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Blazor.IModule.html",
-          "hash": "4yc+dsKGNiytLG1UrzAnEaD/lnIxDVWlN1VTbJAuxL4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Blazor.Options.ModuleOptions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Blazor.Options.ModuleOptions.html",
-          "hash": "I3whYfldGTGZ8DmPdd+mlG6jSkQhvBxaMKeq0OupQDY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Blazor.Options.PluginOptions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Blazor.Options.PluginOptions.html",
-          "hash": "hLVknPTDDQgEUio0TF7hN/x5AhtJLbYLEL6nDMjdbgE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Blazor.Options.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Blazor.Options.html",
-          "hash": "RN7i23GorxeGjA+WcTjo9CcIhv/joml7kUrErikk6SU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Blazor.Plugins.ModuleBase.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Blazor.Plugins.ModuleBase.html",
-          "hash": "gUt0mWvSctBrcsCKscfRE84rF0XkI5aWlrX8g0Q9Okg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Blazor.Plugins.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Blazor.Plugins.html",
-          "hash": "KybSfhuEArxCc2WnIdoIv38MNCoBbbTreZJljp7UX/0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Blazor.Services.IStateService.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Blazor.Services.IStateService.html",
-          "hash": "/iRa6kVV3U6QyrtwycVsCHOkIA3gZDsn+cOrNIbj2mA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Blazor.Services.ITokenService.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Blazor.Services.ITokenService.html",
-          "hash": "EBXCW4Vf0Mj3wGXekNQw+RdxZMOpp8WsDH5C3h8ZT2Q="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Blazor.Services.StateService.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Blazor.Services.StateService.html",
-          "hash": "WAwmamGvD3CC94U0BH3ixH2lBtKYjSoH809CYGkG+so="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Blazor.Services.StateServiceExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Blazor.Services.StateServiceExtensions.html",
-          "hash": "9yeBMRJtoHCeWqqNV7KTYbg62Nh6Z+BXjcavUq58kp4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Blazor.Services.TokenProvider.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Blazor.Services.TokenProvider.html",
-          "hash": "je1uojTkQ/xIKpadwsJU7FzgSHMHLcOvhTT5QaZAl00="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Blazor.Services.TokenServiceBase.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Blazor.Services.TokenServiceBase.html",
-          "hash": "98e0rP9Zl/27SM+cA6Y3fW23m2Wj6Svvi7Ixo0uOusk="
+          "relative_path": "api/CG.Blazor.Services.BackgroundService.html",
+          "hash": "3jl83bUf3Sl8abhUVOx9pyhuCSoEbAhZyGvaY6Gm2pA="
         }
       },
       "is_incremental": false,
@@ -174,115 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Blazor.Services.html",
-          "hash": "7FPN/P0BJ24rYHILzbytEfnPEe5yE1/D6EwShHjOhoM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Blazor.ViewModels.BlazorViewModelBase.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Blazor.ViewModels.BlazorViewModelBase.html",
-          "hash": "kGdx4R/wBMdJjOiWbOg4Bhhb3haT+eyLD1+nJRYg2I0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Blazor.ViewModels.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Blazor.ViewModels.html",
-          "hash": "Y2DXHAumLDJsyerXD55z5QQaXQHooEiQ0gsJ7cT+/VM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Blazor.Views.ViewBase-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Blazor.Views.ViewBase-1.html",
-          "hash": "LLn/cIFNENGSKgVm3urCNaiZg3qrxfakJNiokJL1Tmk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Blazor.Views.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Blazor.Views.html",
-          "hash": "bX7J1AfHi9RIgLdhDY8InewM11w3A7jb48QtZWR2mxc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Blazor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Blazor.html",
-          "hash": "rEJEoxKVWWpNiriyVkl2zj5pTbGa71pbCsM+l2iQTF8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.html",
-          "hash": "UxtcGy4m3PPGOw39cNOaqCZQJPsBhe4pB7BWE5Py55A="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Microsoft.AspNetCore.Builder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.AspNetCore.Builder.html",
-          "hash": "aHfminSc3D1rgSWAvcLLWpRkoVoH5UawmZH6q8vKLTg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html",
-          "hash": "HUTN4swHZ16gP3/u9mAAnQv5n9tJPGY9a2QgbxN17yo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Extensions.DependencyInjection.html",
-          "hash": "D3XLH53AMRuTwfHmdY8/eGsT31KkaeQ+mIZEBRJQPBQ="
+          "hash": "Wg6viYRg6rtBci5c/kZWHKzCgFIK1iFXwTWmuRpsOuQ="
         }
       },
       "is_incremental": false,
@@ -294,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "ycPmkbw4GIMxFpaXtGztqtjGiEqP9W93OR/WpeLOH0o="
+          "hash": "R6/vazD0YYpnNPTcVN3elhzcYxO2wSQLEJkvTCRUyE4="
         }
       },
       "is_incremental": false,
@@ -306,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "3lFGsZn+vpYCWz7OututIOBGsz91XMn2mjINvNxc584="
+          "hash": "GSM6/qjA0Y6/lyPTFQFyqzR0RP/48E3IDhzCnmbB9WQ="
         }
       },
       "is_incremental": false,
@@ -374,7 +122,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "kC1NCuPgF8MoDdHY5qcQdrdFdkGJ5joDlmUf9MGMNP8="
+          "hash": "XWioS5NZd08gTrqb27tsoiMjRAwzZMJ0Ic597T3AOTE="
         }
       },
       "is_incremental": false,
@@ -386,7 +134,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "sswJOvfOTUSsa+mWgniNwdmJPijn7+6S22QWnFOC5qU="
+          "hash": "/MkPRMntTPKCABydqbfCFxQ3VCZWpm8v8vMgX/zzthI="
         }
       },
       "is_incremental": false,
@@ -413,7 +161,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 23,
+          "total_file_count": 2,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
