@@ -11,6 +11,9 @@ variables:
 
 steps:
 
+- checkout: self
+  fetchDepth: 0
+
 - task: NuGetToolInstaller@1
   inputs:
     versionSpec: '5.1.0'
