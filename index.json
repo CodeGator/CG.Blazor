@@ -1,13 +1,28 @@
 {
-  "api/CG.Blazor.Services.BackgroundService.html": {
-    "href": "api/CG.Blazor.Services.BackgroundService.html",
-    "title": "Class BackgroundService",
-    "keywords": "Class BackgroundService Base class for implementing a long running . Inheritance System.Object BackgroundService Implements IDisposable Namespace : CG.Blazor.Services Assembly : CG.Blazor.dll Syntax public abstract class BackgroundService : IHostedService Fields _executingTask Declaration protected Task? _executingTask Field Value Type Description System.Nullable < Task > _stoppingCts Declaration protected readonly CancellationTokenSource _stoppingCts Field Value Type Description CancellationTokenSource Methods Dispose() Declaration public virtual void Dispose() ExecuteAsync(CancellationToken) Declaration protected abstract Task ExecuteAsync(CancellationToken stoppingToken) Parameters Type Name Description CancellationToken stoppingToken Returns Type Description Task StartAsync(CancellationToken) Declaration public virtual Task StartAsync(CancellationToken cancellationToken) Parameters Type Name Description CancellationToken cancellationToken Returns Type Description Task StopAsync(CancellationToken) Declaration public virtual async Task StopAsync(CancellationToken cancellationToken) Parameters Type Name Description CancellationToken cancellationToken Returns Type Description Task Implements IDisposable"
+  "api/CG.Blazor.Pages.Help.About.AssemblyModel.html": {
+    "href": "api/CG.Blazor.Pages.Help.About.AssemblyModel.html",
+    "title": "Class AssemblyModel",
+    "keywords": "Class AssemblyModel This class represents the model for a .NET assembly. Inheritance System.Object AssemblyModel Inherited Members System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : CG.Blazor.Pages.Help.About Assembly : CG.Blazor.dll Syntax public class AssemblyModel Properties Company This property contains the company of the assembly. Declaration public string Company { get; set; } Property Value Type Description System.String Name This property contains the name of the assembly. Declaration public string Name { get; set; } Property Value Type Description System.String Version This property contains the version of the assembly. Declaration public string Version { get; set; } Property Value Type Description System.String"
   },
-  "api/CG.Blazor.Services.html": {
-    "href": "api/CG.Blazor.Services.html",
-    "title": "Namespace CG.Blazor.Services",
-    "keywords": "Namespace CG.Blazor.Services Classes BackgroundService Base class for implementing a long running ."
+  "api/CG.Blazor.Pages.Help.About.html": {
+    "href": "api/CG.Blazor.Pages.Help.About.html",
+    "title": "Namespace CG.Blazor.Pages.Help.About",
+    "keywords": "Namespace CG.Blazor.Pages.Help.About Classes AssemblyModel This class represents the model for a .NET assembly. Index This class is the code-behind for the Index page."
+  },
+  "api/CG.Blazor.Pages.Help.About.Index.html": {
+    "href": "api/CG.Blazor.Pages.Help.About.Index.html",
+    "title": "Class Index",
+    "keywords": "Class Index This class is the code-behind for the Index page. Inheritance System.Object Index Inherited Members System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : CG.Blazor.Pages.Help.About Assembly : CG.Blazor.dll Syntax public class Index Fields _assemblies This field contains the list of assemblies. Declaration protected IEnumerable<AssemblyModel>? _assemblies Field Value Type Description System.Nullable < IEnumerable < AssemblyModel >> _crumbs This field contains a reference to breadcrumbs for the view. Declaration protected readonly List<BreadcrumbItem> _crumbs Field Value Type Description List < BreadcrumbItem > Methods OnInitializedAsync() This method is called by the framework to initialize the page. Declaration protected override async Task OnInitializedAsync() Returns Type Description Task A task to perform the operation."
+  },
+  "api/CG.Blazor.Themes.DefaultTheme-1.html": {
+    "href": "api/CG.Blazor.Themes.DefaultTheme-1.html",
+    "title": "Class DefaultTheme<T>",
+    "keywords": "Class DefaultTheme<T> This class represents the default MudBlazor UI theme for most CODEGATOR related websites and microservices. Inheritance System.Object DefaultTheme<T> Namespace : CG.Blazor.Themes Assembly : CG.Blazor.dll Syntax public abstract class DefaultTheme<T> : MudTheme where T : DefaultTheme<T>, new() Type Parameters Name Description T The type of associated concrete theme Constructors DefaultTheme() This constructor creates a new instance of the DefaultTheme<T> class. Declaration protected DefaultTheme() Methods Instance() This method returns a singleton instance of DefaultTheme<T> Declaration public static DefaultTheme<T> Instance() Returns Type Description DefaultTheme <T> The singleton instance of DefaultTheme<T>"
+  },
+  "api/CG.Blazor.Themes.html": {
+    "href": "api/CG.Blazor.Themes.html",
+    "title": "Namespace CG.Blazor.Themes",
+    "keywords": "Namespace CG.Blazor.Themes Classes DefaultTheme<T> This class represents the default MudBlazor UI theme for most CODEGATOR related websites and microservices."
   },
   "articles/intro.html": {
     "href": "articles/intro.html",
