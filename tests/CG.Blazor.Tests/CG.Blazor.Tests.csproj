@@ -22,8 +22,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\src\CG.Blazor\CG.Blazor.csproj" />
-  </ItemGroup>
-
 </Project>
