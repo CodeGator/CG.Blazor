@@ -1,0 +1,40 @@
+﻿@page "/help/about"
+
+<PageTitle>About</PageTitle>
+
+<MudBreadcrumbs Items="_crumbs"></MudBreadcrumbs>
+
+<div class="container pb-5">
+    <div class="jumbotron">
+        <MudText Typo="Typo.h6" Class="pb-1">About @Assembly.GetEntryAssembly().ReadProduct()</MudText>
+        <MudText Class="px-4" Style="font-size:small" Typo="Typo.body1">@Assembly.GetEntryAssembly().ReadDescription()</MudText>
+        <MudText Style="color: grey; font-size:small" Class="px-4" Typo="Typo.body1">Version: @Assembly.GetEntryAssembly().ReadInformationalVersion()</MudText>
+    </div>
+</div>
+
+<MudTable Items="@_assemblies" Dense Striped>
+    <ToolBarContent>
+        <MudText Typo="Typo.body1">Loaded Assemblies</MudText>
+        <MudSpacer />
+    </ToolBarContent>
+    <HeaderContent>
+        <MudTh><MudTableSortLabel SortBy="new Func<AssemblyModel, object>(x=>x.Name)">Name</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortBy="new Func<AssemblyModel, object>(x=>x.Version)">Version</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortBy="new Func<AssemblyModel, object>(x=>x.Company)">Company</MudTableSortLabel></MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="Name">@context.Name</MudTd>
+        <MudTd DataLabel="Version">@context.Version</MudTd>
+        <MudTd DataLabel="Company">@context.Company</MudTd>
+    </RowTemplate>
+    <PagerContent>
+        <MudTablePager />
+    </PagerContent>
+    <NoRecordsContent>
+        No assemblies were found.
+    </NoRecordsContent>
+    <LoadingContent>
+        Loading assemblies ...
+    </LoadingContent>
+</MudTable>
+

@@ -1,46 +1,53 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-	<GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
-	<Authors>Martin Cook</Authors>
-	<PackageIcon>packageDefaultIcon-50x50.png</PackageIcon>
-	<PackageLicenseExpression>MIT</PackageLicenseExpression>
-	<Copyright>Copyright © 2022 - 2023 by CodeGator. All rights reserved.</Copyright>
-	<Description>This package contains server side Blazor extensions used by other CodeGator packages. 
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
+		<AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Authors>Martin Cook</Authors>
+		<PackageIcon>packageDefaultIcon-50x50.png</PackageIcon>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<Copyright>Copyright © 2020 - 2023 by CodeGator. All rights reserved.</Copyright>
+		<Description>
+			This package contains Blazor extensions used by other CodeGator packages.
 
-Platforms supported:
-    .NET 6.x or above</Description>
-	<Company>CodeGator</Company>
-	<PackageProjectUrl>https://github.com/CodeGator/CG.Blazor</PackageProjectUrl>
-	<RepositoryUrl>https://github.com/CodeGator/CG.Blazor</RepositoryUrl>
-	<RepositoryType>git</RepositoryType>
-	<PackageTags>blazor, CG.Blazor, CodeGator</PackageTags>
-	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-	<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-	<GenerateDocumentationFile>True</GenerateDocumentationFile>
-  </PropertyGroup>
+			Platforms supported:
+			.NET 6.x or above
+		</Description>
+		<Company>CodeGator</Company>
+		<PackageProjectUrl>https://github.com/CodeGator/CG.Blazor</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/CodeGator/CG.Blazor</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>blazor, CG.Blazor, CodeGator</PackageTags>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+	</PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile></DocumentationFile>
-  </PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DocumentationFile></DocumentationFile>
+	</PropertyGroup>
 
 	<ItemGroup>
 		<FrameworkReference Include="Microsoft.AspNetCore.App" />
 	</ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Nerdbank.GitVersioning" Version="3.5.119">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="CG.Reflection" Version="2023.1.4" />
+		<PackageReference Include="MudBlazor" Version="6.1.7" />
+		<PackageReference Include="Nerdbank.GitVersioning" Version="3.5.119">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
 
-  <ItemGroup>
-    <None Include="..\..\packageDefaultIcon-50x50.png">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
-  </ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\packageDefaultIcon-50x50.png">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
 
 </Project>
