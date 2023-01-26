@@ -132,3 +132,28 @@ references:
   fullName.vb: CG.Blazor.Themes.DefaultTheme(Of T).Instance
   nameWithType: DefaultTheme<T>.Instance
   nameWithType.vb: DefaultTheme(Of T).Instance
+- uid: MudBlazor
+  name: MudBlazor
+  href: api/MudBlazor.html
+  commentId: N:MudBlazor
+  fullName: MudBlazor
+  nameWithType: MudBlazor
+- uid: MudBlazor.DialogServiceExtensions
+  name: DialogServiceExtensions
+  href: api/MudBlazor.DialogServiceExtensions.html
+  commentId: T:MudBlazor.DialogServiceExtensions
+  fullName: MudBlazor.DialogServiceExtensions
+  nameWithType: DialogServiceExtensions
+- uid: MudBlazor.DialogServiceExtensions.ShowErrorBox(MudBlazor.IDialogService,Exception,System.String)
+  name: ShowErrorBox(IDialogService, Exception, String)
+  href: api/MudBlazor.DialogServiceExtensions.html#MudBlazor_DialogServiceExtensions_ShowErrorBox_MudBlazor_IDialogService_Exception_System_String_
+  commentId: M:MudBlazor.DialogServiceExtensions.ShowErrorBox(MudBlazor.IDialogService,Exception,System.String)
+  fullName: MudBlazor.DialogServiceExtensions.ShowErrorBox(MudBlazor.IDialogService, Exception, System.String)
+  nameWithType: DialogServiceExtensions.ShowErrorBox(IDialogService, Exception, String)
+- uid: MudBlazor.DialogServiceExtensions.ShowErrorBox*
+  name: ShowErrorBox
+  href: api/MudBlazor.DialogServiceExtensions.html#MudBlazor_DialogServiceExtensions_ShowErrorBox_
+  commentId: Overload:MudBlazor.DialogServiceExtensions.ShowErrorBox
+  isSpec: "True"
+  fullName: MudBlazor.DialogServiceExtensions.ShowErrorBox
+  nameWithType: DialogServiceExtensions.ShowErrorBox

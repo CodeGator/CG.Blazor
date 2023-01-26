@@ -24,6 +24,16 @@
     "title": "Namespace CG.Blazor.Themes",
     "keywords": "Namespace CG.Blazor.Themes Classes DefaultTheme<T> This class represents the default MudBlazor UI theme for most CODEGATOR related websites and microservices."
   },
+  "api/MudBlazor.DialogServiceExtensions.html": {
+    "href": "api/MudBlazor.DialogServiceExtensions.html",
+    "title": "Class DialogServiceExtensions",
+    "keywords": "Class DialogServiceExtensions This class contains extension methods related to the MudBlazor.IDialogService type. Inheritance System.Object DialogServiceExtensions Inherited Members System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : MudBlazor Assembly : CG.Blazor.dll Syntax public static class DialogServiceExtensions Methods ShowErrorBox(IDialogService, Exception, String) This method shows an error message, formatted from the given exception. Declaration public static async Task ShowErrorBox(this IDialogService dialogService, Exception ex, string title) Parameters Type Name Description MudBlazor.IDialogService dialogService The dialog service to use for the operation. Exception ex The exception to use for the operation. System.String title The title to use for the operation. Returns Type Description Task A task to perform the operation."
+  },
+  "api/MudBlazor.html": {
+    "href": "api/MudBlazor.html",
+    "title": "Namespace MudBlazor",
+    "keywords": "Namespace MudBlazor Classes DialogServiceExtensions This class contains extension methods related to the MudBlazor.IDialogService type."
+  },
   "articles/intro.html": {
     "href": "articles/intro.html",
     "title": "Add your introductions here!",

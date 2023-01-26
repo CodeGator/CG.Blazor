@@ -73,12 +73,36 @@
       "version": ""
     },
     {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MudBlazor.DialogServiceExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MudBlazor.DialogServiceExtensions.html",
+          "hash": "F0dpMga87Bm73ZTH+ejmHWAGLhlvVRnFTjetK/WT0hk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MudBlazor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MudBlazor.html",
+          "hash": "1RZ4N4w7jPAgeJbC3kTlHFYH3q7r/hebpBRdF5cJ+dc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "api/toc.yml",
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "RR2EV4UbEvrRNg3lqk14K7crrCiMREIC0ziUx1noCHQ="
+          "hash": "gIelJb+vcK+btWLv203hOLTFFBHGmqP6zAFLmIdNooQ="
         }
       },
       "is_incremental": false,
@@ -197,7 +221,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 5,
+          "total_file_count": 7,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
