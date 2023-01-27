@@ -1,7 +1,4 @@
 ﻿
-using Microsoft.AspNetCore.Components;
-using System.Text;
-
 namespace MudBlazor;
 
 /// <summary>
@@ -17,8 +14,7 @@ public static class DialogServiceExtensions
     #region Public methods
 
     /// <summary>
-    /// This method shows an error message, formatted from the given 
-    /// exception.
+    /// This method shows an error message, formatted from the given exception.
     /// </summary>
     /// <param name="dialogService">The dialog service to use for the operation.</param>
     /// <param name="ex">The exception to use for the operation.</param>
@@ -27,7 +23,7 @@ public static class DialogServiceExtensions
     public static async Task ShowErrorBox(
         this IDialogService dialogService,
         Exception ex,
-        string title
+        string title = "Something broke!"
         )
     {
         // Validate the parameters before attempting to use them.

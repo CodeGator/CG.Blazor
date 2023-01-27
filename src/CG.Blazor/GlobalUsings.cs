@@ -5,3 +5,5 @@ global using System;
 global using System.Threading.Tasks;
 global using System.Linq;
 global using CG.Validations;
+global using Microsoft.AspNetCore.Components;
+global using System.Text;
