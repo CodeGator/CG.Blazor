@@ -19,28 +19,31 @@ public static class DialogServiceExtensions
     /// <param name="dialogService">The dialog service to use for the operation.</param>
     /// <param name="exception">The exception to use for the operation.</param>
     /// <param name="title">The title to use for the operation.</param>
+    /// <param name="caption">The caption to use for the operation.</param>
+    /// <param name="delimiter">The delimiter to use for parsing embedded
+    /// lists in the error message.</param>
     /// <returns>A task to perform the operation.</returns>
     public static async Task ShowErrorBox(
         this IDialogService dialogService,
         Exception exception,
-        string title = "Something broke!"
+        string title = "Something broke!",
+        string caption = "",
+        char delimiter = '|'
         )
     {
         // Validate the parameters before attempting to use them.
         Guard.Instance().ThrowIfNull(dialogService, nameof(dialogService))
             .ThrowIfNull(exception, nameof(exception));
 
-        // Should we supply a default title?
-        if (string.IsNullOrWhiteSpace(title)) 
-        {
-            title = "Something broke!";
-        }
-
         // Create the body of the message.
         var sb = new StringBuilder();
-        sb.Append($"<b>{title}</b><br /><br />");
-        sb.Append($"<ul>");
-        sb.Append($"<li>{exception.Message}</li>");
+
+        // Was a title specified?
+        if (!string.IsNullOrEmpty(title))
+        {
+            sb.Append($"<b>{title}</b><br /><br />");
+        }
+        sb.Append($"<ul><li>{exception.Message}</li>");
 
         // Does the base error contain data?
         if (exception.GetBaseException().Data.Count > 0)
@@ -52,6 +55,7 @@ public static class DialogServiceExtensions
                 sb.Append($"<li>{obj}</li>");
             }
 
+            // Close the list and start a new one.
             sb.Append($"</ul><br /><ul>");
         }
 
@@ -59,7 +63,7 @@ public static class DialogServiceExtensions
         var msg = exception.GetBaseException().Message;
 
         // Look for delimiters in the message.
-        var parts = msg.Split('|');
+        var parts = msg.Split(delimiter);
 
         // Did wee find any?
         if (parts.Length > 1)
@@ -77,11 +81,12 @@ public static class DialogServiceExtensions
             sb.Append($"<li>{msg}</li>");
         }
 
+        // End the list.
         sb.Append($"</ul>");
 
         // Display the formatted error message.
         await dialogService.ShowMessageBox(
-                title: title,
+                title: caption,
                 markupMessage: (MarkupString)sb.ToString()
                 );
     }
