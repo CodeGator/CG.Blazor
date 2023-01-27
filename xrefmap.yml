@@ -144,12 +144,12 @@ references:
   commentId: T:MudBlazor.DialogServiceExtensions
   fullName: MudBlazor.DialogServiceExtensions
   nameWithType: DialogServiceExtensions
-- uid: MudBlazor.DialogServiceExtensions.ShowErrorBox(MudBlazor.IDialogService,Exception,System.String)
-  name: ShowErrorBox(IDialogService, Exception, String)
-  href: api/MudBlazor.DialogServiceExtensions.html#MudBlazor_DialogServiceExtensions_ShowErrorBox_MudBlazor_IDialogService_Exception_System_String_
-  commentId: M:MudBlazor.DialogServiceExtensions.ShowErrorBox(MudBlazor.IDialogService,Exception,System.String)
-  fullName: MudBlazor.DialogServiceExtensions.ShowErrorBox(MudBlazor.IDialogService, Exception, System.String)
-  nameWithType: DialogServiceExtensions.ShowErrorBox(IDialogService, Exception, String)
+- uid: MudBlazor.DialogServiceExtensions.ShowErrorBox(MudBlazor.IDialogService,Exception,System.String,System.String,System.Char)
+  name: ShowErrorBox(IDialogService, Exception, String, String, Char)
+  href: api/MudBlazor.DialogServiceExtensions.html#MudBlazor_DialogServiceExtensions_ShowErrorBox_MudBlazor_IDialogService_Exception_System_String_System_String_System_Char_
+  commentId: M:MudBlazor.DialogServiceExtensions.ShowErrorBox(MudBlazor.IDialogService,Exception,System.String,System.String,System.Char)
+  fullName: MudBlazor.DialogServiceExtensions.ShowErrorBox(MudBlazor.IDialogService, Exception, System.String, System.String, System.Char)
+  nameWithType: DialogServiceExtensions.ShowErrorBox(IDialogService, Exception, String, String, Char)
 - uid: MudBlazor.DialogServiceExtensions.ShowErrorBox*
   name: ShowErrorBox
   href: api/MudBlazor.DialogServiceExtensions.html#MudBlazor_DialogServiceExtensions_ShowErrorBox_
