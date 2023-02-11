@@ -1,0 +1,8 @@
+﻿@namespace CG.Blazor.Components
+@inherits MudComponentBase
+@implements IAsyncDisposable
+
+@if (Parent?.SelectedPanel == this)
+{
+    @ChildContent
+}

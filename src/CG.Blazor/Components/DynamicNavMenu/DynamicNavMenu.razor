@@ -1,0 +1,44 @@
+﻿@namespace CG.Blazor.Components
+@inherits MudNavMenu
+
+@if (ChildContentOnTop)
+{
+    <div @attributes="UserAttributes" class="@Classname" style="@Style">
+        @ChildContent
+    </div>
+}
+
+@foreach (var menuItem in _menuItems.Where(x => x.GroupTitle?.Length == 0)
+    .OrderBy(x => x.Priority).ThenBy(x => x.MenuTitle))
+{
+    <MudNavLink IconColor=@(menuItem.MenuColor ?? Color.Inherit) 
+                Match=@(menuItem.MenuMatch ?? NavLinkMatch.Prefix)
+                Icon=@menuItem.MenuIcon 
+                Disabled=@menuItem.MenuDisabled
+                Href=@menuItem.MenuRoute>@menuItem.MenuTitle</MudNavLink>
+}
+
+@foreach (var menuItem in _menuItems.Where(x => x.GroupTitle?.Length > 0)
+   .OrderBy(x => x.Priority).ThenBy(x => x.GroupTitle))
+{
+    <MudNavGroup Title=@menuItem.GroupTitle 
+                 Icon=@menuItem.GroupIcon 
+                 IconColor=@(menuItem.GroupColor ?? Color.Inherit)>
+        @foreach (var groupItem in _menuItems.Where(x => x.GroupTitle == menuItem.GroupTitle)
+            .OrderBy(x => x.Priority).ThenBy(x => x.MenuTitle))
+        {
+            <MudNavLink IconColor=@(groupItem.MenuColor ?? Color.Inherit)
+                        Match=@(groupItem.MenuMatch ?? NavLinkMatch.Prefix) 
+                        Icon=@groupItem.MenuIcon
+                        Disabled=@menuItem.MenuDisabled
+                        Href=@groupItem.MenuRoute>@groupItem.MenuTitle</MudNavLink>
+        }
+    </MudNavGroup>
+}
+
+@if (!ChildContentOnTop)
+{
+    <div @attributes="UserAttributes" class="@Classname" style="@Style">
+        @ChildContent
+    </div>
+}

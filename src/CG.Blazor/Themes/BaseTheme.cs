@@ -2,12 +2,11 @@
 namespace CG.Blazor.Themes;
 
 /// <summary>
-/// This class represents the default MudBlazor UI theme for most CODEGATOR
-/// related websites and microservices.
+/// This class is a base implementation of a default MudBlazor UI theme.
 /// </summary>
 /// <typeparam name="T">The type of associated concrete theme</typeparam>
-public abstract class DefaultTheme<T> : MudTheme 
-    where T : DefaultTheme<T>, new()
+public abstract class BaseTheme<T> : MudTheme 
+    where T : BaseTheme<T>, new()
 {
     // *******************************************************************
     // Fields.
@@ -18,7 +17,7 @@ public abstract class DefaultTheme<T> : MudTheme
     /// <summary>
     /// This field contains the singleton theme instance.
     /// </summary>
-    private static DefaultTheme<T>? _instance;
+    private static BaseTheme<T>? _instance;
 
     #endregion
 
@@ -29,10 +28,10 @@ public abstract class DefaultTheme<T> : MudTheme
     #region Constructors
 
     /// <summary>
-    /// This constructor creates a new instance of the <see cref="DefaultTheme{T}"/>
+    /// This constructor creates a new instance of the <see cref="BaseTheme{T}"/>
     /// class.
     /// </summary>
-    protected DefaultTheme()
+    protected BaseTheme()
     {
         // Create the default palette
         Palette = new Palette()
@@ -170,10 +169,10 @@ public abstract class DefaultTheme<T> : MudTheme
     #region Public methods
 
     /// <summary>
-    /// This method returns a singleton instance of <see cref="DefaultTheme{T}"/>
+    /// This method returns a singleton instance of <see cref="BaseTheme{T}"/>
     /// </summary>
-    /// <returns>The singleton instance of <see cref="DefaultTheme{T}"/></returns>
-    public static DefaultTheme<T> Instance()
+    /// <returns>The singleton instance of <see cref="BaseTheme{T}"/></returns>
+    public static BaseTheme<T> Instance()
     {
         // Should we create the instance?
         if (null == _instance)

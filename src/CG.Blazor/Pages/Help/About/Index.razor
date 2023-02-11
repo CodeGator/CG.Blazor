@@ -6,13 +6,13 @@
 
 <div class="container pb-5">
     <div class="jumbotron">
-        <MudText Typo="Typo.h6" Class="pb-1">About @Assembly.GetEntryAssembly().ReadTitle()</MudText>
-        <MudText Class="px-4" Style="font-size:small" Typo="Typo.body1">@Assembly.GetEntryAssembly().ReadDescription()</MudText>
-        @if (@Assembly.GetEntryAssembly().ReadProduct() != @Assembly.GetEntryAssembly().ReadTitle())
+        <MudText Typo="Typo.h6" Class="pb-1">About @Assembly.GetEntryAssembly()?.ReadTitle()</MudText>
+        <MudText Class="px-4" Style="font-size:small" Typo="Typo.body1">@Assembly.GetEntryAssembly()?.ReadDescription()</MudText>
+        @if (@Assembly.GetEntryAssembly()?.ReadProduct() != @Assembly.GetEntryAssembly()?.ReadTitle())
         {
-            <MudText Class="px-4" Style="font-size:small" Typo="Typo.body2">Product: @Assembly.GetEntryAssembly().ReadProduct()</MudText>
+            <MudText Class="px-4" Style="font-size:small" Typo="Typo.body2">Product: @Assembly.GetEntryAssembly()?.ReadProduct()</MudText>
         }
-        <MudText Style="color: grey; font-size:small" Class="px-4" Typo="Typo.body1">Version: @Assembly.GetEntryAssembly().ReadInformationalVersion()</MudText>
+        <MudText Style="color: grey; font-size:small" Class="px-4" Typo="Typo.body1">Version: @Assembly.GetEntryAssembly()?.ReadInformationalVersion()</MudText>
     </div>
 </div>
 

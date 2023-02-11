@@ -1,4 +1,7 @@
 ﻿
+using System.Globalization;
+using System.Runtime.InteropServices;
+
 namespace CG.Blazor.Pages.Help.About;
 
 /// <summary>
@@ -48,7 +51,7 @@ public partial class Index
             {
                 Name = !string.IsNullOrEmpty(x.GetName().Name ?? "unknown") ? x.GetName().Name ?? "unknown" : "unknown",
                 Version = !string.IsNullOrEmpty(x.ReadInformationalVersion()) ? x.ReadInformationalVersion() : "unknown",
-                Company = !string.IsNullOrEmpty(x.ReadCompany()) ? x.ReadCompany() : "unknown",
+                Company = !string.IsNullOrEmpty(x.ReadCompany()) ? x.ReadCompany() : "unknown"
             }).OrderBy(x => x.Company).ThenBy(x => x.Name)
             .ToList();
 
@@ -57,6 +60,7 @@ public partial class Index
     }
 
     #endregion
+
 }
 
 /// <summary>
@@ -84,6 +88,11 @@ public class AssemblyModel
     /// This property contains the company of the assembly.
     /// </summary>
     public string Company { get; set; } = null!;
+
+    /// <summary>
+    /// This property contains the creation date of the assembly.
+    /// </summary>
+    public DateTime CreationDate { get; set; }
 
     #endregion
 }
