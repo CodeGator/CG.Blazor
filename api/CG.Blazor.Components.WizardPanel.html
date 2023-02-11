@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class AssemblyModel
+    <title>Class WizardPanel
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class AssemblyModel
+    <meta name="title" content="Class WizardPanel
    ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -78,59 +78,64 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CG.Blazor.Pages.Help.About.AssemblyModel">
+            <article class="content wrap" id="_content" data-uid="CG.Blazor.Components.WizardPanel">
   
   
-  <h1 id="CG_Blazor_Pages_Help_About_AssemblyModel" data-uid="CG.Blazor.Pages.Help.About.AssemblyModel" class="text-break">Class AssemblyModel
+  <h1 id="CG_Blazor_Components_WizardPanel" data-uid="CG.Blazor.Components.WizardPanel" class="text-break">Class WizardPanel
   </h1>
-  <div class="markdown level0 summary"><p>This class represents the model for a .NET assembly.</p>
+  <div class="markdown level0 summary"><p>This class is the code-behind for the <a class="xref" href="CG.Blazor.Components.WizardPanel.html">WizardPanel</a>
+razor component.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">AssemblyModel</span></div>
+    <div class="level1"><span class="xref">WizardPanel</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">IAsyncDisposable</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="CG.Blazor.Pages.Help.About.html">CG.Blazor.Pages.Help.About</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CG.Blazor.Components.html">CG.Blazor.Components</a></h6>
   <h6><strong>Assembly</strong>: CG.Blazor.dll</h6>
-  <h5 id="CG_Blazor_Pages_Help_About_AssemblyModel_syntax">Syntax</h5>
+  <h5 id="CG_Blazor_Components_WizardPanel_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AssemblyModel</code></pre>
+    <pre><code class="lang-csharp hljs">public class WizardPanel : MudComponentBase</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
-  <a id="CG_Blazor_Pages_Help_About_AssemblyModel_Company_" data-uid="CG.Blazor.Pages.Help.About.AssemblyModel.Company*"></a>
-  <h4 id="CG_Blazor_Pages_Help_About_AssemblyModel_Company" data-uid="CG.Blazor.Pages.Help.About.AssemblyModel.Company">Company</h4>
-  <div class="markdown level1 summary"><p>This property contains the company of the assembly.</p>
+  <a id="CG_Blazor_Components_WizardPanel_ChildContent_" data-uid="CG.Blazor.Components.WizardPanel.ChildContent*"></a>
+  <h4 id="CG_Blazor_Components_WizardPanel_ChildContent" data-uid="CG.Blazor.Components.WizardPanel.ChildContent">ChildContent</h4>
+  <div class="markdown level1 summary"><p>This property contains the child content for the component.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Company { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public RenderFragment? ChildContent { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">RenderFragment</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_WizardPanel_Description_" data-uid="CG.Blazor.Components.WizardPanel.Description*"></a>
+  <h4 id="CG_Blazor_Components_WizardPanel_Description" data-uid="CG.Blazor.Components.WizardPanel.Description">Description</h4>
+  <div class="markdown level1 summary"><p>This property contains the description for the component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Description { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -147,14 +152,14 @@
       </tr>
     </tbody>
   </table>
-  <a id="CG_Blazor_Pages_Help_About_AssemblyModel_CreationDate_" data-uid="CG.Blazor.Pages.Help.About.AssemblyModel.CreationDate*"></a>
-  <h4 id="CG_Blazor_Pages_Help_About_AssemblyModel_CreationDate" data-uid="CG.Blazor.Pages.Help.About.AssemblyModel.CreationDate">CreationDate</h4>
-  <div class="markdown level1 summary"><p>This property contains the creation date of the assembly.</p>
+  <a id="CG_Blazor_Components_WizardPanel_Parent_" data-uid="CG.Blazor.Components.WizardPanel.Parent*"></a>
+  <h4 id="CG_Blazor_Components_WizardPanel_Parent" data-uid="CG.Blazor.Components.WizardPanel.Parent">Parent</h4>
+  <div class="markdown level1 summary"><p>This property contains the parent of the component.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DateTime CreationDate { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">protected Wizard Parent { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -166,43 +171,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">DateTime</span></td>
+        <td><a class="xref" href="CG.Blazor.Components.Wizard.html">Wizard</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="CG_Blazor_Pages_Help_About_AssemblyModel_Name_" data-uid="CG.Blazor.Pages.Help.About.AssemblyModel.Name*"></a>
-  <h4 id="CG_Blazor_Pages_Help_About_AssemblyModel_Name" data-uid="CG.Blazor.Pages.Help.About.AssemblyModel.Name">Name</h4>
-  <div class="markdown level1 summary"><p>This property contains the name of the assembly.</p>
+  <a id="CG_Blazor_Components_WizardPanel_Title_" data-uid="CG.Blazor.Components.WizardPanel.Title*"></a>
+  <h4 id="CG_Blazor_Components_WizardPanel_Title" data-uid="CG.Blazor.Components.WizardPanel.Title">Title</h4>
+  <div class="markdown level1 summary"><p>This property contains the title for the component.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Blazor_Pages_Help_About_AssemblyModel_Version_" data-uid="CG.Blazor.Pages.Help.About.AssemblyModel.Version*"></a>
-  <h4 id="CG_Blazor_Pages_Help_About_AssemblyModel_Version" data-uid="CG.Blazor.Pages.Help.About.AssemblyModel.Version">Version</h4>
-  <div class="markdown level1 summary"><p>This property contains the version of the assembly.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Version { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string Title { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -219,6 +200,46 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="CG_Blazor_Components_WizardPanel_DisposeAsync_" data-uid="CG.Blazor.Components.WizardPanel.DisposeAsync*"></a>
+  <h4 id="CG_Blazor_Components_WizardPanel_DisposeAsync" data-uid="CG.Blazor.Components.WizardPanel.DisposeAsync">DisposeAsync()</h4>
+  <div class="markdown level1 summary"><p>This method is called to dispose of the component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async ValueTask DisposeAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ValueTask</span></td>
+        <td><p>A task to perform the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_WizardPanel_OnInitialized_" data-uid="CG.Blazor.Components.WizardPanel.OnInitialized*"></a>
+  <h4 id="CG_Blazor_Components_WizardPanel_OnInitialized" data-uid="CG.Blazor.Components.WizardPanel.OnInitialized">OnInitialized()</h4>
+  <div class="markdown level1 summary"><p>This method is called to initialize the component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnInitialized()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">IAsyncDisposable</span>
+  </div>
 </article>
           </div>
           

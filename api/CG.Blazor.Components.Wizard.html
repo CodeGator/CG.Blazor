@@ -1,0 +1,1413 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Wizard
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Wizard
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CG.Blazor.Components.Wizard">
+  
+  
+  <h1 id="CG_Blazor_Components_Wizard" data-uid="CG.Blazor.Components.Wizard" class="text-break">Class Wizard
+  </h1>
+  <div class="markdown level0 summary"><p>This class is the code-behind for the <a class="xref" href="CG.Blazor.Components.Wizard.html">Wizard</a> razor
+component.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Wizard</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">IAsyncDisposable</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CG.Blazor.Components.html">CG.Blazor.Components</a></h6>
+  <h6><strong>Assembly</strong>: CG.Blazor.dll</h6>
+  <h5 id="CG_Blazor_Components_Wizard_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Wizard : MudComponentBase</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="CG_Blazor_Components_Wizard_ActionContent_" data-uid="CG.Blazor.Components.Wizard.ActionContent*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_ActionContent" data-uid="CG.Blazor.Components.Wizard.ActionContent">ActionContent</h4>
+  <div class="markdown level1 summary"><p>This property contains the action content for the component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RenderFragment? ActionContent { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">RenderFragment</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_AllowActiveTimeline_" data-uid="CG.Blazor.Components.Wizard.AllowActiveTimeline*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_AllowActiveTimeline" data-uid="CG.Blazor.Components.Wizard.AllowActiveTimeline">AllowActiveTimeline</h4>
+  <div class="markdown level1 summary"><p>This property indicates whether or not to the timeline should respond
+to mouse clicks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AllowActiveTimeline { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_ButtonVariant_" data-uid="CG.Blazor.Components.Wizard.ButtonVariant*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_ButtonVariant" data-uid="CG.Blazor.Components.Wizard.ButtonVariant">ButtonVariant</h4>
+  <div class="markdown level1 summary"><p>This property contains the variant for the wizard buttons.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Variant ButtonVariant { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Variant</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_CancelButtonColor_" data-uid="CG.Blazor.Components.Wizard.CancelButtonColor*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_CancelButtonColor" data-uid="CG.Blazor.Components.Wizard.CancelButtonColor">CancelButtonColor</h4>
+  <div class="markdown level1 summary"><p>This property contains the color for the cancel button.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color CancelButtonColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_CancelButtonTooltip_" data-uid="CG.Blazor.Components.Wizard.CancelButtonTooltip*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_CancelButtonTooltip" data-uid="CG.Blazor.Components.Wizard.CancelButtonTooltip">CancelButtonTooltip</h4>
+  <div class="markdown level1 summary"><p>This property contains the tooltip for the cancel button.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CancelButtonTooltip { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_CanSkipAhead_" data-uid="CG.Blazor.Components.Wizard.CanSkipAhead*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_CanSkipAhead" data-uid="CG.Blazor.Components.Wizard.CanSkipAhead">CanSkipAhead</h4>
+  <div class="markdown level1 summary"><p>This property indicates whether the wizard can skip ahead
+pages, or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanSkipAhead { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_Classname_" data-uid="CG.Blazor.Components.Wizard.Classname*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_Classname" data-uid="CG.Blazor.Components.Wizard.Classname">Classname</h4>
+  <div class="markdown level1 summary"><p>This property contains the CSS class for the component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string Classname { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_Description_" data-uid="CG.Blazor.Components.Wizard.Description*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_Description" data-uid="CG.Blazor.Components.Wizard.Description">Description</h4>
+  <div class="markdown level1 summary"><p>This property contains the description for the wizard.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Description { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_DescriptionColor_" data-uid="CG.Blazor.Components.Wizard.DescriptionColor*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_DescriptionColor" data-uid="CG.Blazor.Components.Wizard.DescriptionColor">DescriptionColor</h4>
+  <div class="markdown level1 summary"><p>This property contains the color for the wizard descriptions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color DescriptionColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_DescriptionTypo_" data-uid="CG.Blazor.Components.Wizard.DescriptionTypo*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_DescriptionTypo" data-uid="CG.Blazor.Components.Wizard.DescriptionTypo">DescriptionTypo</h4>
+  <div class="markdown level1 summary"><p>This property contains the typography for the wizard descriptions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Typo DescriptionTypo { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Typo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_DisableNextButton_" data-uid="CG.Blazor.Components.Wizard.DisableNextButton*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_DisableNextButton" data-uid="CG.Blazor.Components.Wizard.DisableNextButton">DisableNextButton</h4>
+  <div class="markdown level1 summary"><p>This property indicates whether the next button should be disabled, or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DisableNextButton { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_DisablePreviousButton_" data-uid="CG.Blazor.Components.Wizard.DisablePreviousButton*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_DisablePreviousButton" data-uid="CG.Blazor.Components.Wizard.DisablePreviousButton">DisablePreviousButton</h4>
+  <div class="markdown level1 summary"><p>This property indicates whether the previous button should be disabled, or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DisablePreviousButton { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_DotColor_" data-uid="CG.Blazor.Components.Wizard.DotColor*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_DotColor" data-uid="CG.Blazor.Components.Wizard.DotColor">DotColor</h4>
+  <div class="markdown level1 summary"><p>This property contains the color for timeline dots.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color DotColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_Elevation_" data-uid="CG.Blazor.Components.Wizard.Elevation*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_Elevation" data-uid="CG.Blazor.Components.Wizard.Elevation">Elevation</h4>
+  <div class="markdown level1 summary"><p>This property contains the elevation for the component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Elevation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_FinishButtonColor_" data-uid="CG.Blazor.Components.Wizard.FinishButtonColor*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_FinishButtonColor" data-uid="CG.Blazor.Components.Wizard.FinishButtonColor">FinishButtonColor</h4>
+  <div class="markdown level1 summary"><p>This property contains the color for the finish button.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color FinishButtonColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_FinishButtonTooltip_" data-uid="CG.Blazor.Components.Wizard.FinishButtonTooltip*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_FinishButtonTooltip" data-uid="CG.Blazor.Components.Wizard.FinishButtonTooltip">FinishButtonTooltip</h4>
+  <div class="markdown level1 summary"><p>This property contains the tooltip for the finish button.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string FinishButtonTooltip { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_HideActions_" data-uid="CG.Blazor.Components.Wizard.HideActions*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_HideActions" data-uid="CG.Blazor.Components.Wizard.HideActions">HideActions</h4>
+  <div class="markdown level1 summary"><p>This property indicates whether to hide the actions area, or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HideActions { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_HideCancelButton_" data-uid="CG.Blazor.Components.Wizard.HideCancelButton*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_HideCancelButton" data-uid="CG.Blazor.Components.Wizard.HideCancelButton">HideCancelButton</h4>
+  <div class="markdown level1 summary"><p>This property indicates whether to show the cancel button, or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HideCancelButton { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_HideFinishButton_" data-uid="CG.Blazor.Components.Wizard.HideFinishButton*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_HideFinishButton" data-uid="CG.Blazor.Components.Wizard.HideFinishButton">HideFinishButton</h4>
+  <div class="markdown level1 summary"><p>This property indicates whether to show the finish button, or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HideFinishButton { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_HideHeader_" data-uid="CG.Blazor.Components.Wizard.HideHeader*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_HideHeader" data-uid="CG.Blazor.Components.Wizard.HideHeader">HideHeader</h4>
+  <div class="markdown level1 summary"><p>This property indicates whether to hide the header area, or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HideHeader { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_HideTimeline_" data-uid="CG.Blazor.Components.Wizard.HideTimeline*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_HideTimeline" data-uid="CG.Blazor.Components.Wizard.HideTimeline">HideTimeline</h4>
+  <div class="markdown level1 summary"><p>This property indicates whether to hide the header timeline, or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HideTimeline { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_IndexChanged_" data-uid="CG.Blazor.Components.Wizard.IndexChanged*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_IndexChanged" data-uid="CG.Blazor.Components.Wizard.IndexChanged">IndexChanged</h4>
+  <div class="markdown level1 summary"><p>This event is raised whenever the index changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventCallback&lt;IndexChangedEventArgs&gt; IndexChanged { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventCallback</span>&lt;<a class="xref" href="CG.Blazor.Components.IndexChangedEventArgs.html">IndexChangedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_IsFinishVisible_" data-uid="CG.Blazor.Components.Wizard.IsFinishVisible*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_IsFinishVisible" data-uid="CG.Blazor.Components.Wizard.IsFinishVisible">IsFinishVisible</h4>
+  <div class="markdown level1 summary"><p>This property indicates whether the finish button should be
+hidden, or not. True if it should be hidden; False otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFinishVisible { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_IsNextDisabled_" data-uid="CG.Blazor.Components.Wizard.IsNextDisabled*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_IsNextDisabled" data-uid="CG.Blazor.Components.Wizard.IsNextDisabled">IsNextDisabled</h4>
+  <div class="markdown level1 summary"><p>This property indicates whether the next button should be
+disabled, or not. True if it should be disabled; False otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNextDisabled { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_IsPreviousDisabled_" data-uid="CG.Blazor.Components.Wizard.IsPreviousDisabled*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_IsPreviousDisabled" data-uid="CG.Blazor.Components.Wizard.IsPreviousDisabled">IsPreviousDisabled</h4>
+  <div class="markdown level1 summary"><p>This property indicates whether the previous button should be
+disabled, or not. True if it should be disabled; False otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPreviousDisabled { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_NextButtonColor_" data-uid="CG.Blazor.Components.Wizard.NextButtonColor*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_NextButtonColor" data-uid="CG.Blazor.Components.Wizard.NextButtonColor">NextButtonColor</h4>
+  <div class="markdown level1 summary"><p>This property contains the color for the next button.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color NextButtonColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_NextButtonTooltip_" data-uid="CG.Blazor.Components.Wizard.NextButtonTooltip*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_NextButtonTooltip" data-uid="CG.Blazor.Components.Wizard.NextButtonTooltip">NextButtonTooltip</h4>
+  <div class="markdown level1 summary"><p>This property contains the tooltip for the next button.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string NextButtonTooltip { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_Outlined_" data-uid="CG.Blazor.Components.Wizard.Outlined*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_Outlined" data-uid="CG.Blazor.Components.Wizard.Outlined">Outlined</h4>
+  <div class="markdown level1 summary"><p>This property indicates whether the wizard should be outlined,
+or not. True to outline; False otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Outlined { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_Panels_" data-uid="CG.Blazor.Components.Wizard.Panels*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_Panels" data-uid="CG.Blazor.Components.Wizard.Panels">Panels</h4>
+  <div class="markdown level1 summary"><p>This property contains a list of the current wizard panels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;WizardPanel&gt; Panels { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="CG.Blazor.Components.WizardPanel.html">WizardPanel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_PreviousButtonColor_" data-uid="CG.Blazor.Components.Wizard.PreviousButtonColor*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_PreviousButtonColor" data-uid="CG.Blazor.Components.Wizard.PreviousButtonColor">PreviousButtonColor</h4>
+  <div class="markdown level1 summary"><p>This property contains the color for the previous button.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color PreviousButtonColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_PreviousButtonTooltip_" data-uid="CG.Blazor.Components.Wizard.PreviousButtonTooltip*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_PreviousButtonTooltip" data-uid="CG.Blazor.Components.Wizard.PreviousButtonTooltip">PreviousButtonTooltip</h4>
+  <div class="markdown level1 summary"><p>This property contains the tooltip for the previous button.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PreviousButtonTooltip { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_SelectedDotColor_" data-uid="CG.Blazor.Components.Wizard.SelectedDotColor*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_SelectedDotColor" data-uid="CG.Blazor.Components.Wizard.SelectedDotColor">SelectedDotColor</h4>
+  <div class="markdown level1 summary"><p>This property contains the color for selected timeline dot.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color SelectedDotColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_SelectedIndex_" data-uid="CG.Blazor.Components.Wizard.SelectedIndex*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_SelectedIndex" data-uid="CG.Blazor.Components.Wizard.SelectedIndex">SelectedIndex</h4>
+  <div class="markdown level1 summary"><p>This property contains the index of the currently selected panel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? SelectedIndex { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_SelectedPanel_" data-uid="CG.Blazor.Components.Wizard.SelectedPanel*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_SelectedPanel" data-uid="CG.Blazor.Components.Wizard.SelectedPanel">SelectedPanel</h4>
+  <div class="markdown level1 summary"><p>This property contains the currently selected panel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WizardPanel SelectedPanel { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Blazor.Components.WizardPanel.html">WizardPanel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_Square_" data-uid="CG.Blazor.Components.Wizard.Square*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_Square" data-uid="CG.Blazor.Components.Wizard.Square">Square</h4>
+  <div class="markdown level1 summary"><p>This property indicates whether the border radius should be set
+to zero, or not. True to set the border radius to zero; False
+otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Square { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_Title_" data-uid="CG.Blazor.Components.Wizard.Title*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_Title" data-uid="CG.Blazor.Components.Wizard.Title">Title</h4>
+  <div class="markdown level1 summary"><p>This property contains the title for the wizard.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Title { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_TitleColor_" data-uid="CG.Blazor.Components.Wizard.TitleColor*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_TitleColor" data-uid="CG.Blazor.Components.Wizard.TitleColor">TitleColor</h4>
+  <div class="markdown level1 summary"><p>This property contains the color for the wizard title.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color TitleColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_TitleTypo_" data-uid="CG.Blazor.Components.Wizard.TitleTypo*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_TitleTypo" data-uid="CG.Blazor.Components.Wizard.TitleTypo">TitleTypo</h4>
+  <div class="markdown level1 summary"><p>This property contains the typography for the wizard title.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Typo TitleTypo { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Typo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_WizardCancelled_" data-uid="CG.Blazor.Components.Wizard.WizardCancelled*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_WizardCancelled" data-uid="CG.Blazor.Components.Wizard.WizardCancelled">WizardCancelled</h4>
+  <div class="markdown level1 summary"><p>This event is raised whenever the wizard is cancelled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventCallback WizardCancelled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventCallback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_WizardContent_" data-uid="CG.Blazor.Components.Wizard.WizardContent*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_WizardContent" data-uid="CG.Blazor.Components.Wizard.WizardContent">WizardContent</h4>
+  <div class="markdown level1 summary"><p>This property contains the child content for the component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RenderFragment? WizardContent { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">RenderFragment</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_WizardFinished_" data-uid="CG.Blazor.Components.Wizard.WizardFinished*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_WizardFinished" data-uid="CG.Blazor.Components.Wizard.WizardFinished">WizardFinished</h4>
+  <div class="markdown level1 summary"><p>This event is raised whenever the wizard is finished.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventCallback WizardFinished { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventCallback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="CG_Blazor_Components_Wizard_AddPanel_" data-uid="CG.Blazor.Components.Wizard.AddPanel*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_AddPanel_CG_Blazor_Components_WizardPanel_" data-uid="CG.Blazor.Components.Wizard.AddPanel(CG.Blazor.Components.WizardPanel)">AddPanel(WizardPanel)</h4>
+  <div class="markdown level1 summary"><p>This method adds a new wizard panel to the component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AddPanel(WizardPanel panel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Blazor.Components.WizardPanel.html">WizardPanel</a></td>
+        <td><span class="parametername">panel</span></td>
+        <td><p>The wizard panel to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_DisposeAsync_" data-uid="CG.Blazor.Components.Wizard.DisposeAsync*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_DisposeAsync" data-uid="CG.Blazor.Components.Wizard.DisposeAsync">DisposeAsync()</h4>
+  <div class="markdown level1 summary"><p>This method is called to dispose of the component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ValueTask DisposeAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ValueTask</span></td>
+        <td><p>A <see cref="!:ValueTask"></see> for the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_OnAfterRender_" data-uid="CG.Blazor.Components.Wizard.OnAfterRender*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_OnAfterRender_System_Boolean_" data-uid="CG.Blazor.Components.Wizard.OnAfterRender(System.Boolean)">OnAfterRender(Boolean)</h4>
+  <div class="markdown level1 summary"><p>This method is called after a render operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnAfterRender(bool firstRender)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">firstRender</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_OnCancel_" data-uid="CG.Blazor.Components.Wizard.OnCancel*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_OnCancel" data-uid="CG.Blazor.Components.Wizard.OnCancel">OnCancel()</h4>
+  <div class="markdown level1 summary"><p>This method cancels the wizard.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected async Task OnCancel()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>A task to perform the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_OnFinish_" data-uid="CG.Blazor.Components.Wizard.OnFinish*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_OnFinish" data-uid="CG.Blazor.Components.Wizard.OnFinish">OnFinish()</h4>
+  <div class="markdown level1 summary"><p>This method finishes the wizard.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected async Task OnFinish()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>A task to perform the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_OnNext_" data-uid="CG.Blazor.Components.Wizard.OnNext*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_OnNext" data-uid="CG.Blazor.Components.Wizard.OnNext">OnNext()</h4>
+  <div class="markdown level1 summary"><p>This method is called to select the next panel in the wizard.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void OnNext()</code></pre>
+  </div>
+  <a id="CG_Blazor_Components_Wizard_OnParametersSet_" data-uid="CG.Blazor.Components.Wizard.OnParametersSet*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_OnParametersSet" data-uid="CG.Blazor.Components.Wizard.OnParametersSet">OnParametersSet()</h4>
+  <div class="markdown level1 summary"><p>This method is called to set the parameter values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnParametersSet()</code></pre>
+  </div>
+  <a id="CG_Blazor_Components_Wizard_OnPrevious_" data-uid="CG.Blazor.Components.Wizard.OnPrevious*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_OnPrevious" data-uid="CG.Blazor.Components.Wizard.OnPrevious">OnPrevious()</h4>
+  <div class="markdown level1 summary"><p>This method is called to select the previous panel in the wizard.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void OnPrevious()</code></pre>
+  </div>
+  <a id="CG_Blazor_Components_Wizard_RemovePanel_" data-uid="CG.Blazor.Components.Wizard.RemovePanel*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_RemovePanel_CG_Blazor_Components_WizardPanel_" data-uid="CG.Blazor.Components.Wizard.RemovePanel(CG.Blazor.Components.WizardPanel)">RemovePanel(WizardPanel)</h4>
+  <div class="markdown level1 summary"><p>This method removes a panel from the component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task RemovePanel(WizardPanel panel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Blazor.Components.WizardPanel.html">WizardPanel</a></td>
+        <td><span class="parametername">panel</span></td>
+        <td><p>The wizard panel to remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_Select_" data-uid="CG.Blazor.Components.Wizard.Select*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_Select_CG_Blazor_Components_WizardPanel_" data-uid="CG.Blazor.Components.Wizard.Select(CG.Blazor.Components.WizardPanel)">Select(WizardPanel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Select(WizardPanel panel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Blazor.Components.WizardPanel.html">WizardPanel</a></td>
+        <td><span class="parametername">panel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_Select_" data-uid="CG.Blazor.Components.Wizard.Select*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_Select_System_Nullable_System_Int32__" data-uid="CG.Blazor.Components.Wizard.Select(System.Nullable{System.Int32})">Select(Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>This method causes the wizard to navigate to the specified panel index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Select(int? index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The index to use for the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_Wizard_TimelineSelect_" data-uid="CG.Blazor.Components.Wizard.TimelineSelect*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_TimelineSelect_System_Nullable_System_Int32__" data-uid="CG.Blazor.Components.Wizard.TimelineSelect(System.Nullable{System.Int32})">TimelineSelect(Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>This is called when the user clicks the timeline.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void TimelineSelect(int? index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The index to use for the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">IAsyncDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
