@@ -66,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Blazor.Components.IndexChangedEventArgs.html",
-          "hash": "YlJH7SYLcEKoISlRsy/Nn79x3luGeNNpYC9y6l4kXfA="
+          "hash": "R3UDAosff/qY7VCtsgU9h9uVt2UvyBta9yBSpyZSuo8="
         }
       },
       "is_incremental": false,
@@ -78,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Blazor.Components.Wizard.html",
-          "hash": "5s8/CNP5nABV5sv6JyyrEyfOS2j1/lzrACMpc8woR+M="
+          "hash": "cgh/kofPHfnK4CmXpvZpr3Ft8QPaCUBxXs2KLi44xaQ="
         }
       },
       "is_incremental": false,
@@ -90,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Blazor.Components.WizardPanel.html",
-          "hash": "ghVFXTnBcVTDeqTjy32a2lqrAQLhwg3e/d1mNXmO39I="
+          "hash": "9s7j2M3i7TfmQdzwJzsIUyFG8SBKh6v2WD7nc05ciMI="
         }
       },
       "is_incremental": false,
@@ -102,7 +102,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Blazor.Components.html",
-          "hash": "CiJ7d4+F/OWYvjDrCNEUhM114X82nYXHncM1cND9tWk="
+          "hash": "VfQqnayzINgZYA8rkZY8tOe3UfuW3ODHqHxW96jgOo8="
         }
       },
       "is_incremental": false,

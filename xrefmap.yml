@@ -387,19 +387,19 @@ references:
   commentId: T:CG.Blazor.Components.Wizard
   fullName: CG.Blazor.Components.Wizard
   nameWithType: Wizard
-- uid: CG.Blazor.Components.Wizard.ActionContent
-  name: ActionContent
-  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_ActionContent
-  commentId: P:CG.Blazor.Components.Wizard.ActionContent
-  fullName: CG.Blazor.Components.Wizard.ActionContent
-  nameWithType: Wizard.ActionContent
-- uid: CG.Blazor.Components.Wizard.ActionContent*
-  name: ActionContent
-  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_ActionContent_
-  commentId: Overload:CG.Blazor.Components.Wizard.ActionContent
+- uid: CG.Blazor.Components.Wizard.#ctor
+  name: Wizard()
+  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard__ctor
+  commentId: M:CG.Blazor.Components.Wizard.#ctor
+  fullName: CG.Blazor.Components.Wizard.Wizard()
+  nameWithType: Wizard.Wizard()
+- uid: CG.Blazor.Components.Wizard.#ctor*
+  name: Wizard
+  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard__ctor_
+  commentId: Overload:CG.Blazor.Components.Wizard.#ctor
   isSpec: "True"
-  fullName: CG.Blazor.Components.Wizard.ActionContent
-  nameWithType: Wizard.ActionContent
+  fullName: CG.Blazor.Components.Wizard.Wizard
+  nameWithType: Wizard.Wizard
 - uid: CG.Blazor.Components.Wizard.AddPanel(CG.Blazor.Components.WizardPanel)
   name: AddPanel(WizardPanel)
   href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_AddPanel_CG_Blazor_Components_WizardPanel_
@@ -426,19 +426,6 @@ references:
   isSpec: "True"
   fullName: CG.Blazor.Components.Wizard.AllowActiveTimeline
   nameWithType: Wizard.AllowActiveTimeline
-- uid: CG.Blazor.Components.Wizard.ButtonVariant
-  name: ButtonVariant
-  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_ButtonVariant
-  commentId: P:CG.Blazor.Components.Wizard.ButtonVariant
-  fullName: CG.Blazor.Components.Wizard.ButtonVariant
-  nameWithType: Wizard.ButtonVariant
-- uid: CG.Blazor.Components.Wizard.ButtonVariant*
-  name: ButtonVariant
-  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_ButtonVariant_
-  commentId: Overload:CG.Blazor.Components.Wizard.ButtonVariant
-  isSpec: "True"
-  fullName: CG.Blazor.Components.Wizard.ButtonVariant
-  nameWithType: Wizard.ButtonVariant
 - uid: CG.Blazor.Components.Wizard.CancelButtonColor
   name: CancelButtonColor
   href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_CancelButtonColor
@@ -465,6 +452,19 @@ references:
   isSpec: "True"
   fullName: CG.Blazor.Components.Wizard.CancelButtonTooltip
   nameWithType: Wizard.CancelButtonTooltip
+- uid: CG.Blazor.Components.Wizard.CancelButtonVariant
+  name: CancelButtonVariant
+  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_CancelButtonVariant
+  commentId: P:CG.Blazor.Components.Wizard.CancelButtonVariant
+  fullName: CG.Blazor.Components.Wizard.CancelButtonVariant
+  nameWithType: Wizard.CancelButtonVariant
+- uid: CG.Blazor.Components.Wizard.CancelButtonVariant*
+  name: CancelButtonVariant
+  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_CancelButtonVariant_
+  commentId: Overload:CG.Blazor.Components.Wizard.CancelButtonVariant
+  isSpec: "True"
+  fullName: CG.Blazor.Components.Wizard.CancelButtonVariant
+  nameWithType: Wizard.CancelButtonVariant
 - uid: CG.Blazor.Components.Wizard.CanSkipAhead
   name: CanSkipAhead
   href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_CanSkipAhead
@@ -478,6 +478,19 @@ references:
   isSpec: "True"
   fullName: CG.Blazor.Components.Wizard.CanSkipAhead
   nameWithType: Wizard.CanSkipAhead
+- uid: CG.Blazor.Components.Wizard.ChildContent
+  name: ChildContent
+  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_ChildContent
+  commentId: P:CG.Blazor.Components.Wizard.ChildContent
+  fullName: CG.Blazor.Components.Wizard.ChildContent
+  nameWithType: Wizard.ChildContent
+- uid: CG.Blazor.Components.Wizard.ChildContent*
+  name: ChildContent
+  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_ChildContent_
+  commentId: Overload:CG.Blazor.Components.Wizard.ChildContent
+  isSpec: "True"
+  fullName: CG.Blazor.Components.Wizard.ChildContent
+  nameWithType: Wizard.ChildContent
 - uid: CG.Blazor.Components.Wizard.Classname
   name: Classname
   href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_Classname
@@ -621,6 +634,19 @@ references:
   isSpec: "True"
   fullName: CG.Blazor.Components.Wizard.FinishButtonTooltip
   nameWithType: Wizard.FinishButtonTooltip
+- uid: CG.Blazor.Components.Wizard.FinishButtonVariant
+  name: FinishButtonVariant
+  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_FinishButtonVariant
+  commentId: P:CG.Blazor.Components.Wizard.FinishButtonVariant
+  fullName: CG.Blazor.Components.Wizard.FinishButtonVariant
+  nameWithType: Wizard.FinishButtonVariant
+- uid: CG.Blazor.Components.Wizard.FinishButtonVariant*
+  name: FinishButtonVariant
+  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_FinishButtonVariant_
+  commentId: Overload:CG.Blazor.Components.Wizard.FinishButtonVariant
+  isSpec: "True"
+  fullName: CG.Blazor.Components.Wizard.FinishButtonVariant
+  nameWithType: Wizard.FinishButtonVariant
 - uid: CG.Blazor.Components.Wizard.HideActions
   name: HideActions
   href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_HideActions
@@ -686,19 +712,6 @@ references:
   isSpec: "True"
   fullName: CG.Blazor.Components.Wizard.HideTimeline
   nameWithType: Wizard.HideTimeline
-- uid: CG.Blazor.Components.Wizard.IndexChanged
-  name: IndexChanged
-  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_IndexChanged
-  commentId: P:CG.Blazor.Components.Wizard.IndexChanged
-  fullName: CG.Blazor.Components.Wizard.IndexChanged
-  nameWithType: Wizard.IndexChanged
-- uid: CG.Blazor.Components.Wizard.IndexChanged*
-  name: IndexChanged
-  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_IndexChanged_
-  commentId: Overload:CG.Blazor.Components.Wizard.IndexChanged
-  isSpec: "True"
-  fullName: CG.Blazor.Components.Wizard.IndexChanged
-  nameWithType: Wizard.IndexChanged
 - uid: CG.Blazor.Components.Wizard.IsFinishVisible
   name: IsFinishVisible
   href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_IsFinishVisible
@@ -764,6 +777,19 @@ references:
   isSpec: "True"
   fullName: CG.Blazor.Components.Wizard.NextButtonTooltip
   nameWithType: Wizard.NextButtonTooltip
+- uid: CG.Blazor.Components.Wizard.NextButtonVariant
+  name: NextButtonVariant
+  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_NextButtonVariant
+  commentId: P:CG.Blazor.Components.Wizard.NextButtonVariant
+  fullName: CG.Blazor.Components.Wizard.NextButtonVariant
+  nameWithType: Wizard.NextButtonVariant
+- uid: CG.Blazor.Components.Wizard.NextButtonVariant*
+  name: NextButtonVariant
+  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_NextButtonVariant_
+  commentId: Overload:CG.Blazor.Components.Wizard.NextButtonVariant
+  isSpec: "True"
+  fullName: CG.Blazor.Components.Wizard.NextButtonVariant
+  nameWithType: Wizard.NextButtonVariant
 - uid: CG.Blazor.Components.Wizard.OnAfterRender(System.Boolean)
   name: OnAfterRender(Boolean)
   href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_OnAfterRender_System_Boolean_
@@ -777,32 +803,19 @@ references:
   isSpec: "True"
   fullName: CG.Blazor.Components.Wizard.OnAfterRender
   nameWithType: Wizard.OnAfterRender
-- uid: CG.Blazor.Components.Wizard.OnCancel
-  name: OnCancel()
-  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_OnCancel
-  commentId: M:CG.Blazor.Components.Wizard.OnCancel
-  fullName: CG.Blazor.Components.Wizard.OnCancel()
-  nameWithType: Wizard.OnCancel()
-- uid: CG.Blazor.Components.Wizard.OnCancel*
-  name: OnCancel
-  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_OnCancel_
-  commentId: Overload:CG.Blazor.Components.Wizard.OnCancel
+- uid: CG.Blazor.Components.Wizard.OnIndexChanged
+  name: OnIndexChanged
+  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_OnIndexChanged
+  commentId: P:CG.Blazor.Components.Wizard.OnIndexChanged
+  fullName: CG.Blazor.Components.Wizard.OnIndexChanged
+  nameWithType: Wizard.OnIndexChanged
+- uid: CG.Blazor.Components.Wizard.OnIndexChanged*
+  name: OnIndexChanged
+  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_OnIndexChanged_
+  commentId: Overload:CG.Blazor.Components.Wizard.OnIndexChanged
   isSpec: "True"
-  fullName: CG.Blazor.Components.Wizard.OnCancel
-  nameWithType: Wizard.OnCancel
-- uid: CG.Blazor.Components.Wizard.OnFinish
-  name: OnFinish()
-  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_OnFinish
-  commentId: M:CG.Blazor.Components.Wizard.OnFinish
-  fullName: CG.Blazor.Components.Wizard.OnFinish()
-  nameWithType: Wizard.OnFinish()
-- uid: CG.Blazor.Components.Wizard.OnFinish*
-  name: OnFinish
-  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_OnFinish_
-  commentId: Overload:CG.Blazor.Components.Wizard.OnFinish
-  isSpec: "True"
-  fullName: CG.Blazor.Components.Wizard.OnFinish
-  nameWithType: Wizard.OnFinish
+  fullName: CG.Blazor.Components.Wizard.OnIndexChanged
+  nameWithType: Wizard.OnIndexChanged
 - uid: CG.Blazor.Components.Wizard.OnNext
   name: OnNext()
   href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_OnNext
@@ -816,19 +829,6 @@ references:
   isSpec: "True"
   fullName: CG.Blazor.Components.Wizard.OnNext
   nameWithType: Wizard.OnNext
-- uid: CG.Blazor.Components.Wizard.OnParametersSet
-  name: OnParametersSet()
-  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_OnParametersSet
-  commentId: M:CG.Blazor.Components.Wizard.OnParametersSet
-  fullName: CG.Blazor.Components.Wizard.OnParametersSet()
-  nameWithType: Wizard.OnParametersSet()
-- uid: CG.Blazor.Components.Wizard.OnParametersSet*
-  name: OnParametersSet
-  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_OnParametersSet_
-  commentId: Overload:CG.Blazor.Components.Wizard.OnParametersSet
-  isSpec: "True"
-  fullName: CG.Blazor.Components.Wizard.OnParametersSet
-  nameWithType: Wizard.OnParametersSet
 - uid: CG.Blazor.Components.Wizard.OnPrevious
   name: OnPrevious()
   href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_OnPrevious
@@ -842,6 +842,32 @@ references:
   isSpec: "True"
   fullName: CG.Blazor.Components.Wizard.OnPrevious
   nameWithType: Wizard.OnPrevious
+- uid: CG.Blazor.Components.Wizard.OnWizardCancelled
+  name: OnWizardCancelled
+  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_OnWizardCancelled
+  commentId: P:CG.Blazor.Components.Wizard.OnWizardCancelled
+  fullName: CG.Blazor.Components.Wizard.OnWizardCancelled
+  nameWithType: Wizard.OnWizardCancelled
+- uid: CG.Blazor.Components.Wizard.OnWizardCancelled*
+  name: OnWizardCancelled
+  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_OnWizardCancelled_
+  commentId: Overload:CG.Blazor.Components.Wizard.OnWizardCancelled
+  isSpec: "True"
+  fullName: CG.Blazor.Components.Wizard.OnWizardCancelled
+  nameWithType: Wizard.OnWizardCancelled
+- uid: CG.Blazor.Components.Wizard.OnWizardFinished
+  name: OnWizardFinished
+  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_OnWizardFinished
+  commentId: P:CG.Blazor.Components.Wizard.OnWizardFinished
+  fullName: CG.Blazor.Components.Wizard.OnWizardFinished
+  nameWithType: Wizard.OnWizardFinished
+- uid: CG.Blazor.Components.Wizard.OnWizardFinished*
+  name: OnWizardFinished
+  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_OnWizardFinished_
+  commentId: Overload:CG.Blazor.Components.Wizard.OnWizardFinished
+  isSpec: "True"
+  fullName: CG.Blazor.Components.Wizard.OnWizardFinished
+  nameWithType: Wizard.OnWizardFinished
 - uid: CG.Blazor.Components.Wizard.Outlined
   name: Outlined
   href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_Outlined
@@ -894,6 +920,45 @@ references:
   isSpec: "True"
   fullName: CG.Blazor.Components.Wizard.PreviousButtonTooltip
   nameWithType: Wizard.PreviousButtonTooltip
+- uid: CG.Blazor.Components.Wizard.PreviousButtonVariant
+  name: PreviousButtonVariant
+  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_PreviousButtonVariant
+  commentId: P:CG.Blazor.Components.Wizard.PreviousButtonVariant
+  fullName: CG.Blazor.Components.Wizard.PreviousButtonVariant
+  nameWithType: Wizard.PreviousButtonVariant
+- uid: CG.Blazor.Components.Wizard.PreviousButtonVariant*
+  name: PreviousButtonVariant
+  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_PreviousButtonVariant_
+  commentId: Overload:CG.Blazor.Components.Wizard.PreviousButtonVariant
+  isSpec: "True"
+  fullName: CG.Blazor.Components.Wizard.PreviousButtonVariant
+  nameWithType: Wizard.PreviousButtonVariant
+- uid: CG.Blazor.Components.Wizard.RaiseWizardCancelled
+  name: RaiseWizardCancelled()
+  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_RaiseWizardCancelled
+  commentId: M:CG.Blazor.Components.Wizard.RaiseWizardCancelled
+  fullName: CG.Blazor.Components.Wizard.RaiseWizardCancelled()
+  nameWithType: Wizard.RaiseWizardCancelled()
+- uid: CG.Blazor.Components.Wizard.RaiseWizardCancelled*
+  name: RaiseWizardCancelled
+  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_RaiseWizardCancelled_
+  commentId: Overload:CG.Blazor.Components.Wizard.RaiseWizardCancelled
+  isSpec: "True"
+  fullName: CG.Blazor.Components.Wizard.RaiseWizardCancelled
+  nameWithType: Wizard.RaiseWizardCancelled
+- uid: CG.Blazor.Components.Wizard.RaiseWizardFinished
+  name: RaiseWizardFinished()
+  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_RaiseWizardFinished
+  commentId: M:CG.Blazor.Components.Wizard.RaiseWizardFinished
+  fullName: CG.Blazor.Components.Wizard.RaiseWizardFinished()
+  nameWithType: Wizard.RaiseWizardFinished()
+- uid: CG.Blazor.Components.Wizard.RaiseWizardFinished*
+  name: RaiseWizardFinished
+  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_RaiseWizardFinished_
+  commentId: Overload:CG.Blazor.Components.Wizard.RaiseWizardFinished
+  isSpec: "True"
+  fullName: CG.Blazor.Components.Wizard.RaiseWizardFinished
+  nameWithType: Wizard.RaiseWizardFinished
 - uid: CG.Blazor.Components.Wizard.RemovePanel(CG.Blazor.Components.WizardPanel)
   name: RemovePanel(WizardPanel)
   href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_RemovePanel_CG_Blazor_Components_WizardPanel_
@@ -1036,45 +1101,6 @@ references:
   isSpec: "True"
   fullName: CG.Blazor.Components.Wizard.TitleTypo
   nameWithType: Wizard.TitleTypo
-- uid: CG.Blazor.Components.Wizard.WizardCancelled
-  name: WizardCancelled
-  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_WizardCancelled
-  commentId: P:CG.Blazor.Components.Wizard.WizardCancelled
-  fullName: CG.Blazor.Components.Wizard.WizardCancelled
-  nameWithType: Wizard.WizardCancelled
-- uid: CG.Blazor.Components.Wizard.WizardCancelled*
-  name: WizardCancelled
-  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_WizardCancelled_
-  commentId: Overload:CG.Blazor.Components.Wizard.WizardCancelled
-  isSpec: "True"
-  fullName: CG.Blazor.Components.Wizard.WizardCancelled
-  nameWithType: Wizard.WizardCancelled
-- uid: CG.Blazor.Components.Wizard.WizardContent
-  name: WizardContent
-  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_WizardContent
-  commentId: P:CG.Blazor.Components.Wizard.WizardContent
-  fullName: CG.Blazor.Components.Wizard.WizardContent
-  nameWithType: Wizard.WizardContent
-- uid: CG.Blazor.Components.Wizard.WizardContent*
-  name: WizardContent
-  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_WizardContent_
-  commentId: Overload:CG.Blazor.Components.Wizard.WizardContent
-  isSpec: "True"
-  fullName: CG.Blazor.Components.Wizard.WizardContent
-  nameWithType: Wizard.WizardContent
-- uid: CG.Blazor.Components.Wizard.WizardFinished
-  name: WizardFinished
-  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_WizardFinished
-  commentId: P:CG.Blazor.Components.Wizard.WizardFinished
-  fullName: CG.Blazor.Components.Wizard.WizardFinished
-  nameWithType: Wizard.WizardFinished
-- uid: CG.Blazor.Components.Wizard.WizardFinished*
-  name: WizardFinished
-  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_WizardFinished_
-  commentId: Overload:CG.Blazor.Components.Wizard.WizardFinished
-  isSpec: "True"
-  fullName: CG.Blazor.Components.Wizard.WizardFinished
-  nameWithType: Wizard.WizardFinished
 - uid: CG.Blazor.Components.WizardPanel
   name: WizardPanel
   href: api/CG.Blazor.Components.WizardPanel.html
