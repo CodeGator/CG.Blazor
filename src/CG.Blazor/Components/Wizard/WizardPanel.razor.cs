@@ -27,28 +27,28 @@ namespace CG.Blazor.Components
         #region Properties
 
         /// <summary>
-        /// This property contains the parent of the component.
-        /// </summary>
-        [CascadingParameter]
-        internal protected Wizard? Parent { get; set; }
-
-        /// <summary>
-        /// This property contains the child content for the component.
+        /// This property contains the child content for the panel.
         /// </summary>
         [Parameter]
         public RenderFragment? ChildContent { get; set; }
 
         /// <summary>
-        /// This property contains the title for the component.
-        /// </summary>
-        [Parameter]
-        public string? Title { get; set; }
-
-        /// <summary>
-        /// This property contains the description for the component.
+        /// This property contains the description for the panel.
         /// </summary>
         [Parameter]
         public string? Description { get; set; }
+
+        /// <summary>
+        /// This property contains the parent of the panel.
+        /// </summary>
+        [CascadingParameter]
+        internal protected Wizard? Parent { get; set; }
+
+        /// <summary>
+        /// This property contains the title to display when this panel is active.
+        /// </summary>
+        [Parameter]
+        public string? Title { get; set; }
 
         #endregion
 
@@ -86,11 +86,15 @@ namespace CG.Blazor.Components
 
             // Mark that we've been disposed.
             _disposed = true;
-            
-            // Cleanup our reference in the parent wizard.
-            await Parent?.RemovePanel(this);
 
-            // Prevent derived types from having the implement IDisposable.
+            // Do we have a parent reference?
+            if (Parent is not null)
+            {
+                // Cleanup the reference.
+                await Parent.RemovePanel(this);
+            }
+
+            // Prevent derived types from having to implement IDisposable.
             GC.SuppressFinalize(this);
         }
 

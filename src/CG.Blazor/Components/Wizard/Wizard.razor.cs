@@ -35,19 +35,19 @@ namespace CG.Blazor.Components
         /// This event is raised whenever the index changes.
         /// </summary>
         [Parameter]
-        public EventCallback<IndexChangedEventArgs> IndexChanged { get; set; }
+        public EventCallback<IndexChangedEventArgs> OnIndexChanged { get; set; }
 
         /// <summary>
         /// This event is raised whenever the wizard is finished.
         /// </summary>
         [Parameter]
-        public EventCallback WizardFinished { get; set; }
+        public EventCallback OnWizardFinished { get; set; }
 
         /// <summary>
         /// This event is raised whenever the wizard is cancelled.
         /// </summary>
         [Parameter]
-        public EventCallback WizardCancelled { get; set; }
+        public EventCallback OnWizardCancelled { get; set; }
 
         #endregion
 
@@ -58,23 +58,11 @@ namespace CG.Blazor.Components
         #region Properties
         
         /// <summary>
-        /// This property contains the action content for the component.
-        /// </summary>
-        [Parameter]
-        public RenderFragment? ActionContent { get; set; }
-
-        /// <summary>
         /// This property indicates whether or not to the timeline should respond
         /// to mouse clicks.
         /// </summary>
         [Parameter]
         public bool AllowActiveTimeline { get; set; }
-
-        /// <summary>
-        /// This property contains the variant for the wizard buttons.
-        /// </summary>
-        [Parameter]
-        public Variant ButtonVariant { get; set; }
 
         /// <summary>
         /// This property contains the color for the cancel button.
@@ -89,6 +77,12 @@ namespace CG.Blazor.Components
         public string CancelButtonTooltip { get; set; } = null!;
 
         /// <summary>
+        /// This property contains the variant for the cancel button.
+        /// </summary>
+        [Parameter]
+        public Variant CancelButtonVariant { get; set; }
+
+        /// <summary>
         /// This property indicates whether the wizard can skip ahead
         /// pages, or not.
         /// </summary>
@@ -99,7 +93,7 @@ namespace CG.Blazor.Components
         /// This property contains the child content for the component.
         /// </summary>
         [Parameter]
-        public RenderFragment? WizardContent { get; set; }
+        public RenderFragment? ChildContent { get; set; }
 
         /// <summary>
         /// This property contains the CSS class for the component.
@@ -161,6 +155,12 @@ namespace CG.Blazor.Components
         /// </summary>
         [Parameter]
         public string FinishButtonTooltip { get; set; } = null!;
+
+        /// <summary>
+        /// This property contains the variant for the finish button.
+        /// </summary>
+        [Parameter]
+        public Variant FinishButtonVariant { get; set; }
 
         /// <summary>
         /// This property indicates whether to hide the actions area, or not.
@@ -226,6 +226,12 @@ namespace CG.Blazor.Components
         public string NextButtonTooltip { get; set; } = null!;
 
         /// <summary>
+        /// This property contains the variant for the next button.
+        /// </summary>
+        [Parameter]
+        public Variant NextButtonVariant { get; set; }
+
+        /// <summary>
         /// This property contains the color for the previous button.
         /// </summary>
         [Parameter]
@@ -236,6 +242,12 @@ namespace CG.Blazor.Components
         /// </summary>
         [Parameter]
         public string PreviousButtonTooltip { get; set; } = null!;
+
+        /// <summary>
+        /// This property contains the variant for the previous button.
+        /// </summary>
+        [Parameter]
+        public Variant PreviousButtonVariant { get; set; }
 
         /// <summary>
         /// This property contains the title for the wizard.
@@ -292,7 +304,49 @@ namespace CG.Blazor.Components
         /// </summary>
         [Parameter]
         public Typo TitleTypo { get; set; }
-                
+
+        #endregion
+
+        // *******************************************************************
+        // Constructors.
+        // *******************************************************************
+
+        #region Constructors
+
+        /// <summary>
+        /// This constructor creates a new instance of the <see cref="Wizard"/>
+        /// class.
+        /// </summary>
+        public Wizard()
+        {
+            // Set default values.
+            AllowActiveTimeline = true;
+            CancelButtonColor = Color.Inherit;
+            CancelButtonTooltip = "";
+            CancelButtonVariant = Variant.Outlined;
+            CanSkipAhead = true;
+            HideCancelButton = true;
+            HideFinishButton = true;
+            DescriptionColor = Color.Inherit;
+            DescriptionTypo = Typo.caption;
+            DotColor = Color.Default;
+            Elevation = 0;
+            FinishButtonColor = Color.Primary;
+            FinishButtonTooltip = "";
+            FinishButtonVariant = Variant.Filled;
+            NextButtonColor = Color.Primary;
+            NextButtonTooltip = "";
+            NextButtonVariant = Variant.Filled;
+            PreviousButtonColor = Color.Inherit;
+            PreviousButtonTooltip = "";
+            PreviousButtonVariant = Variant.Filled;
+            SelectedDotColor = Color.Info;
+            TitleColor = Color.Inherit;
+            TitleTypo = Typo.h4;
+            Title = "";
+            Description = "";
+        }
+
         #endregion
 
         // *******************************************************************
@@ -341,7 +395,7 @@ namespace CG.Blazor.Components
             };
 
             // Fire the event.
-            IndexChanged.InvokeAsync(eventArgs);
+            OnIndexChanged.InvokeAsync(eventArgs);
 
             // Should we cancel the navigation?
             if (eventArgs.NewIndex == eventArgs.CurrentIndex)
@@ -370,7 +424,7 @@ namespace CG.Blazor.Components
             // Do we have a selected panel?
             if (SelectedPanel is not null)
             {
-                // Should we carry the wizard title to this page?
+                // Should we carry the panel title to this page?
                 if (string.IsNullOrEmpty(SelectedPanel.Title))
                 {
 #pragma warning disable BL0005 // Component parameter should not be set outside of its component.
@@ -378,7 +432,7 @@ namespace CG.Blazor.Components
 #pragma warning restore BL0005 // Component parameter should not be set outside of its component.
                 }
 
-                // Should we carry the wizard description to this page?
+                // Should we carry the panel description to this page?
                 if (string.IsNullOrEmpty(SelectedPanel.Description))
                 {
 #pragma warning disable BL0005 // Component parameter should not be set outside of its component.
@@ -483,10 +537,10 @@ namespace CG.Blazor.Components
         /// This method cancels the wizard.
         /// </summary>
         /// <returns>A task to perform the operation.</returns>
-        protected async Task OnCancel()
+        protected async Task RaiseWizardCancelled()
         {
             // Raise the event.
-            await WizardCancelled.InvokeAsync();
+            await OnWizardCancelled.InvokeAsync();
         }
 
         // *******************************************************************
@@ -495,10 +549,10 @@ namespace CG.Blazor.Components
         /// This method finishes the wizard.
         /// </summary>
         /// <returns>A task to perform the operation.</returns>
-        protected async Task OnFinish()
+        protected async Task RaiseWizardFinished()
         {
             // Raise the event.
-            await WizardFinished.InvokeAsync();
+            await OnWizardFinished.InvokeAsync();
         }
 
         // *******************************************************************
@@ -513,42 +567,6 @@ namespace CG.Blazor.Components
                 // Try to select the first page.
                 Select(0);
             }
-        }
-
-        // *******************************************************************
-
-        /// <summary>
-        /// This method is called to set the parameter values.
-        /// </summary>
-        protected override void OnParametersSet()
-        {
-            // Set default values.
-            AllowActiveTimeline = true;
-            ButtonVariant = Variant.Filled;
-            CancelButtonColor = Color.Inherit;
-            CancelButtonTooltip = "";
-            CanSkipAhead = true;
-            HideActions = ActionContent is null;
-            HideCancelButton = true;
-            HideFinishButton = true;
-            DescriptionColor = Color.Inherit;
-            DescriptionTypo = Typo.caption;
-            DotColor = Color.Default;
-            Elevation = 1;
-            FinishButtonColor = Color.Primary;
-            FinishButtonTooltip = "";
-            NextButtonColor = Color.Primary;
-            NextButtonTooltip = "";
-            PreviousButtonColor = Color.Inherit;
-            PreviousButtonTooltip = "";
-            SelectedDotColor = Color.Info;
-            TitleColor = Color.Inherit;
-            TitleTypo = Typo.h4;
-            Title = "";
-            Description = "";
-
-            // Give the base class a chance.
-            base.OnParametersSet();
         }
 
         // *******************************************************************

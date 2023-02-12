@@ -3,7 +3,7 @@
 namespace CG.Blazor.Components
 {
     /// <summary>
-    /// This class contains arguments for the IndexChanged event.
+    /// This class contains arguments for the OnIndexChanged event.
     /// </summary>
     public class IndexChangedEventArgs
     {

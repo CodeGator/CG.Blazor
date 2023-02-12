@@ -8,64 +8,84 @@
              Elevation="@Elevation"
              Outlined="@Outlined"
              Square="@Square">
-        @if (SelectedIndex is not null)
+
+        @if (!HideHeader)
         {
-            @if (!HideHeader)
-            {
-                <MudCardHeader>
-                    <MudGrid Spacing="2">
-                        @if (!HideTimeline)
-                        {
-                            <MudItem xs="12">
-                                <MudTimeline Style="width:100%;"
-                                 Class="my-n10"
-                                 TimelineOrientation="TimelineOrientation.Horizontal"
-                                 SelectedIndexChanged=@(AllowActiveTimeline ? x => TimelineSelect(x) : x => {})>
-                                    @foreach (var panel in _panels)
-                                    {
-                                        <MudTimelineItem Size="Size.Small"
-                                         Color=@(SelectedPanel == panel ? SelectedDotColor : DotColor) 
-                                         Variant=@(SelectedPanel == panel ? Variant.Filled : Variant.Outlined)
-                                         Style=@(AllowActiveTimeline ? "cursor:pointer" : "")>
-                                            <ItemDot>@(_panels.IndexOf(panel) + 1)</ItemDot>
-                                        </MudTimelineItem>
-                                    }
-                                </MudTimeline>
-                            </MudItem>
-                        }
-                        @if (!string.IsNullOrEmpty(@SelectedPanel?.Title))
-                        {
-                            <MudItem xs="12">
-                                <MudText Typo="Typo.body1">@SelectedPanel.Title</MudText>
-                            </MudItem>
-                        }
-                        @if (!string.IsNullOrEmpty(@SelectedPanel?.Description))
-                        {
-                            <MudItem xs="12">
-                                <MudText Typo="Typo.caption">@SelectedPanel.Description</MudText>
-                            </MudItem>
-                        }
-                    </MudGrid>
-                </MudCardHeader>
-            }
+            <MudCardHeader>
+                <MudGrid Spacing="2">
+                    @if (!HideTimeline)
+                    {
+                        <MudItem xs="12">
+                            <MudTimeline Style="width:100%;"
+                                Class="my-n10"
+                                TimelineOrientation="TimelineOrientation.Horizontal"
+                                SelectedIndexChanged=@(AllowActiveTimeline ? x => TimelineSelect(x) : x => {})>
+                                @foreach (var panel in _panels)
+                                {
+                                    <MudTimelineItem Size="Size.Small"
+                                        Color=@(SelectedPanel == panel ? SelectedDotColor : DotColor) 
+                                        Variant=@(SelectedPanel == panel ? Variant.Filled : Variant.Outlined)
+                                        Style=@(AllowActiveTimeline && CanSkipAhead ? "cursor:pointer" : "")>
+                                        <ItemDot>@(_panels.IndexOf(panel) + 1)</ItemDot>
+                                    </MudTimelineItem>
+                                }
+                            </MudTimeline>
+                        </MudItem>
+                    }
+                    @if (!string.IsNullOrEmpty(@SelectedPanel?.Title))
+                    {
+                        <MudItem xs="12">
+                            <MudText Typo="Typo.body1">@SelectedPanel.Title</MudText>
+                        </MudItem>
+                    }
+                    @if (!string.IsNullOrEmpty(@SelectedPanel?.Description))
+                    {
+                        <MudItem xs="12">
+                            <MudText Typo="Typo.caption">@SelectedPanel.Description</MudText>
+                        </MudItem>
+                    }
+                </MudGrid>
+            </MudCardHeader>
         }
 
         <MudCardContent>
-            @WizardContent
+            @ChildContent
         </MudCardContent>
 
-        @if (SelectedIndex is not null)
+        @if (!HideActions)
         {
-            @if (!HideActions)
-            {
-                <MudCardActions>
+            <MudCardActions>
+                @if (!HideCancelButton)
+                {
+                    @if (!string.IsNullOrEmpty(CancelButtonTooltip))
+                    {
+                        <MudTooltip Text=@CancelButtonTooltip>
+                            <MudButton OnClick="RaiseWizardCancelled"
+                                        Color="@CancelButtonColor"
+                                        Variant="@CancelButtonVariant">
+                                Cancel
+                            </MudButton>
+                        </MudTooltip>
+                    }
+                    else
+                    {
+                        <MudButton OnClick="RaiseWizardCancelled"
+                                    Color="@CancelButtonColor"
+                                    Variant="@CancelButtonVariant">
+                            Cancel
+                        </MudButton>
+                    }
+                }                    
+
+                <span style="display: flex; margin-left: auto">
                     @if (!string.IsNullOrEmpty(PreviousButtonTooltip))
                     {
                         <MudTooltip Text=@PreviousButtonTooltip>
                             <MudButton OnClick="OnPrevious"
-                                       Disabled="@IsPreviousDisabled"
-                                       Color="@PreviousButtonColor"
-                                       Variant="@ButtonVariant">
+                                        Disabled="@IsPreviousDisabled"
+                                        Class="mr-4"
+                                        Color="@PreviousButtonColor"
+                                        Variant="@PreviousButtonVariant">
                                 Previous
                             </MudButton>
                         </MudTooltip>
@@ -73,90 +93,61 @@
                     else
                     {
                         <MudButton OnClick="OnPrevious"
-                           Disabled="@IsPreviousDisabled"
-                           Color="@PreviousButtonColor"
-                           Variant="@ButtonVariant">
+                                    Class="mr-4"
+                                    Disabled="@IsPreviousDisabled"
+                                    Color="@PreviousButtonColor"
+                                    Variant="@PreviousButtonVariant">
                             Previous
                         </MudButton>
                     }
-
-                    <span style="display: flex; margin-left: auto">
-                        @if (!HideCancelButton)
+                    @if (IsFinishVisible)
+                    {
+                        @if (!string.IsNullOrEmpty(NextButtonTooltip))
                         {
-                            @if (!string.IsNullOrEmpty(CancelButtonTooltip))
-                            {
-                                <MudTooltip Text=@CancelButtonTooltip>
-                                    <MudButton OnClick="OnCancel"
-                                               Class="mr-4"
-                                               Color="@CancelButtonColor"
-                                               Variant="@ButtonVariant">
-                                               Cancel
-                                    </MudButton>
-                                </MudTooltip>
-                            }
-                            else
-                            {
-                                <MudButton OnClick="OnCancel"
-                                           Class="mr-4"
-                                           Color="@CancelButtonColor"
-                                           Variant="@ButtonVariant">
-                                           Cancel
+                            <MudTooltip Text=@NextButtonTooltip>
+                                <MudButton OnClick="RaiseWizardFinished"
+                                            Color="@FinishButtonColor"
+                                            Disabled="@DisableNextButton"
+                                            Variant="@FinishButtonVariant">
+                                    Finish
                                 </MudButton>
-                            }
-                        }
-                        @if (IsFinishVisible)
-                        {
-                            @if (!string.IsNullOrEmpty(NextButtonTooltip))
-                            {
-                                <MudTooltip Text=@NextButtonTooltip>
-                                    <MudButton OnClick="OnFinish"
-                                               Color="@FinishButtonColor"
-                                               Disabled="@DisableNextButton"
-                                               Variant="@ButtonVariant">
-                                        Finish
-                                    </MudButton>
-                                </MudTooltip>
-                            }
-                            else
-                            {
-                                <MudButton OnClick="OnFinish"
-                                           Color="@FinishButtonColor"
-                                           Disabled="@DisableNextButton"
-                                           Variant="@ButtonVariant">
-                                        Finish
-                                </MudButton>
-                            }
+                            </MudTooltip>
                         }
                         else
                         {
-                            @if (!string.IsNullOrEmpty(NextButtonTooltip))
-                            {
-                                <MudTooltip Text=@NextButtonTooltip>
-                                    <MudButton OnClick="OnNext"
-                                               Disabled="@IsNextDisabled"
-                                               Color="@NextButtonColor"
-                                               Variant="@ButtonVariant">
-                                               Next
-                                    </MudButton>
-                                </MudTooltip>
-                            }
-                            else
-                            {
-                                <MudButton OnClick="OnNext"
-                                           Disabled="@IsNextDisabled"
-                                           Color="@NextButtonColor"
-                                           Variant="@ButtonVariant">
-                                           Next
-                                </MudButton>
-                            }
+                            <MudButton OnClick="RaiseWizardFinished"
+                                        Color="@FinishButtonColor"
+                                        Disabled="@DisableNextButton"
+                                        Variant="@FinishButtonVariant">
+                                    Finish
+                            </MudButton>
+                        }
                     }
-                    </span>
-                </MudCardActions>
-            }
-            else
-            {
-                @ActionContent
-            }
+                    else
+                    {
+                        @if (!string.IsNullOrEmpty(NextButtonTooltip))
+                        {
+                            <MudTooltip Text=@NextButtonTooltip>
+                                <MudButton OnClick="OnNext"
+                                            Disabled="@IsNextDisabled"
+                                            Color="@NextButtonColor"
+                                            Variant="@NextButtonVariant">
+                                            Next
+                                </MudButton>
+                            </MudTooltip>
+                        }
+                        else
+                        {
+                            <MudButton OnClick="OnNext"
+                                        Disabled="@IsNextDisabled"
+                                        Color="@NextButtonColor"
+                                        Variant="@NextButtonVariant">
+                                        Next
+                            </MudButton>
+                        }
+                }
+                </span>
+            </MudCardActions>
         }
     </MudCard>
 </CascadingValue>
