@@ -400,6 +400,18 @@ references:
   isSpec: "True"
   fullName: CG.Blazor.Components.Wizard.Wizard
   nameWithType: Wizard.Wizard
+- uid: CG.Blazor.Components.Wizard._disposed
+  name: _disposed
+  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard__disposed
+  commentId: F:CG.Blazor.Components.Wizard._disposed
+  fullName: CG.Blazor.Components.Wizard._disposed
+  nameWithType: Wizard._disposed
+- uid: CG.Blazor.Components.Wizard._panels
+  name: _panels
+  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard__panels
+  commentId: F:CG.Blazor.Components.Wizard._panels
+  fullName: CG.Blazor.Components.Wizard._panels
+  nameWithType: Wizard._panels
 - uid: CG.Blazor.Components.Wizard.AddPanel(CG.Blazor.Components.WizardPanel)
   name: AddPanel(WizardPanel)
   href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_AddPanel_CG_Blazor_Components_WizardPanel_
@@ -725,6 +737,19 @@ references:
   isSpec: "True"
   fullName: CG.Blazor.Components.Wizard.IsFinishVisible
   nameWithType: Wizard.IsFinishVisible
+- uid: CG.Blazor.Components.Wizard.IsHeaderVisible
+  name: IsHeaderVisible
+  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_IsHeaderVisible
+  commentId: P:CG.Blazor.Components.Wizard.IsHeaderVisible
+  fullName: CG.Blazor.Components.Wizard.IsHeaderVisible
+  nameWithType: Wizard.IsHeaderVisible
+- uid: CG.Blazor.Components.Wizard.IsHeaderVisible*
+  name: IsHeaderVisible
+  href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_IsHeaderVisible_
+  commentId: Overload:CG.Blazor.Components.Wizard.IsHeaderVisible
+  isSpec: "True"
+  fullName: CG.Blazor.Components.Wizard.IsHeaderVisible
+  nameWithType: Wizard.IsHeaderVisible
 - uid: CG.Blazor.Components.Wizard.IsNextDisabled
   name: IsNextDisabled
   href: api/CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_IsNextDisabled
@@ -1107,6 +1132,12 @@ references:
   commentId: T:CG.Blazor.Components.WizardPanel
   fullName: CG.Blazor.Components.WizardPanel
   nameWithType: WizardPanel
+- uid: CG.Blazor.Components.WizardPanel._disposed
+  name: _disposed
+  href: api/CG.Blazor.Components.WizardPanel.html#CG_Blazor_Components_WizardPanel__disposed
+  commentId: F:CG.Blazor.Components.WizardPanel._disposed
+  fullName: CG.Blazor.Components.WizardPanel._disposed
+  nameWithType: WizardPanel._disposed
 - uid: CG.Blazor.Components.WizardPanel.ChildContent
   name: ChildContent
   href: api/CG.Blazor.Components.WizardPanel.html#CG_Blazor_Components_WizardPanel_ChildContent
@@ -1146,6 +1177,19 @@ references:
   isSpec: "True"
   fullName: CG.Blazor.Components.WizardPanel.DisposeAsync
   nameWithType: WizardPanel.DisposeAsync
+- uid: CG.Blazor.Components.WizardPanel.HideHeader
+  name: HideHeader
+  href: api/CG.Blazor.Components.WizardPanel.html#CG_Blazor_Components_WizardPanel_HideHeader
+  commentId: P:CG.Blazor.Components.WizardPanel.HideHeader
+  fullName: CG.Blazor.Components.WizardPanel.HideHeader
+  nameWithType: WizardPanel.HideHeader
+- uid: CG.Blazor.Components.WizardPanel.HideHeader*
+  name: HideHeader
+  href: api/CG.Blazor.Components.WizardPanel.html#CG_Blazor_Components_WizardPanel_HideHeader_
+  commentId: Overload:CG.Blazor.Components.WizardPanel.HideHeader
+  isSpec: "True"
+  fullName: CG.Blazor.Components.WizardPanel.HideHeader
+  nameWithType: WizardPanel.HideHeader
 - uid: CG.Blazor.Components.WizardPanel.OnInitialized
   name: OnInitialized()
   href: api/CG.Blazor.Components.WizardPanel.html#CG_Blazor_Components_WizardPanel_OnInitialized

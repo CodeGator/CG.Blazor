@@ -102,6 +102,31 @@ razor component.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class WizardPanel : MudComponentBase</code></pre>
   </div>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="CG_Blazor_Components_WizardPanel__disposed" data-uid="CG.Blazor.Components.WizardPanel._disposed">_disposed</h4>
+  <div class="markdown level1 summary"><p>This field indicate whether the component has been disposed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _disposed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   <a id="CG_Blazor_Components_WizardPanel_ChildContent_" data-uid="CG.Blazor.Components.WizardPanel.ChildContent*"></a>
@@ -130,7 +155,9 @@ razor component.</p>
   </table>
   <a id="CG_Blazor_Components_WizardPanel_Description_" data-uid="CG.Blazor.Components.WizardPanel.Description*"></a>
   <h4 id="CG_Blazor_Components_WizardPanel_Description" data-uid="CG.Blazor.Components.WizardPanel.Description">Description</h4>
-  <div class="markdown level1 summary"><p>This property contains the description for the panel.</p>
+  <div class="markdown level1 summary"><p>This property contains the description to display when this panel is active.
+This value overrides the <a class="xref" href="CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_Description">Description</a> property, when
+this panel is selected.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -148,6 +175,32 @@ razor component.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Components_WizardPanel_HideHeader_" data-uid="CG.Blazor.Components.WizardPanel.HideHeader*"></a>
+  <h4 id="CG_Blazor_Components_WizardPanel_HideHeader" data-uid="CG.Blazor.Components.WizardPanel.HideHeader">HideHeader</h4>
+  <div class="markdown level1 summary"><p>This property indicates whether the header, on the parent, should
+be hidden when this panel is active. This value overrides the
+<a class="xref" href="CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_HideHeader">HideHeader</a> property, when this panel is selected.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HideHeader { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -178,7 +231,9 @@ razor component.</p>
   </table>
   <a id="CG_Blazor_Components_WizardPanel_Title_" data-uid="CG.Blazor.Components.WizardPanel.Title*"></a>
   <h4 id="CG_Blazor_Components_WizardPanel_Title" data-uid="CG.Blazor.Components.WizardPanel.Title">Title</h4>
-  <div class="markdown level1 summary"><p>This property contains the title to display when this panel is active.</p>
+  <div class="markdown level1 summary"><p>This property contains the title to display when this panel is active.
+This value overrides the <a class="xref" href="CG.Blazor.Components.Wizard.html#CG_Blazor_Components_Wizard_Title">Title</a> property, when
+this panel is selected.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

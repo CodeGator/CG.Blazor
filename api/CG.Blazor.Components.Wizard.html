@@ -114,6 +114,54 @@ class.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Wizard()</code></pre>
   </div>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="CG_Blazor_Components_Wizard__disposed" data-uid="CG.Blazor.Components.Wizard._disposed">_disposed</h4>
+  <div class="markdown level1 summary"><p>This field indicate whether the component has been disposed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _disposed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="CG_Blazor_Components_Wizard__panels" data-uid="CG.Blazor.Components.Wizard._panels">_panels</h4>
+  <div class="markdown level1 summary"><p>This field contains the inner list of wizard panels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly List&lt;WizardPanel&gt; _panels</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="CG.Blazor.Components.WizardPanel.html">WizardPanel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   <a id="CG_Blazor_Components_Wizard_AllowActiveTimeline_" data-uid="CG.Blazor.Components.Wizard.AllowActiveTimeline*"></a>
@@ -649,7 +697,7 @@ pages, or not.</p>
   <a id="CG_Blazor_Components_Wizard_IsFinishVisible_" data-uid="CG.Blazor.Components.Wizard.IsFinishVisible*"></a>
   <h4 id="CG_Blazor_Components_Wizard_IsFinishVisible" data-uid="CG.Blazor.Components.Wizard.IsFinishVisible">IsFinishVisible</h4>
   <div class="markdown level1 summary"><p>This property indicates whether the finish button should be
-hidden, or not. True if it should be hidden; False otherwise.</p>
+hidden, or not.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -671,10 +719,36 @@ hidden, or not. True if it should be hidden; False otherwise.</p>
       </tr>
     </tbody>
   </table>
+  <a id="CG_Blazor_Components_Wizard_IsHeaderVisible_" data-uid="CG.Blazor.Components.Wizard.IsHeaderVisible*"></a>
+  <h4 id="CG_Blazor_Components_Wizard_IsHeaderVisible" data-uid="CG.Blazor.Components.Wizard.IsHeaderVisible">IsHeaderVisible</h4>
+  <div class="markdown level1 summary"><p>This property indicates whether the header should be displayed,
+or not. This property is takes into consideration the value
+of the <a class="xref" href="CG.Blazor.Components.WizardPanel.html#CG_Blazor_Components_WizardPanel_HideHeader">HideHeader</a> property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool IsHeaderVisible { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="CG_Blazor_Components_Wizard_IsNextDisabled_" data-uid="CG.Blazor.Components.Wizard.IsNextDisabled*"></a>
   <h4 id="CG_Blazor_Components_Wizard_IsNextDisabled" data-uid="CG.Blazor.Components.Wizard.IsNextDisabled">IsNextDisabled</h4>
   <div class="markdown level1 summary"><p>This property indicates whether the next button should be
-disabled, or not. True if it should be disabled; False otherwise.</p>
+disabled, or not.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -699,7 +773,7 @@ disabled, or not. True if it should be disabled; False otherwise.</p>
   <a id="CG_Blazor_Components_Wizard_IsPreviousDisabled_" data-uid="CG.Blazor.Components.Wizard.IsPreviousDisabled*"></a>
   <h4 id="CG_Blazor_Components_Wizard_IsPreviousDisabled" data-uid="CG.Blazor.Components.Wizard.IsPreviousDisabled">IsPreviousDisabled</h4>
   <div class="markdown level1 summary"><p>This property indicates whether the previous button should be
-disabled, or not. True if it should be disabled; False otherwise.</p>
+disabled, or not.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
