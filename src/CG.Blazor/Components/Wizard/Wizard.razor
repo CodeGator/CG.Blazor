@@ -9,13 +9,13 @@
              Outlined="@Outlined"
              Square="@Square">
 
-        @if (!HideHeader)
-        {
-            <MudCardHeader>
+             <MudCardHeader>
                 <MudGrid Spacing="2">
+                @if (!HideHeader)
+                {
                     @if (!HideTimeline)
                     {
-                        <MudItem xs="12">
+                        <MudItem xs="12" Style=@($"display: {(IsHeaderVisible ? "block" : "none")}")>
                             <MudTimeline Style="width:100%;"
                                 Class="my-n10"
                                 TimelineOrientation="TimelineOrientation.Horizontal"
@@ -32,21 +32,35 @@
                             </MudTimeline>
                         </MudItem>
                     }
-                    @if (!string.IsNullOrEmpty(@SelectedPanel?.Title))
+
+                    @if (!string.IsNullOrEmpty(SelectedPanel?.Title))
                     {
                         <MudItem xs="12">
-                            <MudText Typo="Typo.body1">@SelectedPanel.Title</MudText>
+                            <MudText Typo="TitleTypo" Color="TitleColor">@SelectedPanel.Title</MudText>
                         </MudItem>
                     }
-                    @if (!string.IsNullOrEmpty(@SelectedPanel?.Description))
+                    else if (!string.IsNullOrEmpty(Title))
                     {
                         <MudItem xs="12">
-                            <MudText Typo="Typo.caption">@SelectedPanel.Description</MudText>
+                            <MudText Typo="TitleTypo" Color="TitleColor">@Title</MudText>
+                        </MudItem>                        
+                    }
+
+                    @if (!string.IsNullOrEmpty(SelectedPanel?.Description))
+                    {
+                        <MudItem xs="12">
+                            <MudText Typo="DescriptionTypo" Color="DescriptionColor">@SelectedPanel.Description</MudText>
                         </MudItem>
                     }
-                </MudGrid>
-            </MudCardHeader>
-        }
+                    else if (!string.IsNullOrEmpty(Description))
+                    {
+                        <MudItem xs="12">
+                            <MudText Typo="DescriptionTypo" Color="DescriptionColor">@Description</MudText>
+                        </MudItem>
+                    }
+            }
+            </MudGrid>
+        </MudCardHeader>
 
         <MudCardContent>
             @ChildContent

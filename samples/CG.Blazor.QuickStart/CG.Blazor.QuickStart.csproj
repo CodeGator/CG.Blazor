@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Authors>Martin Cook</Authors>
+    <Company>CodeGator</Company>
+    <Product>Blazor QuickStart</Product>
+    <Description>A server-side Blazor sample for the CG.Blazor package.</Description>
+    <Copyright>Copyright © 2023 by CodeGator. All rights reserved</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\CG.Blazor\CG.Blazor.csproj" />
+  </ItemGroup>
+
+</Project>

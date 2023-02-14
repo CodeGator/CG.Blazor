@@ -16,12 +16,12 @@ namespace CG.Blazor.Components
         /// <summary>
         /// This field contains the inner list of wizard panels.
         /// </summary>
-        private readonly List<WizardPanel> _panels = new();
+        internal protected readonly List<WizardPanel> _panels = new();
 
         /// <summary>
         /// This field indicate whether the component has been disposed.
         /// </summary>
-        private bool _disposed;
+        internal protected bool _disposed;
 
         #endregion
 
@@ -193,25 +193,33 @@ namespace CG.Blazor.Components
         public bool HideTimeline { get; set; }
 
         /// <summary>
-        /// This property indicates whether the previous button should be
-        /// disabled, or not. True if it should be disabled; False otherwise.
+        /// This property indicates whether the previous button should be 
+        /// disabled, or not. 
         /// </summary>
         public bool IsPreviousDisabled => DisablePreviousButton ||
             !SelectedIndex.HasValue || SelectedIndex <= 0;
 
         /// <summary>
         /// This property indicates whether the next button should be
-        /// disabled, or not. True if it should be disabled; False otherwise.
+        /// disabled, or not.
         /// </summary>
         public bool IsNextDisabled => DisableNextButton ||
             (!SelectedIndex.HasValue || SelectedIndex >= _panels.Count - 1);
 
         /// <summary>
         /// This property indicates whether the finish button should be
-        /// hidden, or not. True if it should be hidden; False otherwise.
+        /// hidden, or not.
         /// </summary>
         public bool IsFinishVisible =>
             !HideFinishButton && (!SelectedIndex.HasValue || SelectedIndex >= _panels.Count - 1);
+
+        /// <summary>
+        /// This property indicates whether the header should be displayed, 
+        /// or not. This property is takes into consideration the value 
+        /// of the <see cref="WizardPanel.HideHeader"/> property.
+        /// </summary>
+        internal protected bool IsHeaderVisible => !HideHeader &&
+            (SelectedPanel is null ? true : !SelectedPanel.HideHeader);
 
         /// <summary>
         /// This property contains the color for the next button.
@@ -418,26 +426,6 @@ namespace CG.Blazor.Components
                 else
                 {
                     SelectedPanel = null;
-                }
-            }
-
-            // Do we have a selected panel?
-            if (SelectedPanel is not null)
-            {
-                // Should we carry the panel title to this page?
-                if (string.IsNullOrEmpty(SelectedPanel.Title))
-                {
-#pragma warning disable BL0005 // Component parameter should not be set outside of its component.
-                    SelectedPanel.Title = Title;
-#pragma warning restore BL0005 // Component parameter should not be set outside of its component.
-                }
-
-                // Should we carry the panel description to this page?
-                if (string.IsNullOrEmpty(SelectedPanel.Description))
-                {
-#pragma warning disable BL0005 // Component parameter should not be set outside of its component.
-                    SelectedPanel.Description = Description;
-#pragma warning restore BL0005 // Component parameter should not be set outside of its component.
                 }
             }
 

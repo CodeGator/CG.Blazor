@@ -1,0 +1,367 @@
+﻿@page "/demo/wizard"
+
+<MudText Typo="Typo.h3">Wizard Demo</MudText>
+<MudText Typo="Typo.body1">This page demonstrates the CodeGator wizard component</MudText>
+
+<hr />
+
+<MudContainer Class="my-10" MaxWidth="MaxWidth.Small">
+    <Wizard Outlined="@_outlined"  
+            AllowActiveTimeline="@_allowActiveTimeline"
+            CancelButtonColor="@_cancelButtonColor"
+            CancelButtonTooltip="@_cancelButtonTooltip"
+            CancelButtonVariant="@_cancelButtonVariant" 
+            HideCancelButton="@_hideCancelButton"
+            NextButtonColor="@_nextButtonColor" 
+            NextButtonTooltip="@_nextButtonTooltip"
+            NextButtonVariant="@_nextButtonVariant"
+            HideFinishButton="@_hideFinishButton"
+            CanSkipAhead=@_canSkipAhead
+            DescriptionColor="@_descriptionColor"
+            DescriptionTypo="@_descriptionTypo"
+            DisableNextButton="@_disableNextButton"
+            DisablePreviousButton="@_disablePreviousButton"
+            FinishButtonColor="@_finishButtonColor"
+            FinishButtonTooltip="@_finishButtonTooltip"
+            FinishButtonVariant="@_finishButtonVariant"
+            DotColor="@_dotColor"
+            HideActions="@_hideActions"
+            HideHeader="@_hideHeader"
+            HideTimeline="@_hideTimeline"
+            PreviousButtonColor="@_previousButtonColor"
+            PreviousButtonVariant="@_previousButtonVariant"
+            PreviousButtonTooltip="@_previousButtonTooltip"
+            SelectedDotColor="@_selectedDotColor"
+            Square="_square"
+            TitleColor="@_titleColor"
+            TitleTypo="@_titleTypo"
+            OnIndexChanged="OnIndexChanged"
+            OnWizardCancelled="OnWizardCancelled"
+            OnWizardFinished="OnWizardFinished">
+        <WizardPanel Title="Step 1" Description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+            <MudText>This is content for panel 1 of 5</MudText>
+        </WizardPanel>
+        <WizardPanel Title="Step 2" Description="Nunc posuere sem sed leo tincidunt rutrum.">
+            <MudText>This is content for panel 2 of 5</MudText>
+        </WizardPanel>
+        <WizardPanel Title="Step 3" Description="Donec sollicitudin lacinia orci.">
+            <MudText>This is content for panel 3 of 5</MudText>
+        </WizardPanel>
+        <WizardPanel Title="Step 4" Description="Praesent tempor rhoncus ornare.">
+            <MudText>This is content for panel 4 of 5</MudText>
+        </WizardPanel>
+        <WizardPanel Title="Step 5" Description="Morbi ipsum sapien, lobortis vitae sodales.">
+            <MudText>This is content for panel 5 of 5</MudText>
+        </WizardPanel>
+    </Wizard>
+</MudContainer>
+
+<hr style="height: 4px" />
+
+<MudExpansionPanels Class="mt-5">
+    <MudExpansionPanel Text="Wizard Properties (alphabetical order)">
+        <MudSlider Max="12" Min="3" TickMarks @bind-Value="_gridSpacing" Style="max-width: 100px">
+            <MudText Typo="Typo.caption">(Grid Spacing)</MudText>
+        </MudSlider>
+
+        <MudGrid Class="mt-5" Style="background-color:antiquewhite">
+            <MudItem xs="_gridSpacing">
+                <MudSwitch @bind-Checked="_allowActiveTimeline" Color="Color.Secondary">Allow Active Timeline</MudSwitch>
+                <MudText Color="Color.Info" Typo="Typo.body1">Determines whether a user can navigate the wizard by clicking on the timeline</MudText>
+            </MudItem>
+            <MudItem xs="@_gridSpacing">
+                <MudSwitch @bind-Checked="_canSkipAhead" Color="Color.Secondary">Can Skip Ahead</MudSwitch>
+                <MudText Color="Color.Info" Typo="Typo.body1">Determines whether a user can skip ahead by clicking on the timeline</MudText>
+            </MudItem>
+            <MudItem xs="@_gridSpacing">
+                <MudSwitch @bind-Checked="_disableNextButton" Color="Color.Secondary">Disable Next Button</MudSwitch>
+                <MudText Color="Color.Info" Typo="Typo.body1">Determines whether the Next button is disabled</MudText>
+            </MudItem>
+            <MudItem xs="@_gridSpacing">
+                <MudSwitch @bind-Checked="_disablePreviousButton" Color="Color.Secondary">Disable Previous Button</MudSwitch>
+                <MudText Color="Color.Info" Typo="Typo.body1">Determines whether the Previous button is disabled</MudText>
+            </MudItem>
+            <MudItem xs="@_gridSpacing">
+                <MudSwitch @bind-Checked="_hideActions" Color="Color.Secondary">Hide Actions</MudSwitch>
+                <MudText Color="Color.Info" Typo="Typo.body1">Determines whether the button area is visible</MudText>
+            </MudItem>
+            <MudItem xs="@_gridSpacing">
+                <MudSwitch @bind-Checked="_hideCancelButton" Color="Color.Secondary">Hide Cancel Button</MudSwitch>
+                <MudText Color="Color.Info" Typo="Typo.body1">Determines whether the Cancel button is visible</MudText>
+            </MudItem>
+            <MudItem xs="@_gridSpacing">
+                <MudSwitch @bind-Checked="_hideFinishButton" Color="Color.Secondary">Hide Finish Button</MudSwitch>
+                <MudText Color="Color.Info" Typo="Typo.body1">Determines whether the Finish button is visible</MudText>
+            </MudItem>
+            <MudItem xs="@_gridSpacing">
+                <MudSwitch @bind-Checked="_hideHeader" Color="Color.Secondary">Hide Header</MudSwitch>
+                <MudText Color="Color.Info" Typo="Typo.body1">Determines whether the header area is visible</MudText>
+            </MudItem>
+            <MudItem xs="@_gridSpacing">
+                <MudSwitch @bind-Checked="_hideTimeline" Color="Color.Secondary">Hide Timeline</MudSwitch>
+                <MudText Color="Color.Info" Typo="Typo.body1">Determines whether the timeline is visible</MudText>
+            </MudItem>
+            <MudItem xs="@_gridSpacing">
+                <MudSwitch @bind-Checked="_outlined" Color="Color.Secondary">Outlined</MudSwitch>
+                <MudText Color="Color.Info" Typo="Typo.body1">Determines whether the wizard has an outline</MudText>
+            </MudItem>
+            <MudItem xs="@_gridSpacing">
+                <MudSwitch @bind-Checked="_square" Color="Color.Secondary">Square</MudSwitch>
+                <MudText Color="Color.Info" Typo="Typo.body1">Determines whether the wizard outline has rounded corners</MudText>
+            </MudItem>            
+            <MudItem xs="@_gridSpacing">
+                <MudSelect T="Color" Label="Cancel Button Color" Placeholder="Select a color" @bind-Value=@_cancelButtonColor>
+                    @foreach (var colorName in Enum.GetNames<Color>())
+                    {
+                        <MudSelectItem Value=@(Enum.Parse<Color>(@colorName))>@colorName</MudSelectItem>
+                    }
+                </MudSelect>
+                <MudText Color="Color.Info" Typo="Typo.body1">Determines the color of the Cancel button</MudText>
+            </MudItem>
+            <MudItem xs="@_gridSpacing">
+                <MudTextField T="string" @bind-Text="_cancelButtonTooltip" Clearable Label="Cancel Button Tooltip"></MudTextField>
+                <MudText Color="Color.Info" Typo="Typo.body1">Determines the tool tip of the Cancel button</MudText>
+            </MudItem>
+            <MudItem xs="@_gridSpacing">
+                <MudSelect T="Variant" Label="Cancel Button Variant" Placeholder="Select a variant" @bind-Value=@_cancelButtonVariant>
+                    @foreach (var variantName in Enum.GetNames<Variant>())
+                    {
+                        <MudSelectItem Value=@(Enum.Parse<Variant>(@variantName))>@variantName</MudSelectItem>
+                    }
+                </MudSelect>
+                <MudText Color="Color.Info" Typo="Typo.body1">Determines the variant of the Cancel button</MudText>
+            </MudItem>
+            <MudItem xs="@_gridSpacing">
+                <MudSelect T="Color" Label="Description Color" Placeholder="Select a color" @bind-Value=@_descriptionColor>
+                    @foreach (var colorName in Enum.GetNames<Color>())
+                    {
+                        <MudSelectItem Value=@(Enum.Parse<Color>(@colorName))>@colorName</MudSelectItem>
+                    }
+                </MudSelect>
+                <MudText Color="Color.Info" Typo="Typo.body1">Determines the color of the Description</MudText>
+            </MudItem>
+            <MudItem xs="@_gridSpacing">
+                <MudSelect T="Typo" Label="Description Typo" Placeholder="Select a typo" @bind-Value=@_descriptionTypo>
+                    @foreach (var typoName in Enum.GetNames<Typo>())
+                    {
+                        <MudSelectItem Value=@(Enum.Parse<Typo>(@typoName))>@typoName</MudSelectItem>
+                    }
+                </MudSelect>
+                <MudText Color="Color.Info" Typo="Typo.body1">Determines the typo of the Description</MudText>
+            </MudItem>
+            <MudItem xs="@_gridSpacing">
+                <MudSelect T="Color" Label="Dot Color" Placeholder="Select a color" @bind-Value=@_dotColor>
+                    @foreach (var colorName in Enum.GetNames<Color>())
+                    {
+                        <MudSelectItem Value=@(Enum.Parse<Color>(@colorName))>@colorName</MudSelectItem>
+                    }
+                </MudSelect>
+                <MudText Color="Color.Info" Typo="Typo.body1">Determines the color of unselected timeline dot</MudText>
+            </MudItem>
+            <MudItem xs="@_gridSpacing">
+                <MudSelect T="Color" Label="Finish Button Color" Placeholder="Select a color" @bind-Value=@_finishButtonColor>
+                    @foreach (var colorName in Enum.GetNames<Color>())
+                    {
+                        <MudSelectItem Value=@(Enum.Parse<Color>(@colorName))>@colorName</MudSelectItem>
+                    }
+                </MudSelect>
+                <MudText Color="Color.Info" Typo="Typo.body1">Determines the color of Finish button</MudText>
+            </MudItem>
+            <MudItem xs="@_gridSpacing">
+                <MudTextField T="string" @bind-Text="_finishButtonTooltip" Clearable Label="Finish Button Tooltip"></MudTextField>
+                <MudText Color="Color.Info" Typo="Typo.body1">Determines the tool tip of the Finish button</MudText>
+            </MudItem>
+                <MudItem xs="@_gridSpacing">
+                <MudSelect T="Variant" Label="Finish Button Variant" Placeholder="Select a variant" @bind-Value=@_finishButtonVariant>
+                    @foreach (var variantName in Enum.GetNames<Variant>())
+                    {
+                        <MudSelectItem Value=@(Enum.Parse<Variant>(@variantName))>@variantName</MudSelectItem>
+                    }
+                </MudSelect>
+                <MudText Color="Color.Info" Typo="Typo.body1">Determines the variant of the Finish button</MudText>
+            </MudItem>
+            <MudItem xs="@_gridSpacing">
+                <MudSelect T="Color" Label="Selected Dot Color" Placeholder="Select a color" @bind-Value=@_selectedDotColor>
+                    @foreach (var colorName in Enum.GetNames<Color>())
+                    {
+                        <MudSelectItem Value=@(Enum.Parse<Color>(@colorName))>@colorName</MudSelectItem>
+                    }
+                </MudSelect>
+                <MudText Color="Color.Info" Typo="Typo.body1">Determines the color of selected timeline dot</MudText>
+            </MudItem>
+            <MudItem xs="@_gridSpacing">
+                <MudSelect T="Color" Label="Title Color" Placeholder="Select a color" @bind-Value=@_titleColor>
+                    @foreach (var colorName in Enum.GetNames<Color>())
+                    {
+                        <MudSelectItem Value=@(Enum.Parse<Color>(@colorName))>@colorName</MudSelectItem>
+                    }
+                </MudSelect>
+            </MudItem>
+            <MudText Color="Color.Info" Typo="Typo.body1">Determines the color of the Title</MudText>
+            <MudItem xs="@_gridSpacing">
+                <MudSelect T="Typo" Label="Title Typo" Placeholder="Select a typo" @bind-Value=@_titleTypo>
+                    @foreach (var typoName in Enum.GetNames<Typo>())
+                    {
+                        <MudSelectItem Value=@(Enum.Parse<Typo>(@typoName))>@typoName</MudSelectItem>
+                    }
+                </MudSelect>
+                <MudText Color="Color.Info" Typo="Typo.body1">Determines the typo of the Title</MudText>
+            </MudItem>           
+            <MudItem xs="@_gridSpacing">
+                <MudSelect T="Color" Label="Next Button Color" Placeholder="Select a color" @bind-Value=@_nextButtonColor>
+                    @foreach (var colorName in Enum.GetNames<Color>())
+                    {
+                        <MudSelectItem Value=@(Enum.Parse<Color>(@colorName))>@colorName</MudSelectItem>
+                    }
+                </MudSelect>
+                <MudText Color="Color.Info" Typo="Typo.body1">Determines the color of the Next button</MudText>
+            </MudItem>
+            <MudItem xs="@_gridSpacing">
+                <MudTextField T="string" @bind-Text="_nextButtonTooltip" Clearable Label="Next Button Tooltip"></MudTextField>
+                <MudText Color="Color.Info" Typo="Typo.body1">Determines the tool tip of the Next button</MudText>
+            </MudItem>
+            <MudItem xs="@_gridSpacing">
+                <MudSelect T="Variant" Label="Next Button Variant" Placeholder="Select a variant" @bind-Value=@_nextButtonVariant>
+                    @foreach (var variantName in Enum.GetNames<Variant>())
+                    {
+                        <MudSelectItem Value=@(Enum.Parse<Variant>(@variantName))>@variantName</MudSelectItem>
+                    }
+                </MudSelect>
+                <MudText Color="Color.Info" Typo="Typo.body1">Determines the variant of the Next button</MudText>
+            </MudItem>
+            <MudItem xs="@_gridSpacing">
+                <MudSelect T="Color" Label="Previous Button Color" Placeholder="Select a color" @bind-Value=@_previousButtonColor>
+                    @foreach (var colorName in Enum.GetNames<Color>())
+                    {
+                        <MudSelectItem Value=@(Enum.Parse<Color>(@colorName))>@colorName</MudSelectItem>
+                    }
+                </MudSelect>
+                <MudText Color="Color.Info" Typo="Typo.body1">Determines the color of the Previous button</MudText>
+            </MudItem>
+            <MudItem xs="@_gridSpacing">
+                <MudTextField T="string" @bind-Text="_previousButtonTooltip" Clearable Label="Previous Button Tooltip"></MudTextField>
+                <MudText Color="Color.Info" Typo="Typo.body1">Determines the tool tip of the Previous button</MudText>
+            </MudItem>
+            <MudItem xs="@_gridSpacing">
+                <MudSelect T="Variant" Label="Previous Button Variant" Placeholder="Select a variant" @bind-Value=@_previousButtonVariant>
+                    @foreach (var variantName in Enum.GetNames<Variant>())
+                    {
+                        <MudSelectItem Value=@(Enum.Parse<Variant>(@variantName))>@variantName</MudSelectItem>
+                    }
+                </MudSelect>
+                <MudText Color="Color.Info" Typo="Typo.body1">Determines the variant of the Previous button</MudText>
+            </MudItem>            
+        </MudGrid>
+    </MudExpansionPanel>
+</MudExpansionPanels>
+
+<MudExpansionPanels Class="mt-4">
+    <MudExpansionPanel Text="Wizard Events">
+        <MudText Color="Color.Info" Typo="Typo.body1">A chronological account of wizard events</MudText>
+        <MudTable Items="@_eventHistory" Dense Elevation="0">
+            <ToolBarContent>
+                <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="@(() => _eventHistory.Clear())">Clear</MudButton>
+            </ToolBarContent>
+            <HeaderContent>
+                <MudTh></MudTh>
+            </HeaderContent>
+            <RowTemplate>
+                <MudTd>@context</MudTd>
+            </RowTemplate>
+            <LoadingContent>
+                Loading events ...
+            </LoadingContent>
+            <NoRecordsContent>
+                No events found.
+            </NoRecordsContent>
+        </MudTable>
+    </MudExpansionPanel>
+</MudExpansionPanels>
+
+@code {
+    bool _allowActiveTimeline;
+    Color _cancelButtonColor;
+    string _cancelButtonTooltip;
+    Variant _cancelButtonVariant;
+    bool _canSkipAhead;
+    Color _descriptionColor;
+    Typo _descriptionTypo;
+    bool _disableNextButton;
+    bool _disablePreviousButton;
+    Color _dotColor;
+    Color _selectedDotColor;
+    Color _finishButtonColor;
+    string _finishButtonTooltip;
+    Variant _finishButtonVariant;
+    bool _hideCancelButton;
+    bool _hideFinishButton;
+    bool _hideActions;
+    bool _hideHeader;
+    bool _hideTimeline;
+    Color _nextButtonColor;
+    string _nextButtonTooltip;
+    Variant _nextButtonVariant;
+    Color _previousButtonColor;
+    Variant _previousButtonVariant;
+    string _previousButtonTooltip;
+    Color _titleColor;
+    Typo _titleTypo;
+    bool _outlined;
+    bool _square;
+    int _gridSpacing = 12;
+
+    List<string> _eventHistory = new();
+
+    protected override void OnInitialized()
+    {
+        _allowActiveTimeline = true;
+        _cancelButtonColor = Color.Inherit;
+        _cancelButtonTooltip = "Cancel the wizard";
+        _cancelButtonVariant = Variant.Outlined;
+        _canSkipAhead = true;
+        _hideCancelButton = false;
+        _hideFinishButton = false;
+        _descriptionColor = Color.Inherit;
+        _descriptionTypo = Typo.caption;
+        _dotColor = Color.Default;
+        _finishButtonColor = Color.Primary;
+        _finishButtonTooltip = "Finish the wizard";
+        _finishButtonVariant = Variant.Filled;
+        _nextButtonColor = Color.Primary;
+        _nextButtonTooltip = "Next step";
+        _nextButtonVariant = Variant.Filled;
+        _previousButtonColor = Color.Inherit;
+        _previousButtonTooltip = "Previous step";
+        _previousButtonVariant = Variant.Filled;
+        _selectedDotColor = Color.Info;
+        _titleColor = Color.Inherit;
+        _titleTypo = Typo.h4;
+
+        base.OnInitialized();
+    }
+
+
+    void OnIndexChanged(IndexChangedEventArgs e)
+    {
+        _eventHistory.Insert(
+            0,
+            $"{DateTime.Now} -> Index Changed (new index: {e.NewIndex}, current index: {e.CurrentIndex})"
+        );
+    }
+
+    void OnWizardCancelled()
+    {
+        _eventHistory.Insert(
+            0,
+            $"{DateTime.Now} -> Wizard Cancelled"
+        );
+    }
+
+    void OnWizardFinished()
+    {
+        _eventHistory.Insert(
+            0,
+            $"{DateTime.Now} -> Wizard Finished"
+        );
+    }
+}

@@ -16,7 +16,7 @@ namespace CG.Blazor.Components
         /// <summary>
         /// This field indicate whether the component has been disposed.
         /// </summary>
-        private bool _disposed;
+        internal protected bool _disposed;
 
         #endregion
 
@@ -33,22 +33,34 @@ namespace CG.Blazor.Components
         public RenderFragment? ChildContent { get; set; }
 
         /// <summary>
-        /// This property contains the description for the panel.
+        /// This property contains the description to display when this panel is active.
+        /// This value overrides the <see cref="Wizard.Description"/> property, when
+        /// this panel is selected.
         /// </summary>
         [Parameter]
         public string? Description { get; set; }
 
         /// <summary>
-        /// This property contains the parent of the panel.
+        /// This property contains the parent of the panel. 
         /// </summary>
         [CascadingParameter]
         internal protected Wizard? Parent { get; set; }
 
         /// <summary>
         /// This property contains the title to display when this panel is active.
+        /// This value overrides the <see cref="Wizard.Title"/> property, when
+        /// this panel is selected.
         /// </summary>
         [Parameter]
         public string? Title { get; set; }
+
+        /// <summary>
+        /// This property indicates whether the header, on the parent, should
+        /// be hidden when this panel is active. This value overrides the 
+        /// <see cref="Wizard.HideHeader"/> property, when this panel is selected.
+        /// </summary>
+        [Parameter]
+        public bool HideHeader { get; set; }
 
         #endregion
 
