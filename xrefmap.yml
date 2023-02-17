@@ -7,6 +7,12 @@ references:
   commentId: N:CG.Blazor.Components
   fullName: CG.Blazor.Components
   nameWithType: CG.Blazor.Components
+- uid: CG.Blazor.Components.DualList
+  name: DualList
+  href: api/CG.Blazor.Components.DualList.html
+  commentId: T:CG.Blazor.Components.DualList
+  fullName: CG.Blazor.Components.DualList
+  nameWithType: DualList
 - uid: CG.Blazor.Components.DynamicNavMenu
   name: DynamicNavMenu
   href: api/CG.Blazor.Components.DynamicNavMenu.html

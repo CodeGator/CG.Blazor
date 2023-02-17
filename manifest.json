@@ -14,6 +14,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.Blazor.Components.DualList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Blazor.Components.DualList.html",
+          "hash": "oaYTztbMsdS2n3/vuUI9YwF1Q1ijIc6ML2K3kOqdots="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CG.Blazor.Components.DynamicNavMenu._MenuItem.yml",
       "output": {
         ".html": {
@@ -102,7 +114,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Blazor.Components.html",
-          "hash": "VfQqnayzINgZYA8rkZY8tOe3UfuW3ODHqHxW96jgOo8="
+          "hash": "U10EPaXsUNlNfXiZZoQ8zkmysfnPlU6a4NzjJxP2w0s="
         }
       },
       "is_incremental": false,
@@ -198,7 +210,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "zrp9y6mJWSJadHl3+oP+1Gq8+DIqSgM/Lnd5lLda6k4="
+          "hash": "MM1mbEL2ZujFDlBFDxhJBPejYIgJDN3to8MIY61f2HQ="
         }
       },
       "is_incremental": false,
@@ -317,7 +329,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 15,
+          "total_file_count": 16,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
