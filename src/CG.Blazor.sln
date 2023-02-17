@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30413.136
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33402.96
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CG.Blazor", "CG.Blazor\CG.Blazor.csproj", "{C130A52F-8334-459A-80C7-5F01BA861A83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CG.Blazor.Tests", "..\tests\CG.Blazor.Tests\CG.Blazor.Tests.csproj", "{444F01A6-66E0-4CF4-A095-50D5594A5412}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CG.Blazor.Tests", "..\tests\CG.Blazor.Tests\CG.Blazor.Tests.csproj", "{444F01A6-66E0-4CF4-A095-50D5594A5412}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
