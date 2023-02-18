@@ -1,9 +1,4 @@
 {
-  "api/CG.Blazor.Components.DualList.html": {
-    "href": "api/CG.Blazor.Components.DualList.html",
-    "title": "Class DualList",
-    "keywords": "Class DualList This class is the code-behind for the DualList control. Inheritance System.Object DualList Inherited Members System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : CG.Blazor.Components Assembly : CG.Blazor.dll Syntax public class DualList"
-  },
   "api/CG.Blazor.Components.DynamicNavMenu._MenuItem.html": {
     "href": "api/CG.Blazor.Components.DynamicNavMenu._MenuItem.html",
     "title": "Class DynamicNavMenu._MenuItem",
@@ -27,7 +22,7 @@
   "api/CG.Blazor.Components.html": {
     "href": "api/CG.Blazor.Components.html",
     "title": "Namespace CG.Blazor.Components",
-    "keywords": "Namespace CG.Blazor.Components Classes DualList This class is the code-behind for the DualList control. DynamicNavMenu This class is the code-behind for the DynamicNavMenu component. DynamicNavMenu._MenuItem This class contains properties for a menu item. DynamicNavMenuAttribute This class is an attribute that denotes an associated dynamic navigation menu. Footer This class is the code-behind for the Footer component. IndexChangedEventArgs This class contains arguments for the OnIndexChanged event. Wizard This class is the code-behind for the Wizard razor component. WizardPanel This class is the code-behind for the WizardPanel razor component."
+    "keywords": "Namespace CG.Blazor.Components Classes DynamicNavMenu This class is the code-behind for the DynamicNavMenu component. DynamicNavMenu._MenuItem This class contains properties for a menu item. DynamicNavMenuAttribute This class is an attribute that denotes an associated dynamic navigation menu. Footer This class is the code-behind for the Footer component. IndexChangedEventArgs This class contains arguments for the OnIndexChanged event. Wizard This class is the code-behind for the Wizard razor component. WizardPanel This class is the code-behind for the WizardPanel razor component."
   },
   "api/CG.Blazor.Components.IndexChangedEventArgs.html": {
     "href": "api/CG.Blazor.Components.IndexChangedEventArgs.html",
