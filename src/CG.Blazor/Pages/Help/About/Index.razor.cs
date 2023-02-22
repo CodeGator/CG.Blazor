@@ -1,6 +1,7 @@
 ﻿
-using System.Globalization;
-using System.Runtime.InteropServices;
+using MudBlazor;
+using System.Collections;
+using static MudBlazor.CategoryTypes;
 
 namespace CG.Blazor.Pages.Help.About;
 
@@ -30,6 +31,21 @@ public partial class Index
     /// </summary>
     internal protected IEnumerable<AssemblyModel>? _assemblies;
 
+    /// <summary>
+    /// This field contains the selected assembly model. 
+    /// </summary>
+    internal protected AssemblyModel? _selectedItem;
+
+    /// <summary>
+    /// This field contains the selcted row number, for the table.
+    /// </summary>
+    internal protected int _selectedRowNumber = -1;
+
+    /// <summary>
+    /// This field contains a reference to the mud table.
+    /// </summary>
+    internal protected MudTable<AssemblyModel>? _mudTable;
+
     #endregion
 
     // *******************************************************************
@@ -51,7 +67,9 @@ public partial class Index
             {
                 Name = !string.IsNullOrEmpty(x.GetName().Name ?? "unknown") ? x.GetName().Name ?? "unknown" : "unknown",
                 Version = !string.IsNullOrEmpty(x.ReadInformationalVersion()) ? x.ReadInformationalVersion() : "unknown",
-                Company = !string.IsNullOrEmpty(x.ReadCompany()) ? x.ReadCompany() : "unknown"
+                Company = !string.IsNullOrEmpty(x.ReadCompany()) ? x.ReadCompany() : "unknown",
+                Description = !string.IsNullOrEmpty(x.ReadDescription()) ? x.ReadDescription() : "unknown",
+                Copyright = !string.IsNullOrEmpty(x.ReadCopyright()) ? x.ReadCopyright() : "unknown"
             }).OrderBy(x => x.Company).ThenBy(x => x.Name)
             .ToList();
 
@@ -59,8 +77,37 @@ public partial class Index
         await base.OnInitializedAsync();
     }
 
-    #endregion
+    // *******************************************************************
 
+    /// <summary>
+    /// This method calculates a dynamic class for each row in the table.
+    /// </summary>
+    /// <param name="element">The element to use for the operation.</param>
+    /// <param name="rowNumber">The row number for the associated row.</param>
+    /// <returns>A CSS class string for the given table row.</returns>
+    protected string SelectedRowClassFunc(
+        AssemblyModel? element, 
+        int rowNumber
+        ) 
+    {
+        if (_selectedRowNumber == rowNumber) 
+        {
+            _selectedRowNumber = -1;
+            return string.Empty;
+        }
+
+        else if (_mudTable.SelectedItem != null && 
+            _mudTable.SelectedItem.Equals(element)
+            ) 
+        {
+            _selectedRowNumber = rowNumber;
+            return "selected";
+        }
+
+        return string.Empty;
+    }
+
+    #endregion
 }
 
 /// <summary>
@@ -88,6 +135,16 @@ public class AssemblyModel
     /// This property contains the company of the assembly.
     /// </summary>
     public string Company { get; set; } = null!;
+
+    /// <summary>
+    /// This property contains the description of the assembly.
+    /// </summary>
+    public string Description { get; set; } = null!;
+
+    /// <summary>
+    /// This property contains the copyright of the assembly.
+    /// </summary>
+    public string Copyright { get; set; } = null!;
 
     /// <summary>
     /// This property contains the creation date of the assembly.

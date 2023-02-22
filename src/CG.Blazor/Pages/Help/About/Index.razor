@@ -17,11 +17,13 @@
     </div>
 </div>
 
-<MudTable Items="@_assemblies" Dense Striped>
-    <ToolBarContent>
-        <MudText Typo="Typo.body1">Loaded Assemblies</MudText>
-        <MudSpacer />
-    </ToolBarContent>
+<MudText Class="pb-4" Typo="Typo.subtitle1" Align="Align.Center">- Dependent Assemblies -</MudText>
+<MudTable @ref="_mudTable" 
+          Items="@_assemblies"
+          Dense 
+          Striped 
+          @bind-SelectedItem="_selectedItem"
+          RowClassFunc="@SelectedRowClassFunc">
     <HeaderContent>
         <MudTh><MudTableSortLabel SortBy="new Func<AssemblyModel, object>(x=>x.Name)">Name</MudTableSortLabel></MudTh>
         <MudTh><MudTableSortLabel SortBy="new Func<AssemblyModel, object>(x=>x.Version)">Version</MudTableSortLabel></MudTh>
@@ -43,3 +45,23 @@
     </LoadingContent>
 </MudTable>
 
+@if (_selectedItem is not null) 
+{
+    <MudText Class="my-4" Typo="Typo.body1">@_selectedItem.Name</MudText>
+    <MudText Class="mb-4" Typo="Typo.body2">@_selectedItem.Description</MudText>
+    <MudText Class="text-muted" Typo="Typo.caption">@_selectedItem.Copyright</MudText>
+}
+
+<style>
+    .selected {
+        background-color: #1E88E5 !important;
+    }
+
+    .selected > td {
+        color: white !important;
+    }
+
+    .selected > td .mud-input {
+        color: white !important;
+    }
+</style>
