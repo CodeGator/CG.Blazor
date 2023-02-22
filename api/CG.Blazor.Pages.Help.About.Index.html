@@ -141,7 +141,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="CG.Blazor.Pages.Help.About.AssemblyModel.html">AssemblyModel</a>&gt;&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Collections.IEnumerable</span>&lt;<a class="xref" href="CG.Blazor.Pages.Help.About.AssemblyModel.html">AssemblyModel</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -152,7 +152,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected readonly List&lt;BreadcrumbItem&gt; _crumbs</code></pre>
+    <pre><code class="lang-csharp hljs">protected readonly CategoryTypes.List&lt;BreadcrumbItem&gt; _crumbs</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -164,7 +164,76 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<span class="xref">BreadcrumbItem</span>&gt;</td>
+        <td><span class="xref">MudBlazor.CategoryTypes.List</span>&lt;<span class="xref">MudBlazor.BreadcrumbItem</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="CG_Blazor_Pages_Help_About_Index__mudTable" data-uid="CG.Blazor.Pages.Help.About.Index._mudTable">_mudTable</h4>
+  <div class="markdown level1 summary"><p>This field contains a reference to the mud table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected MudTable&lt;AssemblyModel&gt; _mudTable</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">MudBlazor.MudTable</span>&lt;<a class="xref" href="CG.Blazor.Pages.Help.About.AssemblyModel.html">AssemblyModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="CG_Blazor_Pages_Help_About_Index__selectedItem" data-uid="CG.Blazor.Pages.Help.About.Index._selectedItem">_selectedItem</h4>
+  <div class="markdown level1 summary"><p>This field contains the selected assembly model.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AssemblyModel _selectedItem</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Blazor.Pages.Help.About.AssemblyModel.html">AssemblyModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="CG_Blazor_Pages_Help_About_Index__selectedRowNumber" data-uid="CG.Blazor.Pages.Help.About.Index._selectedRowNumber">_selectedRowNumber</h4>
+  <div class="markdown level1 summary"><p>This field contains the selcted row number, for the table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int _selectedRowNumber</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -192,6 +261,55 @@
       <tr>
         <td><span class="xref">Task</span></td>
         <td><p>A task to perform the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Blazor_Pages_Help_About_Index_SelectedRowClassFunc_" data-uid="CG.Blazor.Pages.Help.About.Index.SelectedRowClassFunc*"></a>
+  <h4 id="CG_Blazor_Pages_Help_About_Index_SelectedRowClassFunc_CG_Blazor_Pages_Help_About_AssemblyModel_System_Int32_" data-uid="CG.Blazor.Pages.Help.About.Index.SelectedRowClassFunc(CG.Blazor.Pages.Help.About.AssemblyModel,System.Int32)">SelectedRowClassFunc(AssemblyModel, Int32)</h4>
+  <div class="markdown level1 summary"><p>This method calculates a dynamic class for each row in the table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string SelectedRowClassFunc(AssemblyModel element, int rowNumber)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Blazor.Pages.Help.About.AssemblyModel.html">AssemblyModel</a></td>
+        <td><span class="parametername">element</span></td>
+        <td><p>The element to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rowNumber</span></td>
+        <td><p>The row number for the associated row.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A CSS class string for the given table row.</p>
 </td>
       </tr>
     </tbody>

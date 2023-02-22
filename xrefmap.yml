@@ -1254,6 +1254,19 @@ references:
   isSpec: "True"
   fullName: CG.Blazor.Pages.Help.About.AssemblyModel.Company
   nameWithType: AssemblyModel.Company
+- uid: CG.Blazor.Pages.Help.About.AssemblyModel.Copyright
+  name: Copyright
+  href: api/CG.Blazor.Pages.Help.About.AssemblyModel.html#CG_Blazor_Pages_Help_About_AssemblyModel_Copyright
+  commentId: P:CG.Blazor.Pages.Help.About.AssemblyModel.Copyright
+  fullName: CG.Blazor.Pages.Help.About.AssemblyModel.Copyright
+  nameWithType: AssemblyModel.Copyright
+- uid: CG.Blazor.Pages.Help.About.AssemblyModel.Copyright*
+  name: Copyright
+  href: api/CG.Blazor.Pages.Help.About.AssemblyModel.html#CG_Blazor_Pages_Help_About_AssemblyModel_Copyright_
+  commentId: Overload:CG.Blazor.Pages.Help.About.AssemblyModel.Copyright
+  isSpec: "True"
+  fullName: CG.Blazor.Pages.Help.About.AssemblyModel.Copyright
+  nameWithType: AssemblyModel.Copyright
 - uid: CG.Blazor.Pages.Help.About.AssemblyModel.CreationDate
   name: CreationDate
   href: api/CG.Blazor.Pages.Help.About.AssemblyModel.html#CG_Blazor_Pages_Help_About_AssemblyModel_CreationDate
@@ -1267,6 +1280,19 @@ references:
   isSpec: "True"
   fullName: CG.Blazor.Pages.Help.About.AssemblyModel.CreationDate
   nameWithType: AssemblyModel.CreationDate
+- uid: CG.Blazor.Pages.Help.About.AssemblyModel.Description
+  name: Description
+  href: api/CG.Blazor.Pages.Help.About.AssemblyModel.html#CG_Blazor_Pages_Help_About_AssemblyModel_Description
+  commentId: P:CG.Blazor.Pages.Help.About.AssemblyModel.Description
+  fullName: CG.Blazor.Pages.Help.About.AssemblyModel.Description
+  nameWithType: AssemblyModel.Description
+- uid: CG.Blazor.Pages.Help.About.AssemblyModel.Description*
+  name: Description
+  href: api/CG.Blazor.Pages.Help.About.AssemblyModel.html#CG_Blazor_Pages_Help_About_AssemblyModel_Description_
+  commentId: Overload:CG.Blazor.Pages.Help.About.AssemblyModel.Description
+  isSpec: "True"
+  fullName: CG.Blazor.Pages.Help.About.AssemblyModel.Description
+  nameWithType: AssemblyModel.Description
 - uid: CG.Blazor.Pages.Help.About.AssemblyModel.Name
   name: Name
   href: api/CG.Blazor.Pages.Help.About.AssemblyModel.html#CG_Blazor_Pages_Help_About_AssemblyModel_Name
@@ -1311,6 +1337,24 @@ references:
   commentId: F:CG.Blazor.Pages.Help.About.Index._crumbs
   fullName: CG.Blazor.Pages.Help.About.Index._crumbs
   nameWithType: Index._crumbs
+- uid: CG.Blazor.Pages.Help.About.Index._mudTable
+  name: _mudTable
+  href: api/CG.Blazor.Pages.Help.About.Index.html#CG_Blazor_Pages_Help_About_Index__mudTable
+  commentId: F:CG.Blazor.Pages.Help.About.Index._mudTable
+  fullName: CG.Blazor.Pages.Help.About.Index._mudTable
+  nameWithType: Index._mudTable
+- uid: CG.Blazor.Pages.Help.About.Index._selectedItem
+  name: _selectedItem
+  href: api/CG.Blazor.Pages.Help.About.Index.html#CG_Blazor_Pages_Help_About_Index__selectedItem
+  commentId: F:CG.Blazor.Pages.Help.About.Index._selectedItem
+  fullName: CG.Blazor.Pages.Help.About.Index._selectedItem
+  nameWithType: Index._selectedItem
+- uid: CG.Blazor.Pages.Help.About.Index._selectedRowNumber
+  name: _selectedRowNumber
+  href: api/CG.Blazor.Pages.Help.About.Index.html#CG_Blazor_Pages_Help_About_Index__selectedRowNumber
+  commentId: F:CG.Blazor.Pages.Help.About.Index._selectedRowNumber
+  fullName: CG.Blazor.Pages.Help.About.Index._selectedRowNumber
+  nameWithType: Index._selectedRowNumber
 - uid: CG.Blazor.Pages.Help.About.Index.OnInitializedAsync
   name: OnInitializedAsync()
   href: api/CG.Blazor.Pages.Help.About.Index.html#CG_Blazor_Pages_Help_About_Index_OnInitializedAsync
@@ -1324,6 +1368,19 @@ references:
   isSpec: "True"
   fullName: CG.Blazor.Pages.Help.About.Index.OnInitializedAsync
   nameWithType: Index.OnInitializedAsync
+- uid: CG.Blazor.Pages.Help.About.Index.SelectedRowClassFunc(CG.Blazor.Pages.Help.About.AssemblyModel,System.Int32)
+  name: SelectedRowClassFunc(AssemblyModel, Int32)
+  href: api/CG.Blazor.Pages.Help.About.Index.html#CG_Blazor_Pages_Help_About_Index_SelectedRowClassFunc_CG_Blazor_Pages_Help_About_AssemblyModel_System_Int32_
+  commentId: M:CG.Blazor.Pages.Help.About.Index.SelectedRowClassFunc(CG.Blazor.Pages.Help.About.AssemblyModel,System.Int32)
+  fullName: CG.Blazor.Pages.Help.About.Index.SelectedRowClassFunc(CG.Blazor.Pages.Help.About.AssemblyModel, System.Int32)
+  nameWithType: Index.SelectedRowClassFunc(AssemblyModel, Int32)
+- uid: CG.Blazor.Pages.Help.About.Index.SelectedRowClassFunc*
+  name: SelectedRowClassFunc
+  href: api/CG.Blazor.Pages.Help.About.Index.html#CG_Blazor_Pages_Help_About_Index_SelectedRowClassFunc_
+  commentId: Overload:CG.Blazor.Pages.Help.About.Index.SelectedRowClassFunc
+  isSpec: "True"
+  fullName: CG.Blazor.Pages.Help.About.Index.SelectedRowClassFunc
+  nameWithType: Index.SelectedRowClassFunc
 - uid: CG.Blazor.Themes
   name: CG.Blazor.Themes
   href: api/CG.Blazor.Themes.html
