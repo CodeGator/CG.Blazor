@@ -116,9 +116,9 @@
                     }
                     @if (IsFinishVisible)
                     {
-                        @if (!string.IsNullOrEmpty(NextButtonTooltip))
+                        @if (!string.IsNullOrEmpty(FinishButtonTooltip))
                         {
-                            <MudTooltip Text=@NextButtonTooltip>
+                            <MudTooltip Text=@FinishButtonTooltip>
                                 <MudButton OnClick="RaiseWizardFinished"
                                             Color="@FinishButtonColor"
                                             Disabled="@DisableNextButton"
